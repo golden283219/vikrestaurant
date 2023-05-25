@@ -1,0 +1,123 @@
+/* wizard toolbar */
+
+.vre-wizard-toolbar {
+	display: flex;
+	align-items: center;
+	margin-top: 15px;
+}
+.vre-wizard-toolbar .vre-wizard-text {
+	flex: 1;
+}
+
+/* wizard steps */
+
+.vre-wizard-steps {
+	margin-top: 15px;
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.vre-wizard-steps .wizard-step-outer {
+	padding: 10px;
+	width: calc(100% / 3 - 20px);
+}
+
+.vre-wizard-steps .wizard-step {
+	padding: 0;
+	height: 100%;
+}
+
+.vre-wizard .wizard-step .wizard-step-top-bar {
+	background: #ccc;
+	padding: 15px;
+	border-top-left-radius: 6px;
+	border-top-right-radius: 6px;
+}
+.vre-wizard .wizard-step .wizard-step-top-bar.completed {
+	background: #537e47;
+	color: #fff;
+}
+.vre-wizard .wizard-step .wizard-step-top-bar .top-bar-primary {
+	font-size: 16px;
+	font-weight: bold;
+}
+
+.vre-wizard .wizard-step .wizard-step-body {
+	background: #f1f1f1;
+	padding: 10px;
+	height: calc(100% - 120px);
+}
+
+.vre-wizard .wizard-step .wizard-step-footer-bar {
+	background: #f1f1f1;
+	padding: 10px;
+	border-bottom-left-radius: 6px;
+	border-bottom-right-radius: 6px;
+	display: inline-table;
+	width: calc(100% - 20px);
+}
+.vre-wizard .wizard-step .wizard-step-footer-bar .btn-success {
+	float: right;
+}
+
+.vre-wizard p {
+	padding: 0;
+}
+
+/* wizard form */
+
+.vre-wizard .wizard-step .wizard-form {
+	margin-top: 10px;
+}
+.vre-wizard .wizard-step .wizard-form .control-group {
+	margin-bottom: 15px;
+}
+.vre-wizard .wizard-step .wizard-form .control-label {
+	display: inline-block;
+	float: left;
+	padding-right: 5px;
+	padding-top: 5px;
+	width: 120px;
+}
+.vre-wizard .wizard-step .wizard-form .controls {
+	display: flex;
+}
+.vre-wizard .wizard-step .wizard-form .controls .switch-ios {
+	margin-bottom: -5px;
+}
+.vre-wizard .wizard-step .wizard-form .controls i {
+	margin-top: 5px;
+}
+.vre-wizard .wizard-step .wizard-form .controls input[type="text"],
+.vre-wizard .wizard-step .wizard-form .controls input[type="email"],
+.vre-wizard .wizard-step .wizard-form .controls input[type="tel"],
+.vre-wizard .wizard-step .wizard-form .controls textarea,
+.vre-wizard .wizard-step .wizard-form .controls select,
+.vre-wizard .wizard-step .wizard-form .controls .chzn-container {
+	flex: 1;
+	margin: 0;
+}
+
+/* wizard summary */
+
+.vre-wizard .wizard-step ul.wizard-step-summary li {
+	margin-bottom: 4px;
+}
+.vre-wizard .wizard-step ul.wizard-step-summary li i {
+	margin-right: 2px;
+}
+
+/* wizard responsiveness */
+
+@media screen and (max-width: 1280px) {
+	/* show only 2 blocks per row */
+	.vre-wizard-steps .wizard-step-outer {
+		width: calc(100% / 2 - 20px);
+	}
+}
+@media screen and (max-width: 767px) {
+	/* show only 1 block per row */
+	.vre-wizard-steps .wizard-step-outer {
+		width: 100%;
+	}
+}

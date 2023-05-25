@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension type="module" version="3.0.0" client="site" method="upgrade">
+	<name>VikRestaurants Take-Away Grid</name>
+	<author>Extensionsforjoomla.com</author>
+	<creationDate>January 12, 2023</creationDate>
+	<copyright>Copyright (C) 2023 e4j - extensionsforjoomla.com . All Rights Reserved</copyright>
+	<license>http://www.gnu.org/licenses/gpl-2.0.html GNU/GPL</license>
+	<authorEmail>dev@extensionsforjoomla.com</authorEmail>
+	<authorUrl>https://extensionsforjoomla.com</authorUrl>
+	<version>1.4.3</version>
+	<description>Module to show a grid of Take-Away items in VikRestaurants 1.8.2 or newer.</description>
+
+	<files>
+		<filename module="mod_vikrestaurants_takeaway_grid">mod_vikrestaurants_takeaway_grid.php</filename>
+		<filename>helper.php</filename>
+		<filename>index.html</filename>
+		<folder>fields</folder>
+		<folder>src</folder>
+		<folder>tmpl</folder>
+	</files>
+
+	<languages>
+		<language tag="en-GB">languages/en-GB.mod_vikrestaurants_takeaway_grid.ini</language>
+	</languages>
+
+	<config>
+		
+		<fields name="params">
+
+			<fieldset name="basic" addfieldpath="/modules/mod_vikrestaurants_takeaway_grid/fields">
+
+				<field
+					name="filtermenu"
+					type="radio"
+					default="1"
+					label="VRTK_GRID_FILTER_MENUS"
+					description="VRTK_GRID_FILTER_MENUS_DESC"
+					class="btn-group btn-group-yesno"
+					layout="joomla.form.field.radio.switcher"
+				>
+					<option value="0">JNO</option>
+					<option value="1">JYES</option>
+				</field>
+
+				<field
+					name="filtermenuall"
+					type="radio"
+					default="1"
+					label="VRTK_GRID_FILTER_MENUS_ALL"
+					description="VRTK_GRID_FILTER_MENUS_ALL_DESC"
+					class="btn-group btn-group-yesno"
+					showon="filtermenu:1"
+					layout="joomla.form.field.radio.switcher"
+				>
+					<option value="0">JNO</option>
+					<option value="1">JYES</option>
+				</field>
+
+				<field
+					name="products"
+					type="products"
+					label="VRTK_GRID_PRODUCTS"
+					description="VRTK_GRID_PRODUCTS_DESC"
+					multiple="true"
+					layout="joomla.form.field.list-fancy-select"
+				/>
+
+				<field
+					name="numitems"
+					type="number"
+					default="3"
+					required="true"
+					min="1"
+					max="10"
+					step="1"
+					label="VRTK_GRID_NUM_ITEMS"
+					description="VRTK_GRID_NUM_ITEMS_DESC"
+				/>
+
+				<field
+					name="price"
+					type="radio"
+					default="1"
+					label="VRTK_GRID_PRICE"
+					description="VRTK_GRID_PRICE_DESC"
+					class="btn-group btn-group-yesno"
+					layout="joomla.form.field.radio.switcher"
+				>
+					<option value="0">JNO</option>
+					<option value="1">JYES</option>
+				</field>
+
+				<field
+					name="image"
+					type="radio"
+					default="1"
+					label="VRTK_GRID_IMAGE"
+					description="VRTK_GRID_IMAGE_DESC"
+					class="btn-group btn-group-yesno"
+					layout="joomla.form.field.radio.switcher"
+				>
+					<option value="0">JNO</option>
+					<option value="1">JYES</option>
+				</field>
+
+				<field
+					name="menu"
+					type="radio"
+					default="1"
+					label="VRTK_GRID_MENU"
+					description="VRTK_GRID_MENU_DESC"
+					class="btn-group btn-group-yesno"
+					layout="joomla.form.field.radio.switcher"
+				>
+					<option value="0">JNO</option>
+					<option value="1">JYES</option>
+				</field>
+
+				<field
+					name="attributes"
+					type="radio"
+					default="1"
+					label="VRTK_GRID_ATTRIBUTES"
+					description="VRTK_GRID_ATTRIBUTES_DESC"
+					class="btn-group btn-group-yesno"
+					layout="joomla.form.field.radio.switcher"
+				>
+					<option value="0">JNO</option>
+					<option value="1">JYES</option>
+				</field>
+
+				<field
+					name="rating"
+					type="list"
+					default="2"
+					label="VRTK_GRID_RATING"
+					description="VRTK_GRID_RATING_DESC"
+				>
+					<option value="2">VRTK_GRID_ALWAYS</option>
+					<option value="1">VRTK_GRID_WHEN_AVAILABLE</option>
+					<option value="0">VRTK_GRID_NEVER</option>
+				</field>
+
+				<field
+					name="itemid"
+					type="menuitem"
+					default="0"
+					label="VRTK_GRID_MENUITEM"
+					description="VRTK_GRID_MENUITEM_DESC"
+				>
+					<option value="0">--</option>
+				</field>
+
+			</fieldset>
+
+			<fieldset name="advanced">	
+				
+				<field
+					name="moduleclass_sfx"
+					type="text"
+					default=""
+					label="COM_MODULES_FIELD_MODULECLASS_SFX_LABEL"
+				/>
+
+				<field
+					name="layout"
+					type="modulelayout"
+					label="JFIELD_ALT_LAYOUT_LABEL"
+					description="JFIELD_ALT_MODULE_LAYOUT_DESC"
+					class="form-select"
+				/>
+
+			</fieldset>
+			
+		</fields>
+
+	</config>
+
+	<updateservers>
+		<server type="extension" name="VikRestaurants Modules Update Site" priority="1">https://extensionsforjoomla.com/vikapi/?task=joomla.updateserver&amp;sku=vre-tkgrid</server>
+	</updateservers>
+
+</extension>

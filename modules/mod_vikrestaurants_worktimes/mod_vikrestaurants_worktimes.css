@@ -1,0 +1,167 @@
+#vrworktmodule {
+	display: inline-block;
+	width: 100%;
+}
+.vrworkt-page-scroller {
+	border: 1px solid #ddd;
+}
+#vrworkt-page1 {
+	background: none repeat scroll 0 0 #fbfbfb;
+}
+.vrworkt-day-view {
+	display: inline-block;
+	text-align: center;
+	width: 100%;
+}
+.vrworkt-day-circle {
+	background: none repeat scroll 0 0 #fff;
+	border-bottom: 1px solid #ddd;
+	min-height: 83px;
+	margin: 0 auto;
+	padding: 10px;
+	text-align: center;
+}
+.vrworkt-day-circle span {
+	display: block;
+}
+.vrworkt-day-num {
+	font-size: 40px;
+}
+.vrworkt-month-text {
+	font-size: 18px;
+	margin: -7px 0 0;
+	text-transform: uppercase;
+}
+.vrworkt-day-status {
+	font-size: 16px;
+	font-weight: bold;
+	margin: 5px 0 0;
+	text-transform: uppercase;
+}
+.vrwt-day-status-ok {
+	color: #008c00;
+	display: inline-block;
+	padding: 5px;
+}
+.vrworkt-shifts-cont {
+	font-size: 14px;
+	width: 100%;
+}
+.vrworkt-shift-name {
+	background: none repeat scroll 0 0 #bbb;
+	color: #fff;
+	display: inline-block;
+	font-size: 11px;
+	min-width: 40px;
+	padding: 2px 7px;
+	margin-right: 5px;
+}
+.vrworkt-shift-row {
+	border-bottom: 1px dashed #ddd;
+	margin: 2px 0;
+	padding: 0 0 3px;
+}
+.vrworkt-shift-row:last-child {
+	border: 0 none;
+}
+.vrworkt-pag-nav {
+	background: none repeat scroll 0 0 #fff;
+	padding: 2px 5px 0 0;
+	text-align: right;
+}
+.vrworkt-pag-nav a {
+	background: none repeat scroll 0 0 #999;
+	border: 0 none;
+	border-radius: 50%;
+	box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.1) inset, 1px 1px 1px rgba(255, 255, 255, 0.1);
+	cursor: pointer;
+	display: inline-block;
+	height: 8px;
+	margin: 2px 1px;
+	position: relative;
+	width: 8px;
+}
+.vrworkt-pag-nav a.vrworkt-nav-selected {
+	cursor: default;
+}
+.vrworkt-pag-nav a.vrworkt-nav-selected:after {
+	background: none repeat scroll 0 0 rgb(255, 255, 255);
+	border-radius: 50%;
+	content: "";
+	height: 4px;
+	left: 2px;
+	position: absolute;
+	top: 2px;
+	width: 4px;
+}
+.vrworkt-head-titles .vrworkt-head-th > span {
+	color: #fff;
+	display: inline-block;
+	padding: 5px;
+}
+.vrworkt-head-titles {
+	margin: 0 0 5px 0;
+}
+.vrworkt-weekday-row {
+	display: inline-block;
+	padding: 6px 0;
+	width: 100%;
+}
+.vrworkt-weekday-row:last-child {
+	border:0;
+}
+.vrworkt-weekday-row .vrworkt-weekday-head {
+	background: none repeat scroll 0 0 #eee;
+	display: inline-block;
+	padding: 5px;
+}
+.vrworkt-weekday-row .vrworkt-weekday-shifts {
+	display: inline-block;
+	float: left;
+}
+.vrworkt-head-th {
+	background: none repeat scroll 0 0 #999;
+	display: inline-block;
+}
+.vrworkt-head-tr {
+	display: inline-block;
+	font-size: .9em;
+	padding: 7px 0 0 0;
+}
+.vrworkt-weekday-shift-void {
+	/*padding: 13px 0 0 0;*/
+	color: #990000;
+}
+.vrworkt-weekday-head {
+	width: 100%;
+}
+.vrworkt-head-th-void {
+	width: 13%;
+}
+.vrworkt-weekday-shifts {
+	width: 100%;
+}
+.vrworkt-head-th-one {
+	width: 96%;
+}
+.vrworkt-head-tr-one {
+	width: 100%;
+}
+.vrworkt-head-th-two {
+	width: 41%;
+}
+.vrworkt-head-tr-two {
+	width: 49%;
+}
+.vrworkt-head-th-three {
+	width: 27%;
+}
+.vrworkt-head-tr-three {
+	width: 30%;
+}
+.vrworkt-head-th-four {
+	width: 19%;
+}
+.vrworkt-head-tr-four {
+	width: 22%;
+}

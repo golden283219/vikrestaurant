@@ -1,0 +1,4638 @@
+@charset "utf-8";
+
+.vrseparatorcflong {
+	font-size: 10px !important;	
+}
+
+.vrrequiredfield {
+	border-color: #BB1111 !important;
+}
+.vrrequired {
+	color: #BB1111 !important;
+}
+
+.vrinvalid {
+	color: #9d261d !important;
+}
+iframe.vrinvalid {
+	border: 1px solid #9d261d;
+}
+
+.vrrequiredfieldok {
+	border-color: #11BB11 !important;
+}
+
+.ui-widget-content {
+	z-index: 10000;
+	box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+.ui-state-hover, .ui-widget-content .ui-state-hover, .ui-widget-header .ui-state-hover, .ui-state-focus, .ui-widget-content .ui-state-focus, .ui-widget-header .ui-state-focus {
+	border: 1px solid #3e6372 !important;
+}
+div.ui-tooltip p {
+	font-size: 90%;
+	margin: 0;
+}
+
+a.no-underline,
+a.no-underline:hover {
+	text-decoration: none !important;
+}
+
+input, select, button {
+	border: 1px solid #ccc;
+	border-radius: 5px;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	padding: 5px;
+	margin: 0;
+}
+input[type^="submit"]{
+	cursor: pointer;
+	
+}
+.break-word {
+	word-break: break-all;
+	word-wrap: break-word;
+}
+
+img.vr-opt-flag {
+	/* height: 16px !important; */
+	/* width: 16px !important; */
+	padding-right: 10px;
+	/* vertical-align: middle; */
+	transform: translateY(15%);
+}
+
+#vrtscrollablediv {
+	overflow: hidden;
+	position: relative;
+	width: 100%;
+}
+.vrbookcontinuebuttoncont {
+	display: inline-block;
+	width: 100%;
+}
+
+#vrtcouterdiv {
+	display: block;
+	overflow-x:auto;
+	overflow-y:hidden;
+}
+
+.vrtopacity{
+	filter:alpha(opacity=40); /* IE */
+	-moz-opacity:0.4; /* Mozilla */
+	opacity: 0.4; /* CSS3 */
+}
+
+.vrtcouterdivborder{
+	border: 1px solid #ccc;
+}
+
+#tcontainer{
+	width: 98%;
+	height: 500px;
+	padding: 10px;
+	background: #ffffff;
+	margin-bottom: 5px;
+	width: 1200px;
+	overflow-x: auto;
+	overflow-y: hidden;
+}
+
+#vrsearchform, .vrresultsummarydiv {
+	color:#666;
+}
+
+.vrtable{
+	background: #A1988D;
+	width: 90px;
+	height: 90px;
+	border: 1px solid #B8B7B7;
+	-webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+	border-radius: 3px;
+	cursor: move;
+	text-align: center;
+	position: absolute;
+}
+.vrtamblinks {
+	margin: 5px 0 0 0;
+	text-align: center;
+}
+.vrtamblinks a {
+	display: table !important;
+	color: #f6f6f6;
+	margin: 0 auto;
+}
+.vrtamblinks a:hover {
+	color: #666;
+}
+/*.vrtable span {
+	color:#fff;
+	font-weight: bold;
+	display: inline-block;
+	margin: 25px 0 0;
+}*/
+.vrtable span {
+	color:#333;
+	background: #fff;
+	border-radius:50%;
+	-moz-border-radius:50%;
+	-webkit-border-radius:50%;
+	padding: 3px 5px;
+	font-weight: bold;
+	display: inline-block;
+	margin: 8px 0 0;
+	box-shadow: 2px 2px 1px #666;
+	-moz-box-shadow: 2px 2px 1px #666;
+	-webkit-box-shadow: 2px 2px 1px #666;
+	font-size: 11px;
+}
+.vrtoccurrency {
+	background: #fff url(images/sharedtable.png) 4px center no-repeat;
+	height: 18px;
+	box-shadow: 2px 2px 1px #666;
+	-moz-box-shadow: 2px 2px 1px #666;
+	-webkit-box-shadow: 2px 2px 1px #666;
+	border-radius:3px;
+	-moz-border-radius:3px;
+	-webkit-border-radius:3px;
+	position: absolute;
+	bottom: 5px;
+	left: 5px;
+	text-align: left;
+	padding: 4px 10px 0 24px;
+	font-size: 11px;
+}
+.vrtcapacity {
+	background: none repeat scroll 0 0 #fff;
+	border-radius: 3px;
+	bottom: 5px;
+	box-shadow: 2px 2px 1px #666;
+	color: #333;
+	font-size: 11px;
+	height: 20px;
+	padding: 4px 10px 6px;
+	position: absolute;
+	right: 5px;
+	text-align: left;
+}
+.vrformfieldset {
+	border:1px solid #ccc;
+	border-radius:5px;
+	-moz-border-radius:5px;
+	-webkit-border-radius:5px;
+	padding: 22px;
+}
+.vrformfieldset legend, .vrordertitlediv {
+	font-size: 1.4em;
+	padding: 0 10px;
+	width: auto;
+}
+.vrformfieldset label  {
+	float:left;
+}
+.vrformfieldset .vrsearchinputdiv {
+	padding: 13px 2px;
+	border-bottom:1px dotted #ccc;
+}
+.vrformfieldset .vrsearchinputlabel, 
+.vrordercomponentsdiv .vrorderinputdiv .vrorderlabel {
+	font-size: 18px;
+	min-width: 10%;
+	display: inline-block;
+	margin: 7px 15px 0 0;
+}
+.vrformfieldset .vrsearchinputdiv:last-of-type {
+	border:0;
+}
+button.vrsearchsubmit, input.vrresultbookbutton, 
+.vrresultfalsehintdiv a, .vrresultbookbuttonfind,
+.vrresultbookbuttoncontinue, #vrconfcontinuebutton,
+button.vrordersubmit {
+	cursor: pointer;
+	background:#993300;
+	border-radius: 5px;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+	text-align: center;
+	color:#fff;
+	font-size:18px;
+	padding: 10px 15px;
+	border:0;
+	float: right;
+}
+button.vrsearchsubmit:hover, input.vrresultbookbutton:hover, 
+.vrresultfalsehintdiv a:hover, .vrresultbookbuttonfind:hover,
+.vrresultbookbuttoncontinue:hover, #vrconfcontinuebutton:hover,
+button.vrordersubmit:hover {
+	background:#B33A00;
+	border:0;
+}
+.vryourtablediv {
+	margin: 15px 0 0 0;
+}
+.vryourtablediv {
+	display: inline-block;
+	width: 100%;
+	text-align: center;
+}
+.vryourtablediv .vrresultbookbuttonfind {
+	float: none;
+}
+#vrchooseroomsp {
+	display: inline-block;
+	float: left;
+	margin: 7px 12px 0 0;
+}
+#vrchooseroomdiv {
+	min-width: 175px;
+	margin: 0 0 10px 0;
+}
+.vrsearchentryinput{
+	position: relative;
+	display: inline-block;
+}
+.vrsearchentryinput input,
+.vrtkdatetimeinput input {
+	background: transparent;
+	border:1px solid #ddd;
+	border-radius:3px;
+	overflow: hidden;
+	min-width: 80px;
+	position: relative;
+}
+.vrsearchentryinput:before {
+	position: absolute;
+	right: 12px;
+	top: 8px;
+	font-family: "Font Awesome 5 Free";
+	content: "\f073";
+	font-size: 16px;
+	color: #2d2d2d;
+	z-index: 1;
+}
+.vre-calendar-wrapper {
+	position: relative;
+	display: inline-block;
+}
+.vre-calendar-wrapper:before {
+	position: absolute;
+	right: 12px;
+	top: 8px;
+	font-family: "Font Awesome 5 Free";
+	content: "\f073";
+	font-size: 16px;
+	color: #2d2d2d;
+	z-index: 1;
+}
+.vrreservationform input[type="text"], .vrreservationform select {
+	min-width: 174px;
+}
+.vrfront-manage-btn .vre-calendar-wrapper:before {
+	right: 19px;
+	top: 12px;
+}
+.vrsearchoptgrouphour {
+	padding: 5px;
+}
+.vrsearchentryselect optgroup {
+	color: #666;
+}
+.vrsearchentryselect optgroup:before {
+	content: attr(label);
+	display: block;
+	text-align: left;
+	font-style: normal;
+	border-bottom:1px dotted #ddd;
+	padding: 0 0 3px;
+	margin: 0 0 3px;
+}
+.vrstepbardiv {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	margin-bottom: 30px;
+}
+.vrstepbardiv > div {
+	flex-basis: 25%;
+}
+.vrstepbardiv .vrstep-inner {
+	padding: 20px 0;
+	position: relative;
+	text-align: center;
+}
+.vrstepbardiv .vrstep-inner a:hover {
+	color: inherit;
+}
+.vrstepbardiv .vrsteptitle {
+	display: inline-block;
+	width: 32px;
+	height: 32px;
+	margin-right: 5px;
+	border: 2px solid #ddd;
+	border-radius: 50%;
+	background-color: #fff;
+	line-height: 28px;
+	font-size: 14px;
+}
+.vrstepbardiv .vrstep .vrstep-inner {
+	position: relative;
+}
+.vrstepbardiv .vrstep .vrstep-inner:after {
+	content: "";
+	top: 35%;
+	right: -40%;
+	position: absolute;
+	width: 82%;
+	height: 2px;
+	background: #eee;
+}
+.vrstepbardiv .vrstep:last-child .vrstep-inner:after {
+	position: relative;
+}
+.vrstepbardiv .vrstepsubtitle {
+	font-size: 14px;
+	display: block;
+	margin-top: 6px;
+}
+.vrstepbardiv .vrstep .vrsteptitle {
+	position: relative;
+	z-index: 1;
+}
+.vrstepbardiv .vrstepactive .vrsteptitle {
+	background: #9B3705;
+	border: 2px solid #9B3705;
+	color: #fff;
+}
+.vrstepbardiv .vrstepactive .vrstep-inner:after {
+	background: #9B3705;
+}
+.vrstepbardiv .vrstepactive.step-current .vrstep-inner:after {
+	background: #eee;
+}
+.vrstepbardiv .vrstepactive.step-current .vrsteptitle {
+	background: #222;
+	border: 2px solid #222;
+	color: #fff;
+}
+.vrresultsummarydiv {
+	border: 1px solid #eee;
+	border-radius: 5px;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+	padding: 10px 20px;
+	margin: 0 0 30px 0;
+}
+.vrresultsummarydiv.confirmation {
+	margin: 20px 0;
+}
+#vrresform .vrresultsummarydiv {
+	margin: 0 0 15px 0;
+}
+.vrresultsummarydiv .vrresultsuminnerdiv {
+	border-bottom: 1px dotted #ddd;
+	padding: 10px 0;
+}
+.vrresultsummarydiv .vrresultsuminnerdiv:last-of-type {
+	border:0;
+}
+.vrresultsummarydiv .vrresultsumlabelsp {
+	font-size:16px;
+	display: inline-block;
+	margin: 0 10px 0 0;
+}
+.vrresultsummarydiv .vrresultsumvaluesp {
+	display: inline-block;
+	font-size:18px;
+}
+.vrresultbookdiv {
+	display: inline-block;
+	width: 100%;
+	font-size:16px;
+	text-align: center;
+	margin: 10px 0 25px;
+	font-weight: bold;
+}
+.vrresultbookdiv span {
+	display: inline-block;
+	padding: 10px;
+	border:1px solid #ddd;
+	border-radius: 4px;
+	-moz-border-radius: 4px;
+	-webkit-border-radius: 4px;
+}
+.vrfault {
+	color: #993300;
+}
+.vrsuccess {
+	color:#006600;
+}
+.vrresulttruehintsdiv {
+	display: inline-block;
+	width: 100%;
+	margin: 10px 0 30px;
+ }
+.vrresultbookotherwisediv, .vrresultbooktrydiv {
+	font-size: 18px;
+}
+.vrbookingouterdiv {
+	margin: 10px 0 0 0; 
+}
+.vrbookingborderdiv {
+	padding: 10px 10px 15px;
+	border:1px solid #ddd;
+	border-radius:4px;
+	-moz-border-radius:4px;
+	-webkit-border-radius:4px;
+}
+.vrhintsouterdiv, .vrresultbookotherwisediv {
+	text-align: center;
+}
+#vrbooktabselsp {
+	font-size: 14px;
+	border:2px solid #ccc;
+	border-radius: 10px;
+	-moz-border-radius: 10px;
+	-webkit-border-radius: 10px;
+	padding: 15px 30px 15px 35px;
+	display: inline-block;
+	background: #fff;
+	position: relative;
+}
+#vrbooktabselsp:after {
+	background: url(images/tableconfirm.png) left center no-repeat;
+	content: "";
+	position: absolute;
+	width: 49px;
+	height: 49px;
+	left: -19px;
+}
+#vrchooseroomouterdiv {
+	margin:20px 0 0 0;
+}
+.vrresulthintsdiv, .vrresultdisabledhintsdiv {
+	display: inline-block;
+	position: relative;
+}
+.vrresulthintsbutton, .vrresulthintsdisabledbutton, .vrcouponcodesubmit {
+	border-radius: 4px;
+	-moz-border-radius: 4px;
+	-webkit-border-radius: 4px;
+	display: inline-block;
+	padding: 7px 16px;
+	text-decoration: none;
+}
+.vrresulthintsbutton, .vrresulthintsbutton:hover, .vrcouponcodesubmit, .vrcouponcodesubmit:hover {
+	background-color: #5cb85c;
+	border:1px solid #5cb85c!important;
+	color:#fff !important;
+}
+.vrresulthintsbutton:hover {
+	color:#666;
+}
+.vrresulthintsdisabledbutton {
+	background: #f7f7f7;
+	border: 1px solid #E7E7E7;
+	color: #ACACAC;
+}
+.vrtable {
+	box-shadow: 2px 2px 1px #666;
+	-moz-box-shadow: 2px 2px 1px #666;
+	-webkit-box-shadow: 2px 2px 1px #666;
+}
+.vrtselected {
+	background-image: url(images/selected.png);
+	background-position: 93% 91%;
+	background-repeat: no-repeat;
+}
+.vrcouponcodediv {
+	border:2px dashed #ccc;
+	border-radius:4px;
+	padding: 20px;
+	display: inline-block;
+	margin-bottom: 20px;
+	width: 100%;
+}
+.vrcouponcodediv .vrheading3 {
+	display: inline-block;
+	margin:0;
+	font-size:16px;
+}
+.vrcouponcodediv .vrcouponcodetext {
+	margin: 0 0 0 5px;
+}
+.vrcouponcodediv .vrcouponcodetext,
+.vrordercomponentsdiv .vrorderinput {
+	border:1px solid #ddd;
+	border-radius: 2px;
+	-moz-border-radius: 2px;
+	-webkit-border-radius: 2px;
+	padding: 7px;
+	color:#666;
+	margin: 0 0 0 5px;
+}
+.vrcustomfields .select2-container {
+	margin-left: 5px;
+}
+.vrcouponcodesubmit {
+	cursor: pointer;
+}
+#vrpayform {
+	margin-top: 15px;
+}
+#vrlegendsharedtablediv {
+	background: url(images/sharedtableicon.png) left center no-repeat;
+	padding:10px 0 10px 33px;
+	display: inline-block;
+	float: right;
+}
+.vrorderpagediv {
+	color:#666;
+}
+.vrordercomponentsdiv {
+	margin: 20px 0 0 0;
+	display: inline-block;
+	width: 100%;
+}
+.vrordercomponentsdiv .vrorderinputdiv .vrordertypediv {
+	margin-top: 5px;
+	float: left;
+}
+.vrordercomponentsdiv .vrorderinputdiv {
+	width: 100%;
+	display: inline-block;
+	margin: 5px 0 12px;
+}
+.vrorderinputdiv button {
+	float: left;
+	margin-left: 0;
+}
+.vrordercomponentsdiv .vrorderinputdiv .vrorderlabel {
+	font-size: 18px;
+	min-width: 18%;
+	display: inline-block;
+	margin: 0 15px 0 0;
+	float: none;
+}
+.vrorderinputdiv .vrordertypediv label {
+	display: inline-block;
+	margin-left:5px;
+}
+.vrordercomponentsdiv .vrorderinputdiv .vrorderlabel {
+	margin-top:0;
+}
+.vrorderpagediv {
+	margin: 15px 0 0 0;
+}
+.vrordercontentinfo {
+	font-size: 16px;
+	line-height: 1.5em;
+}
+.vrorderboxcontent {
+	padding: 45px 50px;
+	position: relative;
+	margin: 0 0 28px 0;
+	background: #f6f6f6;
+}
+.vrorderboxcontent h3.vrorderheader {
+	display: inline-block;
+	font-weight: bold;
+	padding: 0;
+	color: #993300 !important;
+	font-weight: normal;
+	text-transform: uppercase;
+	font-size: 27px;
+	margin-bottom: 20px;
+}
+
+/*.vrtdspecialday {
+	background: #ff0000 !important;
+}*/
+.vrtdspecialday a {
+	border-color: #900 !important;
+	background: #b00 !important;
+	color: #fff !important;
+}
+
+.vrtkdatetimeinput, .vrtkdatetimeselect {
+	background-color: #fff;
+	border-radius: 3px;
+	overflow: hidden;
+}
+#vrmenusondatediv {
+	display: inline-block;
+	width: 100%;
+	margin: 20px 15px 15px 15px;
+}
+#vrmenusondatediv a {
+	text-decoration: none;
+}
+#vrmenusondatediv .vrmenuouterbox {
+	border-radius:8px;
+	-moz-border-radius:8px;
+	-webkit-border-radius:8px;
+	border:1px solid #ccc;
+	display: inline-block;
+	min-width: 18%;
+	max-width: 33%; 
+	padding: 5px 0;
+	background: url(images/menu_icon.png) 50% 45px no-repeat;
+	margin:0 20px 0 0;
+}
+#vrmenusondatediv .vrmenuouterbox:last-child {
+	margin: 0;
+}
+.vrmenuouterbox .vrmenuinnerbox span {
+	display: block;
+	padding: 0 18px;
+}
+.vrmenuouterbox .vrmenuinnerbox .vrmenunamesp {
+	color: #990000;
+	font-weight: bold;
+	display: inline-block;
+	font-size: 14px;
+}
+.vrmenuouterbox .vrmenuinnerbox .vrmenuwshiftsp {
+	text-align: right;
+	padding-top: 100px;
+	color: #333;
+	font-size: 13px;
+	font-weight: bold;
+}
+
+.vrreservationstatusconfirmed, .vrreservationstatuspending, .vrreservationstatusremoved {
+	text-transform: uppercase;
+	font-weight: bold;
+}
+.vrreservationstatusconfirmed {
+	color:#008000;
+}
+.vrreservationstatusremoved {
+	color:#990000;
+}
+.vrreservationstatuspending {
+	color:#FF7000;
+}
+.vrmenusfieldsdiv {
+	border:2px solid #ccc;
+	border-radius: 5px;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+	padding: 10px;
+	display: inline-block;
+	width: 100%;
+}
+.vrmenusfieldsdiv div {
+	float: left;
+	display: inline-block;
+}
+.vrmenusfieldsdiv .vrmenufieldsubmit {
+	background: none repeat scroll 0 0 #993300;
+	border: 0 none;
+	border-radius: 5px 5px 5px 5px;
+	color: #FFFFFF;
+	cursor: pointer;
+	font-size: 15px;
+	padding: 9px 15px;
+	text-align: center;
+	margin: 0 0 0 10px;
+}
+.vrmenusfieldsdiv label {
+	display: inline-block;
+	margin: 8px 10px 0 0;
+	float: left;
+}
+.vrmenufielddatediv {
+	position: relative;
+}
+.vrmenusfieldsdiv .hasDatepicker {
+	background: transparent;
+	border: 1px solid #DDDDDD;
+	border-radius: 3px;
+	min-width: 80px;
+	overflow: hidden;
+	padding: 8px;
+	color: #555;
+	font-size: inherit;
+	position: relative;
+}
+body.contentpane {
+	padding: 0;
+	margin: 0;
+}
+.vrsearchmenupreviewbutton {
+	background:#444;
+	border-radius: 5px;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+	color:#fff;
+	padding: 10px 15px;
+
+}
+#vrroomdescriptionactiondiv{
+	margin-bottom: 10px;
+}
+
+#vrroomdescriptionactiondiv a, #vrroomdescriptionactiondiv a:hover {
+	color: #fff;
+	background:#666;
+	padding: 3px 6px;
+	border-radius: 3px;
+	-moz-border-radius: 3px;
+	-webkit-border-radius: 3px;
+	border:1px solid #777;
+	cursor: pointer;
+}
+#vrparserpreviewtop, #vrparserpreviewbody, #vrparserpreviewbottom {
+	margin: 0 auto;
+}
+.vrtkstartnotediv {
+	border-radius: 4px;
+	-moz-border-radius: 4px;
+	-webkit-border-radius: 4px;
+	border: 1px solid #ccc;
+	padding: 10px 20px;
+	margin-bottom: 15px;
+}
+.vrtkitemsdiv {
+	border-radius: 4px;
+	-moz-border-radius: 4px;
+	-webkit-border-radius: 4px;
+	border: 1px solid #ccc;
+	padding: 20px;
+	margin-top: 20px;
+}
+.vrtkitemsofmenudiv {
+	margin: 0 0 20px 0;
+}
+.vrtkitemsdiv .vrtkmenuheader .vrtkmenutitlediv {
+	font-size: 30px;
+	color: #9B3705;
+	border-bottom:1px dotted #ccc;
+	padding: 0 0 10px 0;
+}
+.vrtkitemsdiv .vrtkmenuheader .vrtkmenudescdiv {
+	margin: 5px 0 0 0;
+}
+.vrtkitemsdiv .vrtksingleitemdiv {
+	border-bottom:1px dotted #ccc;
+	padding: 10px 0 10px 0;
+	margin: 0 0 5px 0;
+	display: inline-block;
+	width: 100%;
+}
+.vrtkitemsdiv .vrtksingleitemdiv:last-of-type {
+	border:0;
+}
+.vrtkitemsdiv .vrtkitemleftdiv {
+	width: 65%;
+	float: left;
+	display: flex;
+	flex-wrap: wrap;
+}
+.vrtkitemsdiv .vrtkitemvardiv {
+	width: 35%;
+	float: left;
+}
+.vrtkitemsdiv .vrtkitemimagediv {
+	float: left;
+	border: 1px solid #CCCCCC;
+	padding: 1px;
+	margin: 0 15px 5px 0;
+}
+.vrtkitemsdiv .vrtkitemimagediv img {
+	display: block;
+}
+.vrtkitemsdiv .vrtkiteminfodiv {
+	flex: 1;
+	margin-right: 10px;
+	min-width: 200px;
+}
+.vrtkitemsdiv .vrtkiteminfodiv .vrtkitemdescsp {
+	margin-top: 5px;
+}
+.vrtkitemsdiv .vrtkiteminfodiv span {
+	display: block;
+	padding: 0 15px 0 0;
+}
+.vrtkitemsdiv .vrtkiteminfodiv .vrtkitemnamesp {
+	font-size: 16px;
+	font-weight: bold;
+	margin-bottom: 5px;
+}
+.vrtkitemsdiv .vrtksinglevar {
+	width: 100%;
+	padding: 9px 0 8px;
+	border-bottom:1px dotted #CCCCCC;
+	position: relative;
+	display: inline-block;
+}
+.vrtkitemsdiv .vrtksinglevar:last-of-type {
+	border: 0;
+}
+.vrtkitemsdiv .vrtksinglevar span {
+	display: inline-block;
+	float: left;
+}
+.vrtkitemsdiv .vrtksinglevar .vrtkvarfloatrdiv {
+	display: inline-block;
+	position: absolute;
+	right: 0;
+}
+.vrtkitemsdiv .vrtksinglevar .vrtkvarnamesp {
+	font-size: 14px;
+	padding: 5px 0 0 0;
+	font-weight: bold;
+	max-width: 52%;
+}
+.vrtkitemsdiv .vrtksinglevar .vrtkvarpricesp {
+	font-size: 21px;
+	font-weight: bold;
+}
+.vrtkitemsdiv .vrtksinglevar .vrtkvaraddbuttondiv {
+	display: inline-block;
+	float: left;
+	margin: 0 0 0 5px;
+}
+.vrtkvarfloatrdiv .vrtk-itemprice-stroke {
+	margin: 5px 5px 0 0;
+}
+.vrtkitemsdiv .vrtksinglevar .vrtkvaraddbuttondiv .vrtkvaraddbutton {
+	background: transparent;
+	border:0;
+	cursor: pointer;
+	padding: 0px 0px 0px 10px;
+	font-size: 22px;
+	color: #159049;
+}
+.vrtkitemsdiv .vrtksinglevar .vrtkvaraddbuttondiv .vrtkvaraddbutton:hover {
+	color: #166437;
+}
+.vrtkitemsdiv .vrtksinglevar .vrtkvaraddbuttondiv .vrtkvaraddbutton:focus, .vrtkitemsdiv .vrtksinglevar .vrtkvaraddbuttondiv .vrtkvaraddbutton:active {
+	color: #49b376;
+}
+.vrtkgotopaydiv {
+	display: inline-block;
+	width: 100%;
+	text-align: right;
+}
+.vrtkgotopaydiv a {
+	display: inline-block;
+}
+.vrtkgotopaydiv .vrtkgotopaybutton {
+	background: #993300;
+	color: #fff;
+	border-radius:5px;
+	-moz-border-radius:5px;
+	-webkit-border-radius:5px;
+	font-size: 18px;
+	border:0;
+	padding: 10px 15px;
+	margin: 10px 0 0 0;
+	cursor: pointer;
+}
+.vrtkgotopaydiv .vrtkgotopaybutton:hover {
+	background: #b33a00;
+}
+.vrtkselectmenudiv {
+	margin: 0 0 10px 0;
+}
+.vrtkconfcartoneitemrow {
+	padding: 10px;
+	width: 100%;
+	display: inline-block;
+	border: 1px solid #e7e7e7;
+	border-radius: 4px;
+	margin: 5px 0;
+}
+.vrtkconfcartoneitemrow .vrtkconfcartleftrow {
+	width: 60%;
+	float: left;
+}
+.vrtk-confcart-item-main {
+	display: inline-block;
+	width: 100%;
+}
+.vrtk-confcart-item-details {
+	background: #f6f6f6;
+	margin:7px 0 0;
+}
+.vrtk-confcart-item-details .vrtk-confcart-item-toppings {
+	padding: 7px 10px;
+}
+.vrtk-confcart-item-details .vrtk-confcart-notes {
+	border-top: 1px solid #eee;
+	padding: 10px;
+	font-style: italic;
+	font-size: 0.9em;
+}
+.vrtkconfcartoneitemrow .vrtkconfcartleftrow span {
+	display: inline-block;
+}
+.vrtkconfcartoneitemrow .vrtkconfcartleftrow .vrtk-confcart-topping {
+	width: 100%;
+	padding: 5px 10px;
+	box-sizing: border-box;
+}
+.vrtkconfcartoneitemrow .vrtkconfcartleftrow .vrtkconfcartenamesp {
+	font-weight: bold;
+	line-height: 1.3em;
+}
+.vrtkconfcartoneitemrow .vrtkconfcartleftrow .vrtkconfcartonamesp, .vrtk-confcart-topping {
+	font-size: .8em;
+	padding:0;
+}
+.vrtkconfcartoneitemrow .vrtkconfcartrightrow {
+	float: right;
+}
+.vrtkconfcartoneitemrow .vrtkconfcartrightrow .vrtkconfcartpricesp {
+	padding-left: 10px;
+	font-weight: bold;
+	color: #333;
+	margin: 0;
+}
+.vrtkconfcartoneitemrow .vrtkconfcartrightrow span {
+	display: inline-block;
+	float: left;
+}
+
+.vrtkconfcartoneitemrow .vrtkconfcartrightrow span.vrtkconfcartremovesp {
+	padding: 0 0 0 8px;
+	margin: -2px 0 0;
+	float: right;
+}
+.vrtkconfcartremovesp a i {
+	color: #d31010;
+	font-size: 16px;
+	margin-top: 5px;
+}
+.vrtkconfcartremovesp a:hover i {
+	color: #a61515;
+}
+.vrtkaddmoreitemsdiv {
+	width: 100%;
+	display: inline-block;
+	padding: 3px 0;
+	margin: 6px 0 0 0;
+}
+.vrtkaddmoreitemsdiv {
+	margin:-19px 0 20px;
+}
+.vrtkaddmoreitemslink {
+	background: #f0ad4e;
+	border:1px solid #eea236;
+	color: #fff;
+	padding: 6px 12px;
+	border-radius: 4px;
+	-moz-border-radius: 4px;
+	-webkit-border-radius: 4px;
+	transition: all 400ms ease-in-out 0s;
+	-moz-transition: all 400ms ease-in-out 0s;
+	-webkit-transition: all 400ms ease-in-out 0s;
+	-o-transition: all 400ms ease-in-out 0s;
+}
+.vrtkaddmoreitemslink:hover {
+	background: #ec971f;
+	border:1px solid #d58512;
+	color: #fff;
+	transition: all 400ms ease-in-out 0s;
+	-moz-transition: all 400ms ease-in-out 0s;
+	-webkit-transition: all 400ms ease-in-out 0s;
+	-o-transition: all 400ms ease-in-out 0s;
+}
+.vrtkdeliveryservicediv {
+	display: inline-block;
+	margin: 0;
+	padding: 0 10px 10px;
+}
+.vrtkdeliveryradiodiv > span {
+	text-align: center;
+	display: inline-block;
+	background: #f6f6f6;
+	padding: 15px;
+	border: 1px solid #eee;
+	margin: 5px 5px 5px 0;
+}
+.vrtkdeliveryradiodiv > span > input {
+	margin: 0 5px 0 0;
+}
+.vrtkdeliverytitlediv {
+	color: #993300;
+	text-transform: uppercase;
+	margin: 0 0 10px 0;
+}
+.vrtk-service-dt-wrapper {
+	display: flex;
+	flex-wrap: wrap;
+	width: 100%;
+	margin: 20px 0;
+	border: 1px solid #e7e7e7;
+	border-radius: 4px;
+	padding: 20px;
+}
+.vrtk-service-dt-wrapper > div {
+	flex: 1;
+}
+.vrtkdatetimediv {
+	margin: 0 0 0 0;
+	float: left;
+}
+.vrtkdatetimediv fieldset {
+	padding: 0;
+}
+.vrtkdatetimediv legend, .vr-payments-list legend {
+	font-size: 14px;
+	color: #993300;
+	text-transform: uppercase;
+	margin: 0 0 5px 0;
+}
+.vrtkdatetimediv .vrtkdatetimeinputdiv {
+	float: left;
+	margin: 0 0 10px;
+}
+.vrtkdatetimediv .vrtkdatetimeinputdiv .vrtkdatetimeinputlabel {
+	display: block;
+	margin: 0 0 5px 0;
+}
+.vrtkdatetimediv .vrtk-date-box {
+	margin-right: 10px;
+}
+.vrtkdatetimeerrmessdiv {
+	width: 100%;
+	float: none;
+	color: #ff0000;
+	font-size: 16px;
+	text-align: center;
+	display: inline-block;
+	margin: 15px 0 0 0;
+}
+.vrtkdeliveryservicediv {
+	display: inline-block;
+	float: left;
+	margin-left: 20px;
+}
+
+.vrloginradiobox {
+	padding: 0 0 20px;
+	border-radius: 4px;
+	margin: 0 0 10px 0;
+}
+.vrloginradiosp {
+	cursor: pointer;
+	margin: 0 10px 0 0;
+	background: #f6f6f6;
+	padding: 10px;
+	border-radius: 4px;
+	border: 1px solid #eee;
+}
+.vrloginradiosp:hover {
+	background: #fff;
+	border: 1px solid #ddd;
+}
+.vrloginradiosp label {
+	display: inline-block;
+	cursor: pointer;
+}
+.vrloginfieldsdiv .vrloginsplabel {
+	min-width: 170px;
+	display: inline-block;
+	margin: 11px 0 0;
+	float: left;
+}
+.vrloginblock, .vrloginform, .vrregisterblock .vrloginfieldsdiv {
+	margin:0 0 15px;
+}
+.vrloginblock, .vrregisterblock {
+	padding: 30px;
+	border: 1px solid #eee;
+	border-radius: 4px;
+}
+.vrloginfieldsdiv .login-fields-rem {
+	margin-top: 15px;
+}
+.vr-login-footer-links {
+	margin-top: 20px;
+}
+.vrloginblock .vrlogininput, .vrloginspinput .vrinput {
+	border-radius: 2px;
+	padding: 8px;
+	width: 250px;
+}
+.vrloginfield {
+	margin: 10px 0 0 0;
+}
+.vrordererrordiv {
+	margin-bottom: 30px;
+	font-size: 14px;
+	color: #9d261d;
+}
+.vrmenuslistcont {
+	margin: 15px 0 0 0;
+	width: 100%;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+.vrmenuslistcont .vrmenublock {
+	flex-basis: 32%;
+	margin: 4px;
+	float: left;
+	display: inline-block;
+	border-radius: 5px;
+	background:#f6f6f6;
+	border: 2px solid #ccc;
+}
+.vrmenuslistcont .vrmenublock .vrmenublock-menu {
+	padding: 8px;
+}
+.vrmenuslistcont .vrmenublock .vrmenublockimage img {
+	width: 100%;
+}
+.vrmenuslistcont .vrmenublock .vrmenublockname {
+	font-size: 1.1em;
+	font-weight: bold;
+	margin: 10px 10px 0 10px;
+}
+.vrmenuslistcont .vrmenublock .vrmenublockdesc p {
+	margin: 5px 10px;
+	padding: 0;
+}
+.vrmenuslistcont .vrmenublock .vrmenublockshifts {
+	border-radius: 3px;
+	font-size: 11px; 
+	padding: 4px;
+	margin: 0px 0 10px 2px;
+}
+.vrmenuslistcont .vrmenublock .vrmenublockworkshname {
+	display: inline-block;
+	background: #ddd;
+	border:1px solid #ccc;
+	padding: 3px 6px;
+	margin: 3px;
+	position: relative;
+	cursor: pointer;
+	transition: all 400ms ease-in-out 0s;
+	-moz-transition: all 400ms ease-in-out 0s;
+	-webkit-transition: all 400ms ease-in-out 0s;
+	-o-transition: all 400ms ease-in-out 0s;
+}
+.vrmenuslistcont .vrmenublock .vrmenublockworksh .vrmenublockworkhighlight {
+	background: #555;
+	color: #fff;
+	border:1px solid #444;
+	transition: all 400ms ease-in-out 0s;
+	-moz-transition: all 400ms ease-in-out 0s;
+	-webkit-transition: all 400ms ease-in-out 0s;
+	-o-transition: all 400ms ease-in-out 0s;
+}
+.vrmenuslistcont .vrmenublock .vrmenublockworksh {
+	position: relative;
+	display: inline-block;
+}
+.vrmenuslistcont .vrmenublock .vrmenublockworkshtime {
+	opacity: 0;
+	padding: 2px;
+	left: -40px;
+	position: absolute;
+	top: -30px;
+	background: #555;
+	color:#fff;
+	border-radius: 4px;
+	min-width: 150px;
+	text-align: center;
+	transition: all 400ms ease-in-out 0s;
+	-moz-transition: all 400ms ease-in-out 0s;
+	-webkit-transition: all 400ms ease-in-out 0s;
+	-o-transition: all 400ms ease-in-out 0s; 
+}
+.vrmenuslistcont .vrmenublock .vrmenublockworkexploded {
+	opacity: 1;
+	transition: all 400ms ease-in-out 0s;
+	-moz-transition: all 400ms ease-in-out 0s;
+	-webkit-transition: all 400ms ease-in-out 0s;
+	-o-transition: all 400ms ease-in-out 0s;
+}
+.vrmenuslistcont .vrmenublock .vrmenublockdesc {
+	min-height: 104px;
+	padding: 5px 10px 10px;
+}
+.vrmenu-detailshead {
+	display: inline-block;
+	padding: 22px 28px;
+}
+.vrmenu-detailshead h3 {
+	margin: 0 0 20px;
+	padding: 17px 0 17px 10px;
+	position: relative;
+	text-align: center;
+	font-size: 2em;
+}
+.vrmenu-detailshead .vrmenu-detailsheadsub {
+	width: 100%;
+	display: inline-block;
+}
+.vrmenu-detailsheadsub .vrmenu-detailsheadsubimage,
+.vrmenu-detailssectionsubimage {
+	float: left;
+	display: inline-block;
+	max-width: 20%;
+}
+.vrmenu-detailsheadsub .vrmenu-detailsheadsubimage img,
+.vrmenu-detailssectionsubimage img {
+	width: 100%;
+	border-radius: 10px;
+	padding: 2px;
+}
+.vrmenu-detailsheadsub .vrmenu-detailsheadsubdesc:not(:only-of-type),
+.vrmenu-detailssectionsub .vrmenu-detailssectionsubdesc:not(:only-of-type) {
+	float: left;
+	display: inline-block;
+	padding: 0 0 0 20px;
+	width: 77%;
+}
+
+.vrmenu-detailslist {
+	padding: 0 26px;
+	margin: 20px 0 0;
+}
+.vrmenu-detailssection > h3 {
+	padding: 17px 0 10px 0;
+	position: relative;
+	color: #444;
+	display: table;
+	margin: 0 auto 20px;
+	width: auto;
+	border-bottom: 1px solid #444;
+}
+.vrmenu-detailssection {
+	margin: 35px 0 0 0;
+}
+.vrmenu-detailssectionsub {
+	width: 100%;
+	display: inline-block;
+	margin: 0 0 10px 0;
+	padding: 10px;
+	box-sizing: border-box;
+}
+.vrmenu-detailsprodlist {
+	border:1px solid #ddd;
+}
+.vrmenu-detailsprod {
+	display: inline-block;
+	width: 100%;
+}
+.vrmenu-detailsprodsub {
+	padding: 0 0 0 10px;
+	width: 99%;
+	display: inline-block;
+}
+.vrmenu-detailsprodsub .vrmenu-detailsprodsubleft {
+	float: left;
+	width: 75%;
+	display: inline-block;
+}
+.vrmenu-detailsprodsub .vrmenu-detailsprodsubleft .vrmenu-detailsprodsubimage {
+	width: 20%;
+	float: left;
+	display: inline-block;
+}
+.vrmenu-detailsprod h3{
+	font-size: 1.2em;
+	color: #444;
+	padding:0;
+	margin: 0 0 5px;
+}
+.vrmenu-detailsprodsub .vrmenu-detailsprodsubleft .vrmenu-detailsprodsubimage a {
+	display: inline-block;
+}
+.vrmenu-detailsprodsub .vrmenu-detailsprodsubleft .vrmenu-detailsprodsubimage img {
+	border-radius: 4px;
+	padding: 2px;
+	width: 100%;
+}
+.vrmenu-detailsprodsub .vrmenu-detailsprodsubleft .vr-menudetailsprodsubnamedesc {
+	width: 76%;
+	float: left;
+	display: inline-block;
+	padding: 0 0 0 20px;
+}
+.vrmenu-detailsprodsub .vrmenu-detailsprodsubright {
+	min-width: 25%;
+	max-width: 25%;
+	float: right;
+}
+.vrmenu-detailsprod-optionslist {
+	display: inline-block;
+	padding: 0;
+	width: 84%;
+}
+.vrmenu-detailsprod-option {
+	display: inline-block;
+	width:100%;
+	padding: 2px 0;
+}
+.vrmenu-detailsprod-option > div {
+	display: inline-block;
+}
+.vrmenu-detailsprod-option .option-name {
+	float: left;
+	padding: 0 8px 0 0;
+}
+.vrmenu-detailsprod-option .option-price {
+	float: right;
+	font-size: 18px;
+}
+.vrmenu-detailsprodlist > div {
+	background: #fff;
+}
+.vrmenu-detailsprodlist > div:nth-child(2n+1) {
+	background: #fbfbfb;
+}
+.vrmenu-detailsprod {
+	padding: 10px 0;
+}
+.vrmenu-detailsprod:not(:last-child) {
+	border-bottom: 1px solid #ddd;
+}
+.vrmenu-detailsprodsubprice {
+	display: inline-block;
+	padding: 3px;
+	margin: 34px 19px 0 0;
+	float: right;
+}
+.vrmenu-detailsprodsubpricesp {
+	display: inline-block;
+	font-size: 18px;
+	padding: 6px 15px;
+}
+.vrsearchmenutitle {
+	text-align: center;
+	font-size: 18px;
+	margin: 15px 0;
+	color: #444;
+}
+.vrsearchmenulist {
+	display: inline-block;
+	width: 100%;
+}
+.vrsearchmenudetails {
+	margin: 3px;
+	width: 24%;
+	float: left;
+	display: inline-block;
+	border:1px solid #ddd;
+}
+.vrsearchmenuinnerdetails {
+	padding: 10px;
+}
+.vrsearchmenuimage img {
+	width: 100%;
+}
+.vrsearchmenuname {
+	font-size: 16px;
+	margin-top: 6px;
+}
+.vrsearchmenuname .menu-cost {
+	float: right;
+}
+.vrsearchmenuinnerdetails .menu-cost-sub {
+	margin-left: 5px;
+}
+.vrsearchmenuname .menu-radio-sel {
+	float: right;
+}
+.vrsearchmenufootleft {
+	background: url(images/people_ico.png) left 3px no-repeat;
+	padding: 0 0 0 20px;
+	display: inline-block;
+}
+.vrsearchmenufoot {
+	margin: 5px 0 0 0;
+}
+.vrsearchmenufootright {
+	float: right;
+	display: inline-block;
+}
+.vrsearchmenufootright i {
+	font-size: 20px;
+}
+.vrsearchmenufootright .vrsearchmenuaddlink {
+	display: inline-block;
+	width: 20px;
+	height: 20px;
+}
+.vrsearchmenufootright > a {
+	width: 20px;
+	height: 20px;
+	display: inline-block;
+}
+.vrsearchmenufootright .vrsearchlinkdisabled {
+	opacity: 0.5;
+	cursor: default;
+}
+.vrsearchmenucont {
+	margin:15px 0 0 0;
+}
+.vryourmenusdiv {
+	margin: 20px 0 10px;
+	font-size: 16px;
+	text-align: center;
+}
+.vryourmenusdiv > span {
+	border:1px solid #ccc;
+	display: inline-block;
+	padding: 10px 20px;
+	border-radius: 5px;
+}
+.vryourmenusdiv > .vrbookmenunopeople {
+	border:1px solid #990000;
+}
+.vryourmenusdiv > .vrbookmenuokpeople {
+	border:1px solid #008C00;
+}
+
+.vrmenu-sectionsbar {
+	border-bottom: 2px solid #eee;
+	border-top: 2px solid #eee;
+	display: flex;
+	overflow-x: auto;
+	overflow-y: hidden;
+	margin: 0 auto;
+	padding: 10px 0;
+	font-size: 16px;
+	
+	top: -1px;
+	position: sticky;
+	background: #fff;
+	z-index: 9;
+}
+.vrmenu-sectionsbar a:hover,
+.vrmenu-sectionsbar a:active,
+.vrmenu-sectionsbar a:visited {
+	text-decoration: none;
+}
+.vrmenu-sectionsbar > span {
+	border-right: 1px solid #ddd;
+	display: inline-block;
+	padding: 0 10px;
+	margin: 4px 0;
+	white-space: nowrap;
+}
+.vrmenu-sectionsbar > span:last-child {
+	border: 0;
+}
+.vrmenu-sectionsbar::-webkit-scrollbar {
+  display: none;
+}
+.vrmenu-sectionsbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+.vrmenu-sectionsbar.orderdishes-page {
+	margin-bottom: 20px;
+}
+.vrmenu-sectionlight {
+	color: #222;
+}
+.vrmenu-backdiv a {
+	background: url(images/menu_fork_ico.png) no-repeat scroll 7px center #CCAD92;
+	color: #fff;
+	padding: 10px 10px 10px 30px;
+	border-radius: 5px;
+	margin: 0 0 0 28px;
+	border:1px solid #A89079;
+	display: inline-block;
+}
+#vrbooknoselsp {
+	padding: 10px 20px;
+	font-size: 14px;
+	border:1px solid #990000;
+	border-radius: 5px;
+}
+.vrreservationstatuscancelled {
+	font-weight: bold;
+	color: #f01b17;
+	text-transform: uppercase;
+}
+.vrordercancbutton {
+	background: #d9534f;
+	border: 1px solid #d43f3a;
+	color: #fff;
+	cursor: pointer;
+	padding: 7px 20px;
+	font-size: 16px;
+	margin-left: 0;
+	transition: all 400ms ease-in-out 0s;
+	-moz-transition: all 400ms ease-in-out 0s;
+	-webkit-transition: all 400ms ease-in-out 0s;
+}
+.vrordercancbutton:hover {
+	background: #d2322d;
+	border: 1px solid #ac2925;
+	transition: all 400ms ease-in-out 0s;
+	-moz-transition: all 400ms ease-in-out 0s;
+	-webkit-transition: all 400ms ease-in-out 0s;
+}
+.vr-cancreason-err {
+	margin-bottom: 5px;
+	color: #b11;
+}
+#vrmapinputsdiv #vrselectedroomdiv {
+	margin: 0 0 10px 0;
+}
+#vrsearchinputdiv > div {
+	margin: 4px 8px 4px 0;
+	float: left;
+	display: inline-block;
+}
+#vrsearchinputdiv .vre-calendar-wrapper {
+	display: inline-block;
+}
+#vrsearchinputdiv > div input {
+	width: auto;
+	min-width: inherit;
+}
+#vrsearchinputdiv > div label {
+	display: inline-block;
+}
+#vrsearchinputdiv > div .vre-select-wrapper {
+	display: inline-block;
+}
+#vrsearchinputdiv > div select {
+	margin-top: 0;
+	height: auto;
+}
+.vrfront-manage-actionsdiv {
+	display: inline-block;
+	width: 100%;
+	margin: 10px 0;
+}
+.vrfront-manage-actionsdiv >  div {
+	float: left;
+	display: inline-block;
+}
+.vrfront-manage-actionsdiv >  div button, .vrfront-manage-actionsdiv >  div input {
+	color:1px solid #ddd;
+	cursor: pointer;
+	padding: 7px 14px;
+	margin: 4px 8px 5px 0;
+	font-size: 16px;
+	border-radius: 5px;
+	transition: all 400ms ease-in-out 0s;
+	-moz-transition: all 400ms ease-in-out 0s;
+	-webkit-transition: all 400ms ease-in-out 0s;
+}
+.vrfront-manage-actionsdiv > .move-right button, .vrfront-manage-actionsdiv > .move-right input {
+	margin-right: 0;
+	margin-left: 8px
+}
+#vrfront-manage-btnsave, #vrfront-manage-btnsaveclose, #vrfront-manage-btncreate {
+	background: #5cb85c;
+	border:1px solid #4cae4c;
+	color: #fff;
+}
+#vrfront-manage-btnsave:hover, #vrfront-manage-btnsaveclose:hover, #vrfront-manage-btncreate:hover {
+	background: #47a447;
+	border:1px solid #398439;
+	transition: all 400ms ease-in-out 0s;
+	-moz-transition: all 400ms ease-in-out 0s;
+	-webkit-transition: all 400ms ease-in-out 0s;
+}
+#vrfront-manage-btnsave:active, #vrfront-manage-btnsaveclose:active, #vrfront-manage-btncreate:active {
+	background: #398439;
+	transition: all 0ms ease-in-out 0s;
+	-moz-transition: all 0ms ease-in-out 0s;
+	-webkit-transition: all 0ms ease-in-out 0s;
+}
+#vrfront-manage-btnbill, #vrfront-manage-btnfilter {
+	background: #428bca;
+	border:1px solid #357ebd;
+	color: #fff;
+}
+#vrfront-manage-btnbill:hover, #vrfront-manage-btnfilter:hover {
+	background: #3276b1;
+	border:1px solid #285e8e;
+	transition: all 400ms ease-in-out 0s;
+	-moz-transition: all 400ms ease-in-out 0s;
+	-webkit-transition: all 400ms ease-in-out 0s;
+}
+#vrfront-manage-btnbill:active, #vrfront-manage-btnfilter:active {
+	background: #285e8e;
+}
+#vrfront-manage-btnclose {
+	background: #d9534f;
+	border:1px solid #d43f3a;
+	color: #fff;
+}
+#vrfront-manage-btnclose:hover {
+	background: #d2322d;
+	border:1px solid #ac2925;
+	transition: all 400ms ease-in-out 0s;
+	-moz-transition: all 400ms ease-in-out 0s;
+	-webkit-transition: all 400ms ease-in-out 0s;
+}
+#vrfront-manage-btnclose:active {
+	background: #ac2925;
+	transition: all 0ms ease-in-out 0s;
+	-moz-transition: all 0ms ease-in-out 0s;
+	-webkit-transition: all 0ms ease-in-out 0s;
+}
+.vrfront-manage-btn.move-right {
+	float: right;
+}
+#vrdatefilterdiv {
+	position: relative;
+}
+.vrfront-manage-actionsdiv > div .vr-calendar-icon, .vrfront-manage-form .hasDatepicker {
+	position: relative;
+}
+.vrfront-manage-actionsdiv > div .vre-select-wrapper {
+	margin-top: 4px;
+}
+.vrfront-manage-form input.hasDatepicker {
+	padding: 8px;
+	margin: 0;
+	width: 290px;
+	color: #555;
+	font-size: inherit;
+}
+.vrfront-manage-form input {
+	padding: 8px;
+	margin: 0;
+	width: 290px;
+	border: 1px solid #ddd;
+}
+.vrfront-manage-form .vre-select-wrapper .vre-select {
+    min-width: 290px;
+}
+.vrfront-manage-form td {
+	padding: 2px 0;
+}
+.vre-tinyselect-wrapper {
+	background-image: url('images/select-arrow.png'), -webkit-linear-gradient(#fafafa, #f4f4f4 40%, #e5e5e5);
+	background-image: url('images/select-arrow.png'), -moz-linear-gradient(#fafafa, #f4f4f4 40%, #e5e5e5);
+	border: 1px solid #AAA;
+	background-repeat: no-repeat;
+	background-position: 93% center;
+	border-radius: 4px;
+	display: inline-block;
+	overflow: hidden;
+	min-width: 150px;
+}
+.vre-tinyselect-wrapper select {
+	-webkit-appearance: button;
+	-webkit-border-radius: 2px;
+	/*-webkit-box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.1);*/
+	-webkit-padding-end: 20px;
+	-webkit-padding-start: 2px;
+	-webkit-user-select: none;
+	-moz-appearance: button;
+	-moz-border-radius: 2px;
+	-moz-box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.1);
+	-moz-padding-end: 20px;
+	-moz-padding-start: 2px;
+	-moz-user-select: none;
+	background: transparent;
+	color: #555;
+	font-size: 14px;
+	/*margin: 20px;*/
+	overflow: hidden;
+	padding: 5px 10px;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+	max-width: 240px !important;
+	min-width: 55px;
+	width: 113% !important;
+	padding: 5px 44px 5px 7px;
+	border:0;
+}
+
+#vrselectedroomdiv {
+	width: 100%;
+	display: inline-block;
+}
+#vrmapinputsdiv {
+	margin: 0 0 10px 0;
+}
+#vrselectedroomdiv > div {
+	float: left;
+	display: inline-block;
+	margin: 0 4px 0 0;
+}
+#vrselectedroomdiv .vroversight-room-link {
+	display: inline-block;
+	font-size: 16px;
+	border:1px solid #ddd;
+	padding: 5px 10px; 
+	border-radius: 4px;
+}
+#vrselectedroomdiv .vroversight-room-selected .vroversight-room-link {
+	border:1px solid #428bca;
+	background: #f6f6f6;
+}
+#vrsearchinputdiv input,
+#vrsearchinputdiv select {
+	padding: 9px 5px;
+	-webkit-appearance: none
+}
+#vrsubmitfinddiv button {
+	padding: 9px 21px;
+	font-size: 16px;
+	font-weight: bold;
+	background: #428bca;
+	border: 1px solid #428bca;
+	color: #fff;
+}
+#vrsearchinputdiv {
+	float: left;
+	border: 1px solid #eee;
+	padding: 20px;
+	width: 100%;
+	background: #f6f6f6;
+	margin: 10px 0;
+}
+.vroversight-notime-warning {
+	border-radius: 4px;
+	font-size: 14px;
+	text-align: center;
+	border:2px solid #D93600;
+	padding: 10px;
+	margin: 0;
+	display: inline-block;
+}
+.vrtrescode {
+	position: absolute;
+	top:0;
+	right: 0;
+}
+.vrtrescode .vrtrescodelabel {
+	margin: 0;
+}
+.vrtrescode img {
+	width: 30px;
+	height: auto;
+}
+.vrrescodeheaderinfodialog {
+	background: #f2f2f2;
+	margin: 0 0 15px 0;
+}
+.vrrescodeheaderdialog .vrrescodeheadertable {
+	text-align: center;
+	font-size: 16px;
+	font-weight: bold;
+	cursor: pointer;
+	margin: 0 0 8px 0;
+}
+.vrrescodeheaderdialog .vrrescodeheadertop {
+	display: inline-block;
+	width: 100%;
+}
+.vrrescodeheaderdialog .vrrescodeheaderback {
+	background: url(images/arrow-left.png) 5px center no-repeat;
+	padding: 0 0 0 20px;
+	margin: 0 0 5px 0;
+	color: #0085B2;
+	cursor: pointer;
+	float: left;
+}
+.vrrescodeheaderdialog .vrrescodeheadertime {
+	float: right;
+	font-size: 12px;
+	margin: 0 5px 0 0;
+}
+.vrrescodeheaderinfodialog > div {
+	border-bottom:1px dotted #ddd;
+	padding: 4px 5px;
+	min-height: 20px;
+}
+.vrrescodeheaderinfodialog > .vrrescodeheaderinfoname {
+	font-size: 14px;
+	font-weight: bold;
+}
+.vrrescodeheaderinfodialog > .vrrescodeheaderinfophone {
+	background: url(images/phone_ico.png) 5px center no-repeat;
+	padding: 4px 0 4px 22px;
+}
+.vrrescodeheaderinfodialog > .vrrescodeheaderinfomail {
+	background: url(images/email_ico.png) 5px center no-repeat;
+	padding: 4px 0 4px 22px;
+}
+.vrrescodeheaderinfodialog > div:last-child {
+	border: 0;
+}
+.vreditres-row-block {
+	display: inline-block;
+	width: 100%;
+	margin: 5px 0;
+	padding: 3px 0 10px;
+	border-bottom:1px dotted #ddd;
+}
+.vreditres-row-block:last-child {
+	border:0;
+}
+.vreditres-row-block span {
+	float: left;
+	display: inline-block;
+	margin: 5px 0 0 0;
+}
+.vreditres-row-block .vreditres-row-code img {
+	width: 25px;
+	height: auto;
+}
+.vroversight-current-details {
+	width: 100%;
+	display: inline-block;
+	margin: 10px 0 0 0;
+}
+.vroversight-current-details > span {
+	display: inline-block;
+	padding: 5px 5px 5px 26px;
+	margin: 5px 10px 5px 0;
+	font-size: 12px;
+}
+.vroversight-nowlink-div {
+	display: inline-block;
+}
+.vroversight-nowlink-div a {
+	display: inline-block;
+	background: none repeat scroll 0 0 #017497;
+	font-size: 15px;
+	padding: 3px 21px 4px;
+	color: #fff;
+	border-radius: 3px;
+}
+.vroversight-current-details .vroversight-current-date {
+	background: #eee url(images/calendar2.png) 5px center no-repeat;
+}
+.vroversight-current-time {
+	background: #eee url(images/work_shift-ico.png) 5px center no-repeat;
+}
+.vroversight-current-people {
+	background: #eee url(images/people_ico.png) 5px center no-repeat;
+}
+.vrrescodeheaderspacerdialog .vrrescode-time-line {
+	padding: 2px 0 2px 21px;
+	font-size: 11px;
+	display: inline-block;
+	background: url(images/work_shift-ico_small.png) 5px center no-repeat;
+	color: #f0863c;
+}
+.vroversight-reservations-block {
+	display: inline-block;
+	width: 100%;
+	margin: 15px 0 0 0;
+	border:1px solid #ddd;
+	padding: 15px;
+	box-sizing: box-border;
+}
+.vroversight-reservations-head {
+	border-radius: 8px;
+	border:1px solid #ddd;
+	display: inline-block;
+	margin: 0;
+}
+.vroversight-reservations-head .vroversight-reservations-tab {
+	border-right: 1px solid #ddd;
+	padding: 8px 10px;
+	cursor: pointer;
+	display: inline-block;
+	float: left;
+}
+.vroversight-reservations-head .vroversight-selected-tab {
+	background: #f6f6f6;
+	box-shadow: 0 0 2px #eee inset;
+}
+.vroversight-reservations-head .vroversight-selected-tab:first-child {
+	border-top-left-radius: 8px;
+	border-bottom-left-radius: 8px;
+}
+.vroversight-reservations-head .vroversight-reservations-tab:last-child {
+	border: 0;
+	border-top-right-radius: 8px;
+	border-bottom-right-radius: 8px;
+}
+.vroversight-reservations-content {
+	padding: 8px 0;
+	margin:10px 0 0 0;
+}
+.vroversight-reservations-titleshead {
+	width: 100%;
+	display: inline-block;
+	font-size: 16px;
+	font-weight: bold;
+	margin: 0 0 15px 0;
+}
+.vroversight-reservations-titleshead > span {
+	float:left;
+	display: inline-block;
+	margin: 0 5px;
+	width: 15%;
+	text-align: center;
+}
+.vroversight-reservation-row {
+	display: inline-block;
+	width: 100%;
+	margin: 3px 0;
+}
+.vroversight-reservation-row > span {
+	float: left;
+	display: inline-block;
+	margin: 4px 5px;
+	width: 15%;
+	text-align: center;
+}
+.vroversight-resrow-status img {
+	width: 25px;
+	cursor: pointer;
+	height: auto;
+}
+.vroversight-resrow-table, .vroversight-resrow-people, .vroversight-resrow-status {
+	text-align: center;
+}
+.vroversight-expandlink {
+	width: 14px;
+	height: 14px;
+	display: inline-block;
+	background: url(images/fullscreen_icon.png) left center no-repeat;
+}
+.vrrescodeheadertimelabel {
+	display: inline-block;
+	margin: 0 5px 0 0;
+}
+
+/* tiny select */
+select.vre-tinyselect:disabled {
+	opacity: 0.7;
+}
+select.vre-tinyselect.large {
+	width: 300px;
+}
+
+
+/* overlay modal */
+.vr-overlay {
+	position: fixed;
+	background-color: rgba(35, 35, 35, 0.79);
+	left: 0;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	z-index: 10000;
+}
+.vr-modal-box {
+	width: 90%;
+	max-width: 960px;
+	height: calc(100vh - 40px);
+	background: none repeat scroll 0 0 #fff;
+	border-radius: 4px;
+	padding: 15px 0;
+	position: absolute;
+	margin-top: 20px;
+	left: 50%;
+	transform: translateX(-50%);
+}
+.vr-modal-head {
+	width: 100%;
+	border-bottom: 1px solid #ddd;
+	padding: 0 15px 5px 15px;
+}
+.vr-modal-head-title {
+	display: inline-block;
+	float: left;
+	margin: 0;
+	font-size: 20px;
+	width: calc(100% - 28px);
+}
+.vr-modal-head-title h3 {
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+}
+.vr-modal-head-dismiss {
+	display: inline-block;
+	float: right;
+	margin-right: 5px;
+	font-size: 28px;
+	line-height: 22px;
+}
+.vr-modal-head-dismiss a {
+	color: #ccc;
+	text-decoration: none !important;
+}
+.vr-modal-head-dismiss a:hover {
+	color: #999;
+	text-decoration: none !important;
+}
+
+/* bootstrap compatibility */
+
+.vr-modal-head {
+	height: auto !important;
+	display: inline-block !important;
+}
+.vr-modal-head h3 {
+	margin-bottom: 5px !important;
+}
+
+/* for buttons out of modal */
+
+.vr-modal-body {
+	/*height: calc(100% - 50px);*/
+	/*subtract 90px with floating footer*/
+	height: calc(100% - 90px);
+	overflow: scroll;
+	padding: 15px;
+}
+
+/******/
+
+.vr-modal-overlay-loading {
+	text-align: center;
+	margin-top: 30%;
+}
+.vrtk-additem-container {
+	display: inline-block;
+	width: 100%;
+}
+.vrtk-additem-quantity-box {
+	display: inline-block;
+	width: 100%;
+}
+.vrtk-additem-quantity-box > span {
+	display: inline-block;
+}
+.vrtk-additem-quantity-box .quantity-label {
+	float: left;
+	padding: 10px 0 0;
+	font-size: 16px;
+}
+.vrtk-additem-quantity-box .quantity-actions {
+	float: right;
+	display: flex;
+	padding: 0;
+	border: 1px solid #ddd;
+	border-radius: 2px;
+}
+.vrtk-additem-quantity-box .quantity-actions > a {
+	flex-basis: 40px;
+	padding: 2px 10px;
+	background: #f2f2f2;
+	color: #444;
+	font-size: 12px;
+	display: flex;
+	justify-content: center;
+}
+.vrtk-additem-quantity-box .quantity-actions > a:hover {
+	background: #ddd;
+}
+.vrtk-additem-quantity-box .quantity-actions > a i {
+	align-self: center;
+}
+.vrtk-additem-quantity-box .quantity-actions > a.disabled {
+	color: #aaa;
+}
+.vrtk-additem-quantity-box .quantity-actions > a.disabled:hover {
+	background: #f2f2f2;
+}
+.vrtk-additem-quantity-box .quantity-actions .vrtk-action-remove {
+	border-right: 1px solid #ddd;
+}
+.vrtk-additem-quantity-box .quantity-actions .vrtk-action-add {
+	border-left: 1px solid #ddd;
+}
+.vrtk-additem-quantity-box .quantity-actions input {
+	-webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+	font-size: 14px;
+	text-align: center;
+	border: 1px solid #fff;
+	border-radius: 0;
+	width: 90px;
+}
+.vrtk-additem-quantity-box .quantity-actions input:focus {
+	/*border: 1px solid #ddd;*/
+	outline: none;
+	outline-width: 0;
+}
+.vrtk-additem-notes-field textarea:focus {
+	border: 1px solid #ddd;
+	outline: none;
+	outline-width: 0;
+}
+.vrtk-additem-middle {
+	width: 100%;
+	display: inline-block;
+	margin: 20px 0;
+}
+.vrtk-additem-notes-box {
+	width: 70%;
+	float: left;
+	border:1px solid #ddd;
+}
+.vrtk-additem-notes-title {
+	font-size: 16px;
+	padding:10px;
+	cursor: pointer;
+}
+.vrtk-additem-notes-field {
+	border-top:1px solid #ddd;
+	padding: 10px;
+}
+.vrtk-additem-notes-info {
+	padding: 0 0 5px 0;
+}
+.vrtk-additem-notes-field textarea {
+	min-height: 100px;
+	width: 100%;
+	resize: vertical;
+	border: 1px solid #ddd;
+	padding: 10px;
+}
+.vrtk-additem-tcost-box {
+	background: #f6f6f6;
+	border:1px solid #ddd;
+	padding: 10px;
+	float: right;
+	min-width: 12%;
+	text-align: center;
+	font-size: 26px;
+}
+.vrtk-additem-groups-container {
+	width: 100%;
+	display: inline-block;
+}
+.vrtk-additem-groups-container .vrtk-additem-group-box {
+	width: 49%;
+	border-radius: 4px;
+	border:1px solid #ddd;
+	padding:10px;
+	margin: 5px 0; 
+	box-sizing:border-box;
+	float: left;
+}
+.vrtk-additem-groups-container .vrtk-additem-group-box:nth-child(odd) {
+	float: left;
+}
+.vrtk-additem-groups-container .vrtk-additem-group-box:nth-child(even) {
+	float: right;
+}
+.vrtk-additem-group-title {
+	font-size: 16px;
+	margin: 0 0 5px;
+	display: inline-block;
+}
+.vrtk-additem-groups-container .vrtk-additem-group-box input {
+	margin: 0 5px 0 0;
+}
+.vrtk-additem-group-fields {
+	display: inline-block;
+	width: 100%;
+}
+.vrtk-group-multiple {
+	display: inline-block;
+	float: left;
+	width: 49%;
+}
+.vrtk-additem-group-topping.use-quantity {
+	width: 100%;
+}
+.vrtk-group-single {
+	display: inline-block;
+	width: 100%;
+}
+.vrtk-additem-topping-price {
+	float: right;
+	margin: 0 22px 0 0;
+	display: inline-block;
+}
+.vrtk-additem-topping-units {
+	float: right;
+}
+.vrtk-additem-topping-units[data-units=""],
+.vrtk-additem-topping-units[data-units="0"] {
+	display: none;
+}
+.vrtk-additem-topping-units a.disabled {
+	opacity: 0.6;
+	cursor: default;
+}
+.vrtk-additem-topping-field {
+	display: inline-block;
+	float: left;
+}
+.vrtk-additem-topping-field label {
+	display: inline-block;
+}
+button.vrtk-additem-cancel-button {
+	background: #eee none repeat scroll 0 0;
+	border: 0 none;
+	border-radius: 3px;
+	color: #666;
+	cursor: pointer;
+	display: block;
+	font-size: 16px;
+	padding: 9.9px 22px;
+}
+button.vrtk-additem-cancel-button:hover {
+	background: #ddd;
+}
+button.vrtk-additem-success-button {
+	background: #159049 none repeat scroll 0 0;
+	border: 0 none;
+	border-radius: 3px;
+	color: #fff;
+	cursor: pointer;
+	display: block;
+	font-size: 16px;
+	padding: 9.9px 18px;
+}
+button.vrtk-additem-success-button:hover {
+	background: #17A152;
+}
+.vrorderinfo {
+	padding: 3px 0;
+}
+.vrtk-order-food {
+	margin-top: 15px;
+}
+.vrtk-order-food:not(:last-child) {
+	border-bottom: 1px solid #ddd;
+	padding: 0 0 15px 0;
+	margin-bottom: 15px;
+}
+.vrtk-order-food-details {
+	width: 100%;
+	display: inline-block;
+}
+.vrtk-order-food-details > div {
+	display: inline-block;
+}
+.vrtk-order-food-details-left {
+	float: left;
+}
+.vrtk-order-food-details-right {
+	float: right;
+}
+.vrtk-order-food-details {
+	font-size: 18px;
+}
+.vrtk-order-food-details-quantity {
+	margin: 0 10px 0 0; 
+	font-size: 0.8em;
+}
+.vrtk-order-food-details-price {
+	min-width: 100px;
+	text-align: right;
+	display: inline-block;
+}
+.vrtk-order-food-middle, .vrtk-order-food-notes {
+	margin: 5px 0 5px 20px;
+	font-size: 0.8em;
+}
+.vrtk-order-food-notes {
+	background: #fff;
+	border:1px solid #eee;
+	padding: 10px;
+}
+.vrtk-order-food-group-toppings {
+	font-style: italic;
+}
+.vr-disable-selection {
+	-webkit-touch-callout: none;
+	-webkit-user-select: none;
+	-khtml-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+}
+.orderinfo-label {
+	width: 200px;
+	display: inline-block;
+	margin-right: 15px;
+}
+.vrorder-grand-total {
+	text-align: right;
+	font-size: 1.1em;
+}
+.vrorder-grand-total .red {
+	color: #930;
+}
+.vrorder-grand-total .grand-total {
+	font-size: 1.1em;
+	margin-top: 5px;
+	color: #930;
+	font-weight: bold;
+}
+.vrorder-grand-total .amount {
+	min-width: 80px;
+	text-align: right;
+	display: inline-block;
+}
+
+/* takeaway menu attributes */
+.vrtk-attributes-legend {
+	background: #eee none repeat scroll 0 0;
+	margin-top: 10px;
+	padding: 5px 2px;
+	text-align: center;
+}
+.vrtk-attribute-box {
+	display: inline-block;
+	text-align: center;
+	width: auto !important;
+	padding: 0 10px;
+}
+.vrtk-attribute-box > * {
+	float: left;
+	display: inline-block;
+}
+.vrtk-attribute-box > span {
+	margin: 3px 0 0 5px;
+}
+/* cart confirm total */
+.vrtk-confcart-fullcost-details {
+	text-align: right;
+	font-size: 14px;
+	margin: 7px 0;
+	padding: 1px 4px;
+}
+.vrtk-confcart-fullcost-details .fullcost-amount {
+	float: right;
+	min-width: 60px;
+	margin-left: 10px;
+	font-weight: bold;
+}
+.vrtk-confcart-fullcost-details.discount ,
+.vrtk-confcart-fullcost-details.taxes  {
+	font-size: 12px;
+	color: #993300;
+}
+.vrtk-confcart-fullcost-details.grand-total {
+	border-top: 1px solid #ddd;
+	padding: 4px;
+	font-size: 20px;
+	display: inline-block;
+	width: 100%;
+}
+.vrtk-confcart-fullcost-details.net s {
+	margin-right: 10px;
+	font-size: 12px;
+}
+.vrtk-confcart-fullcost-details.gratuity {
+	background: #eee;
+	display: inline-block;
+	padding: 10px;
+	float: right;
+}
+.vrtk-confcart-fullcost-details.gratuity .fullcost-amount {
+	font-weight: bold;
+}
+.vrtk-confcart-fullcost-details.gratuity .gratuity-inline-form {
+	margin-top: 5px;
+}
+.gratuity-inline-form .vre-select-wrapper {
+	margin-top: 5px;
+}
+.gratuity-inline-form select {
+	min-width: 100%;
+	width: 100%;
+	height: 33px;
+}
+.vrtkconfcartpricesp-full {
+	display: inline-block;
+	margin: 0 0 0 5px;
+}
+
+.gratuity-inline-form {
+	margin-left: 5px;
+}
+.gratuity-inline-form input {
+	width: 100px;
+	text-align: right;
+}
+/* all orders page */
+.vr-allorders-userhead {
+	margin-bottom: 15px;
+}
+.vr-allorders-userleft {
+	display: inline-block;
+}
+.vr-allorders-userright {
+	display: inline-block;
+	float: right;
+}
+.vr-allorders-box, .vr-allorders-void {
+	margin: 30px 0;
+}
+.vr-allorders-list {
+	text-align: center;
+	margin-top: 10px;
+	border: 1px solid #eee;
+	border-radius: 2px;
+}
+.vr-allorders-list.spacer {
+	margin-top: 20px;
+}
+.vr-allorders-singlerow {
+	width: 100%;
+	display: inline-block;
+	padding: 10px;	
+	border-bottom: 1px solid #eee;
+}
+.vr-allorders-head {
+	background: #eee;
+	border-bottom: 1px solid #ddd;
+	border-top-left-radius: 1px;
+	border-top-right-radius: 1px;
+}
+.vr-allorders-singlerow:last-child {
+	border-bottom: 0;
+}
+.vr-allorders-column .vr-icon-idgroup {
+	border: 1px solid #eee;
+	border-radius: 2px;
+	margin-left: 14px;
+	float: right;
+	margin-right: 30px;
+	width: 30px;
+	height: 30px;
+	text-align: center;
+	line-height: 30px;
+	margin-top: -5px;
+} 
+.vr-allorders-head a {
+	color: #444;
+	font-weight: bold;
+}
+.vr-allorders-head a:hover {
+	color: #0183bf;
+}
+.vr-allorders-head i {
+	margin-left: 5px;
+}
+.vr-allorders-singlerow .td-secondary {
+	font-size: .8em;
+	color: #777;
+}
+.vr-allorders-singlerow .vre-select-wrapper {
+	display: inline-block;
+}
+.vr-allorders-singlerow .vre-select-wrapper .vre-select {
+	height: 28px;
+	line-height: 14px;
+}
+.vr-allorders-singlerow .vrrescodelink {
+	display: inline-block;
+	margin-left: 5px;
+}
+.vr-allorders-column {
+	display: inline-block;
+	float: left;
+	margin: 5px 0 0;
+}
+.vr-allorders-column img {
+	margin: -5px 0 0;
+	max-height: 32px;
+}
+.vr-allorders-void {
+	text-align: center;
+	font-size: 14px;
+}
+.vrfront-manage-form .form-horizontal {
+	background: #f6f6f6;
+	padding: 20px 30px;
+}
+.vrfront-manage-form .form-horizontal .control-group  {
+	margin: 10px 0;
+	display: flex;
+	flex-wrap: wrap;
+}
+.vrfront-manage-form .form-horizontal .control-group .control-label {
+	flex-basis: 180px;
+	margin-top: 8px;
+}
+.vrfront-manage-form .form-horizontal .control-group .control-label b {
+	font-weight: normal;
+	margin-bottom: 3px;
+}
+.vrfront-manage-form .form-horizontal .control-group textarea {
+	border: 1px solid #ddd;
+	border-radius: 5px;
+	width: 290px;
+}
+.vrfront-manage-form .form-horizontal .control-group input[type="tel"] {
+	width: 290px;
+}
+.vrorder-backbox {
+	background: none repeat scroll 0 0 #006699;
+	border: 1px solid #005580;
+	border-radius: 8px;
+	display: inline-block;
+	margin: 0 0 10px;
+}
+.vrorder-backbox a {
+	color: #fff;
+	font-size: 16px;
+	padding: 10px 20px;
+	display: inline-block;
+}
+.vr-allorders-logout {
+	background: #eee;
+	color: #777;
+	border-radius: 10px;
+	border:1px solid #e7e7e7;
+	font-weight: bold;
+	cursor: pointer;
+	padding: 9px 17px;
+}
+.vr-allorders-sublogin {
+	font-size: 12px;
+	margin: 10px 0 0;
+}
+
+
+/* list pagination */
+.vr-list-pagination {
+	display: inline-block;
+	width: 100%;
+	text-align: center;
+	margin: 10px 0;
+}
+.vr-list-pagination ul {
+	margin: 0;
+	padding: 0;
+	text-align: center;
+}
+.vr-list-pagination ul li {
+	display: inline-block;
+	margin: 0 3px;
+}
+.vr-list-pagination ul li a, .vr-list-pagination ul li span {
+	display: inline-block;
+	padding: 0px 7px;
+	background: #eee;
+	border:1px solid #ddd;
+}
+.vr-list-pagination ul li span {
+	color: #999;
+}
+.vr-list-pagination ul li a {
+	color: #666;
+}
+.vr-list-pagination ul li a:hover {
+	background: #ddd;
+}
+
+/* dashboard box */
+
+.vr-dashboard-box {	
+	border: 1px solid #ccc;
+	margin: 5px 5px 15px 0;
+}
+.vrdash-title {
+	padding: 10px;
+	border-bottom: 1px solid #ccc;
+	background: #f6f6f6 none repeat scroll 0 0;
+	text-transform: uppercase;
+	font-size: 16px;
+}
+.vrdash-container {
+	padding: 10px 0; 
+}
+.vrdash-scrollable {
+	overflow: hidden;
+	overflow-x: scroll;
+}
+.vrdash-tab-head  {
+	display: inline-block;
+	margin: 10px 0 15px 0;
+	border: 1px solid #ccc;
+}
+.vr-incoming-table td {
+	padding: 5px;
+}
+.vrdash-tab-button {
+	float: left;
+	display: inline-block;
+	font-size: 13px;
+}
+.vrdash-tab-button a {
+	padding: 10px 20px;
+	background: #fff;
+	color: #333;
+}
+.vrdash-tab-button a strong {
+	font-size: 18px;
+}
+.vrdash-tab-button a:hover {
+	text-decoration: none !important;
+}
+.vrdash-tab-button a {
+	border-right: 1px solid #ccc;
+	cursor: pointer;
+	display: inline-block;
+	float: left;
+}
+.vrdash-tab-button:last-child a {
+	border-right: 0;
+	cursor: pointer;
+	display: inline-block;
+	float: left;
+}
+.vrdash-tab-button a.active {
+	background: #f6f6f6 none repeat scroll 0 0;
+	box-shadow: 0 0 2px #eee inset;
+	cursor: default;
+}
+
+#vroversightform .vr-dash-section {
+	margin-top: 50px;
+}
+.widget-floating-box.top-right {
+	display: inline-block;
+	width: auto;
+	float: right;
+	margin-top: 20px;
+}
+.badge {
+	padding-left: 9px;
+	padding-right: 9px;
+	border-radius: 9px;
+}
+.badge-important {
+	background-color: #a94442;
+}
+
+/* dashboard restaurant */
+
+.vr-dash-roomcont-table {
+	overflow: hidden; 
+	overflow-x: scroll;
+}
+.vr-dash-roomcont-title {
+	text-align: center;
+	width: 100%;
+	font-weight: bold;
+	font-size: 14px;
+	margin: 5px 0 0;
+}
+.vr-dash-roomcont-title > div {
+	display: inline-block;
+}
+.vr-dash-roomcont-title .title-left {
+	float: left;
+}
+.vr-dash-roomcont-title .title-right {
+	float: right;
+}
+.vr-dashboard-overview-table {
+	margin-top: 10px;
+	width: 100%;
+	border-collapse: collapse;
+	margin-bottom: 15px;
+}
+.vr-dashboard-overview-table th {
+	font-size: 12px;
+	color: #777;
+	background: #f3f2f6;
+	padding: 12px;
+}
+.vr-dashboard-overview-table td:first-child {
+	color: #039;
+	color: #777;
+	background: #f3f2f6;
+	font-weight: bold;
+	text-align: center;
+	min-width: 120px;
+	border-left: 0 !important;
+}
+.vr-dashboard-overview-table td.first {
+	border-left: 0 !important;
+}
+.vr-dashboard-overview-table td {
+	background: #fafafa;
+	border-top: 1px solid #fff;
+	border-left: 1px solid #fff;
+	border-top: 1px solid #ddd;
+	border-left: 1px solid #ddd;
+	color: #669;
+	padding: 0;
+	height: 48px;
+	text-align: center;
+	vertical-align: middle;
+}
+.vr-dashboard-overview-table td.first-cell {
+	
+}
+.vr-dashboard-overview-table td.contiguous-cell {
+	border-left: 0 !important;
+}
+.vr-dashboard-overview-table td.green {
+	background: #38c870 !important;
+}
+.vr-dashboard-overview-table td img {
+	width: 30px;
+	height: auto;
+	margin: 0;
+}
+.vr-dashboard-overview-table td.orange {
+	background: #e9b82c !important;
+}
+.vr-dashboard-overview-table td.red {
+	background: #e94b37 !important;
+}
+.vr-dashboard-overview-table td.red.closure, 
+.vr-dashboard-overview-table td.closure-tmp {
+	background: #a32514 !important;
+}
+.vr-dashboard-overview-table td.red.closure .td-primary,
+.vr-dashboard-overview-table td.red.closure .vrrescodelink {
+	color: #fff;
+}
+.vr-dashboard-overview-table tbody tr td:not(:first-child):hover {
+	background: #dceef7;
+}
+.vr-dashboard-overview-table a {
+	width: 100%;
+	height: 100%;
+	display: block;
+}
+.vr-dashboard-overview-table .vr-sight-cal-box {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	color: #333;
+}
+.vr-dashboard-overview-table a.vr-sight-cal-box > * {
+	padding: 0 5px;
+}
+.vr-dashboard-overview-table .vr-sight-cal-box .td-primary {
+	font-size: 13px;
+	font-family: Arial, Tahoma, Sans-Serif;
+}
+.vr-dashboard-overview-table .vr-sight-cal-box .td-pull-right {
+	float: right;
+}
+.vrdash-tab-pane .more-details-handle {
+	margin-left: 10px;
+}
+.vrdash-tab-pane .dash-item-record {
+	margin: 8px 0; 
+}
+.vrdash-tab-pane .dash-item-record:last-child {
+	margin-bottom:0;
+}
+.dash-table-wrapper .vre-select-wrapper {
+	display: inline-block;
+}
+.dash-table-wrapper .vrrescodelink {
+	margin: 8px 0px 0 16px;
+}
+.dash-table-wrapper .vrrescodelink img {
+	max-height: 32px;
+	margin-top: 0;
+}
+.vrfront-manage-headerdiv .vrfront-manage-actionsdiv .vre-tinyselect-wrapper {
+	vertical-align: top;
+	display: inline-block;
+	margin-top: 5px;
+}
+.vrfront-search-toolbar .select2-container .select2-choice {
+	height: 32px;
+	line-height: 32px;
+}
+.vrfront-search-toolbar .select2-container .select2-choice .select2-arrow b {
+	background-position: 0 3px;
+}
+
+/* end dashboard */
+
+.vrtk-menus-date-block {
+	float: right;
+	margin: 0 0 0 5px;
+	padding: 0 0 5px 0;
+	display: inline-block;
+	position: relative;
+}
+.vrtk-menus-date-block.vre-tinyselect-wrapper {
+	padding-bottom: 0;
+	margin-bottom: 0;
+}
+.vrtk-menus-date-block.vre-tinyselect-wrapper .vre-tinyselect, .vrtkselectmenudiv.vre-tinyselect-wrapper .vre-tinyselect {
+	padding: 8px 44px 8px 7px;
+}
+.vrtk-menus-filter-date {
+	width: 100%;
+	padding: 8px 0;
+	text-indent: 10px;
+	color: #555;
+	font-size: 1em;
+	border:0;
+	outline: none;
+	border-radius: 5px;
+	position: relative;
+
+	appearence: none;
+	-moz-appearence: none;
+	-webkit-appearence: none;
+	border: none;
+}
+input[type="text"].vrtk-menus-filter-date {
+	padding-right: 45px;
+	padding-left: 0;
+	background: transparent;
+	z-index: 1;
+}
+.vrtk-menus-date-block:not(.vre-select-wrapper):before {
+	position: absolute;
+	right: 12px;
+	top: 8px;
+	font-family: "Font Awesome 5 Free";
+	content: "\f073";
+	font-size: 16px;
+	color: #2d2d2d;
+	z-index: 1;
+}
+.vrtk-menus-filter-date:focus {
+	outline: none;
+}
+.vrtk-menus-filter-date.enabled {
+	cursor: pointer;
+}
+.vrtk-menus-filter-head {
+	display: inline-block;
+	width: 100%;
+}
+.vrtk-menus-filter-head .vrtkselectmenudiv {
+	float: left;
+}
+.vrtk-menusubtitle-notactive {
+	font-size: 18px;
+	color: #ccc;
+}
+.vrtkmenutitlediv.disabled {
+	color: #aaa !important;
+}
+/* confirmation task */
+.vr-confirmpage {
+	/*width: 99%;*/
+	border: 2px solid;
+	border-radius: 5px;
+	text-align: center;
+	/* text-transform: uppercase; */
+	font-size: 16px;
+	font-weight: bold;
+	padding: 25px 10px;
+}
+.vr-confirmpage.order-error {
+	border-color: #B20000;
+}
+.vr-confirmpage.order-notice {
+	border-color: #D9A300;
+}
+.vr-confirmpage.order-good {
+	border-color: #006600;
+}
+.vrloginwarning {
+	border-radius: 5px;
+	border:2px solid #ddd;
+	padding: 20px;
+	text-align: center;
+}
+.vrloginwarningexit a {
+	background: #ccc none repeat scroll 0 0;
+	border: 0 none;
+	border-radius: 5px;
+	color: #555;
+	cursor: pointer;
+	font-size: 14px;
+	margin: 5px 0 0 5px;
+	padding: 10px 43px;
+	text-transform: uppercase;
+	transition: all 400ms ease-in-out 0s;
+	display: inline-block;
+}
+.vrloginwarningexit a:hover {
+	background: #ddd;
+	transition: all 400ms ease-in-out 0s;
+}
+.vrloginwarningtext {
+	font-size: 16px;
+	margin: 0 0 10px 0;
+}
+.vr-livemap-rcont {
+	float: right;
+}
+.vr-livemap-rbox {
+	position: relative;
+}
+.vr-livemap-rtitle {
+	
+}
+.vr-livemap-rtitle a {
+	display: inline-block;
+	position: relative;
+	border-radius: 3px;
+	border:1px solid #ddd;
+	padding: 5px;
+	padding: 8px 40px 8px 12px;
+	background: #fff;
+	box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+}
+.vr-livemap-rtitle a::after {
+	border-left: 6px solid transparent;
+	border-right: 6px solid transparent;
+	border-top: 6px solid;
+	content: "";
+	display: inline-block;
+	height: 0;
+	position: absolute;
+	right: 8px;
+	top: 19px;
+	vertical-align: middle;
+	width: 0;
+	color: #bbb;
+}
+.vr-livemap-modal {
+	background: #fff;
+	border: 2px solid #951414;
+	position: absolute;
+	border-radius: 3px;
+	right: 16px;
+	min-width: 250px;
+	margin: 12px 0 0;
+	z-index: 1000;
+}
+.vr-livemap-modal::before {
+	width: 0;
+	height: 0;
+	border-style: solid;
+	border-width: 0 7px 7px 7px;
+	border-color: transparent transparent #951414 transparent;
+	position: absolute;
+	top: -9px;
+	right: 50px;
+	content: "";
+}
+.vr-livemap-modal ul {
+	margin: 0;
+	padding: 0;
+}
+.vr-livemap-modal ul li {
+	padding: 10px;
+	margin: 0;
+	list-style-type: none;
+}
+.vr-livemap-modal ul li a {
+	display: block;
+}
+.vr-livemap-modal ul li:hover {
+	background: #eee;
+}
+.vr-livemap-modal ul li.separator {
+	border-bottom:1px solid #ccc;
+}
+.vrloginbutton, .vrregisterblock .vrloginspinput .vrbooknow {
+	background: #951414 none repeat scroll 0 0;
+	border: 0 none;
+	border-radius: 5px;
+	color: #fff;
+	cursor: pointer;
+	font-size: 14px;
+	margin: 5px 0 0 5px;
+	padding: 10px 43px;
+	text-transform: uppercase;
+	transition: all 400ms ease-in-out 0s;
+}
+.vrloginbutton:hover, .vrregisterblock .vrloginspinput .vrbooknow:hover {
+	background: #741010;
+	transition: all 400ms ease-in-out 0s;
+}
+.vrtkdatetimediv .vrtkdatetimeinputdiv .vre-tinyselect-wrapper select {
+	padding:7px 37px 7px 7px;
+	height: auto;
+	margin-bottom: 0;
+	line-height: initial;
+}
+select.vre-tinyselect.large {
+	max-width: 400px !important;
+}
+
+/* takeaway message box */
+.vr-toast-wrapper {
+	position: fixed;
+	width: 400px;
+	left: 50%;
+	bottom: -10px;
+	transform: translate(-50%, 100%);
+	z-index: 100;
+
+	transition: 0.4s ease all;
+	-moz-transition: 0.4s ease all;
+	-webkit-transition: 0.4s ease all;
+}
+.vr-toast-wrapper.toast-slide-in {
+	transform: translate(-50%, 0%);
+	bottom: 10px;
+}
+
+.vr-takeaway-message {
+	background: none repeat scroll 0 0 #fff;
+}
+.vr-takeaway-message-content {
+	padding: 20px 25px;
+	font-size: 14px;
+	font-weight: bold;
+	border: 1px solid #333;
+	border-radius: 1px;
+	background-color: rgba(64, 64, 64, 0.15);
+}
+.vr-takeaway-message-content.error {
+	border: 1px solid #990000;
+	background-color: rgba(153, 0, 0, 0.20)
+}
+.vr-takeaway-message-content.success {
+	border: 1px solid #59a27b;
+	background-color: rgba(112, 204, 135, 0.40);
+}
+.vr-takeaway-message-content.warning {
+	border: 1px solid #e08950;
+	background-color: rgba(224, 137, 80, 0.35);
+}
+
+/* shake effect */
+
+.vr-toast-wrapper.vr-do-shake {
+	animation: vr-shake-animation 0.82s cubic-bezier(.36, .07, .19, .97) both;
+	transform: translate3d(-50%, 0, 0) !important;
+	backface-visibility: hidden;
+	perspective: 1000px;
+}
+
+@keyframes vr-shake-animation {
+	10%, 90% {
+		transform: translate3d(-50.5%, 0, 0);
+	}
+
+	20%, 80% {
+		transform: translate3d(-49%, 0, 0);
+	}
+
+	30%, 50%, 70% {
+		transform: translate3d(-52%, 0, 0);
+	}
+
+	40%, 60% {
+		transform: translate3d(-48%, 0, 0);
+	}
+}
+
+/* custom fields */
+
+.vrcustomfields div .cf-value {
+	position: relative;
+	margin-bottom: 35px;
+	display: inline-block;
+}
+.vrcustomfields .vrinput, .vrcustomfields .vrtextarea {
+	font-size: 18px;
+	height: auto;
+	padding: 10px 10px 10px 5px;
+	margin-bottom: 0;
+	display: block;
+	width: 300px !important;
+	border: none;
+	background: transparent;
+	border-bottom: 1px solid #757575;
+	border-radius:0;
+	box-sizing: border-box;
+	line-height: normal;
+	box-shadow: none;
+	-webkit-box-shadow: none;
+}
+.vrcustomfields .vrinput:focus, .vrcustomfields .vrtextarea:focus {
+	box-shadow: none;
+	-webkit-box-shadow: none;
+}
+.vrcustomfields .vr-cf-select {
+	width: 300px;
+	min-width: 300px;
+}
+.vrcustomfields .vrtextarea {
+	color: inherit;
+	font-family: inherit;
+	font-size: 15px;
+	margin-left: 5px;
+}
+.vrcustomfields .vrinput:focus, .vrcustomfields .vrtextarea:focus { 
+	outline:none;
+}
+.vrcustomfields div .cf-label {
+	color: #999;
+	font-size: 15px;
+	font-weight: normal;
+	position: absolute;
+	pointer-events: none;
+	left: 5px;
+	top: 15px;
+	width: 200px;
+	transition: 0.2s ease all;
+	-moz-transition: 0.2s ease all;
+	-webkit-transition: 0.2s ease all;
+}
+.vrcustomfields div .phone-field .cf-label:not(.focus) {
+	left: 48px;
+}
+.vrcustomfields div .phone-field-plain .iti__flag-container {
+	/* hide flag when dial code selection is disabled */
+	display: none;
+}
+.vre-family-check, .vrcustomfields .vr-cf-checkbox-wrap .cf-value {
+	display: flex;
+	align-items: baseline;
+}
+.vre-family-check label, .vr-cf-checkbox-wrap .cf-value label {
+	float: inherit;
+	flex: 1;
+}
+
+/* active state */
+.vrcustomfields .vrinput:focus ~ .cf-label,
+.vrcustomfields .vrinput.has-value ~ .cf-label,
+.vrcustomfields .vrtextarea:focus ~ .cf-label,
+.vrcustomfields .vrtextarea.has-value ~ .cf-label,
+.vrcustomfields .cf-label.focus {
+  /*top: -20px;*/
+  top: -14px;
+  font-size: 14px;
+  color: #5264AE;
+}
+.vrcustomfields .cf-highlight {
+	position: absolute;
+	height: 60%;
+	width: 100px;
+	top: 25%;
+	left: 0;
+	pointer-events: none;
+	opacity: 0.5;
+}
+.vrcustomfields .cf-bar {
+	position: relative;
+	display: block;
+	width: 100%;
+}
+.vrcustomfields .cf-bar:before, .vrcustomfields .cf-bar:after 	{
+  content:'';
+  height:2px; 
+  width:0;
+  bottom:0px; 
+  position:absolute;
+  background:#5264AE; 
+  transition:0.2s ease all; 
+  -moz-transition:0.2s ease all; 
+  -webkit-transition:0.2s ease all;
+}
+.vrcustomfields .cf-bar:before {
+  left: 50%;
+}
+.vrcustomfields .cf-bar:after {
+  right: 50%; 
+}
+.vrcustomfields .vrinput:focus ~ .cf-bar:before,
+.vrcustomfields .vrinput:focus ~ .cf-bar:after,
+.vrcustomfields .vrtextarea:focus ~ .cf-bar:before,
+.vrcustomfields .vrtextarea:focus ~ .cf-bar:after,
+.vrcustomfields .cf-bar.focus:before,
+.vrcustomfields .cf-bar.focus:after {
+	width: 50%;
+}
+.cf-value .vr-phones-select .select2-choice:focus, .cf-value .vr-phones-select .select2-choice:active {
+	box-shadow: none;
+}
+.cf-value .vr-phones-select .select2-arrow {
+	display: none !important;	
+}
+
+.vrcustomfields div .cf-value.vre-tinyselect-wrapper {
+	margin-left: 5px;
+}
+.vrcustomfields div .cf-value.vre-tinyselect-wrapper .vre-tinyselect { 
+	padding-top: 5px;
+	padding-bottom: 5px;
+}
+.vrcustomfields .vre-tinyselect-wrapper {
+	background-image: url('images/select-arrow.png');
+	border-radius: 2px;
+}
+.vrcustomfields .vre-tinyselect-wrapper select {
+	background: transparent;
+}
+.vrcustomfields .cf-dropdown .cf-label {
+	position: relative;
+	display: block;
+	top: auto;
+	margin-bottom:7px;
+}
+.vrcustomfields div .cf-value .vr-phones-select {
+	margin-top: -3px;
+}
+.vrcustomfields div span.cf-label.top {
+	vertical-align: top;
+}
+.vrcustomfields .vrseparatorcf {
+	font-size: 20px;
+	padding: 8px 0;
+	margin: 0 0 20px;
+	display: block;
+}
+.vrcustomfields .vrseparatorcf.long {
+	font-size: 10px;
+}
+
+.vrtk-address-response {
+	margin: 5px 0 0;
+	font-weight: bold;
+}
+.vrtk-address-response.fail {
+	color: #900;
+}
+
+/* takeaway item */
+
+.vrtk-itemdet-category {
+	margin-bottom: 7px;
+}
+.vrtk-itemdet-category a {
+	font-weight: bold;
+}
+.vrtk-itemdet-category .arrow-separator {
+	margin: 0 2px;
+}
+
+.vrtk-itemdet-prod-head {
+	border-bottom: 1px solid #ddd;
+	margin-bottom: 10px;
+}
+.vrtk-itemdet-prod-head .tk-title .vrtk-item-date-block {
+	display: inline-block;
+	float: right;
+	cursor: pointer;
+}
+.vrtk-itemdet-prod-head .tk-subtitle-notactive {
+	font-size: 18px;
+	color: #ccc;
+}
+.vrtk-itemdet-prod-head .tk-attributes {
+	display: inline-block;
+	margin-left: 10px;
+}
+
+.vrtk-itemdet-prod-body .tk-left {
+	vertical-align: top;
+	display: inline-block;
+	width: 40%;
+	margin-right: 15px;
+}
+.vrtk-itemdet-prod-body .tk-right {
+	vertical-align: top;
+	display: inline-block;
+	width: calc(59% - 15px);
+}
+
+.vrtk-itemdet-prod-body .tk-left .tk-image {
+	margin-bottom: 15px;
+}
+.vrtk-itemdet-prod-body .tk-left .tk-image img {
+	max-width: 100%;
+}
+
+.vrtk-itemdet-prod-body .tk-left .vre-tinyselect-wrapper {
+	width: 80%;
+}
+.vrtk-itemdet-prod-body .tk-left .vre-tinyselect-wrapper select.vre-tinyselect {
+	max-width: 140% !important;
+}
+
+.vrtk-itemdet-prod-body .tk-left .tk-variations {
+	margin-bottom: 25px;
+}
+.vrtk-itemdet-prod-body .tk-left .tk-variations .tk-label {
+	margin-bottom: 3px;
+	font-size: 18px;
+}
+
+.vrtk-itemdet-prod-body .tk-left .tk-toppings-groups .tk-label {
+	margin-bottom: 3px;
+	font-size: 16px;
+}
+.vrtk-itemdet-prod-body .tk-left .tk-toppings-groups .tk-topping-wrapper {
+	margin-bottom: 10px;
+}
+.vrtk-itemdet-prod-body .tk-left .tk-toppings-groups .tk-topping-wrapper .tk-topping-fields-cont {
+	width: 80%;
+}
+.vrtk-itemdet-prod-body .tk-left .tk-toppings-groups .tk-topping-wrapper .tk-topping-fields-cont .tk-topping-field {
+	margin-bottom: 3px;
+}
+.vrtk-itemdet-prod-body .tk-left .tk-toppings-groups .tk-topping-wrapper .tk-topping-fields-cont .tk-topping-field .tk-topping-rate {
+	float: right;
+	margin-right: 10px;
+}
+
+.vrtk-itemdet-prod-body .tk-right .tk-cart-summary {
+	padding: 10px;
+	text-align: center;
+	border-bottom: 1px solid #ddd;
+	display: inline-block;
+	width: 100%;
+}
+.vrtk-itemdet-prod-body .tk-right .tk-cart-summary .tk-cart-summary-inner {
+	width: 70%;
+	margin: 0 auto;
+}
+.vrtk-itemdet-prod-body .tk-right .tk-cart-summary .tk-cart-summary-inner .tk-price {
+	padding: 5px 20px;
+	margin-bottom: 6px;
+	font-size: 32px;
+}
+.vrtk-itemdet-prod-body .tk-right .tk-cart-summary .tk-cart-summary-inner .tk-add-cart {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+.vrtk-itemdet-prod-body .tk-right .tk-cart-summary .tk-cart-summary-inner .tk-add-cart .vrtk-additem-quantity-box {
+	width: auto;
+}
+.vrtk-itemdet-prod-body .tk-right .tk-cart-summary .tk-cart-summary-inner .tk-add-cart button {
+	float: right;
+	width: 100%;
+	min-height: 36px;
+	padding: 8px 16px;
+	font-size: 14px;
+	border-radius: 0px;
+	border: 0;
+	cursor: pointer;
+	background-color: #006699;
+	color: #fff;
+	margin: 0 0 0 5px;
+	line-height: normal;
+}
+.vrtk-itemdet-prod-body .tk-right .tk-cart-summary .tk-cart-summary-inner .tk-add-cart button:hover {
+	background-color: #0088cc !important;
+}
+.vrtk-itemdet-prod-body .tk-right .tk-cart-summary .tk-cart-summary-inner .tk-add-cart button:active {
+	background-color: #004c71 !important;
+}
+.vrtk-itemdet-prod-body .tk-right .tk-cart-summary .tk-cart-summary-inner .tk-add-cart button:disabled {
+	background-color: #ccc !important;
+	cursor: auto;
+}
+/* ease transition on button hover */
+.vrtk-itemdet-prod-body .tk-right .tk-cart-summary .tk-cart-summary-inner .tk-add-cart button:hover {
+	transition: all 400ms ease-in-out 0s;
+	-moz-transition: all 400ms ease-in-out 0s;
+	-webkit-transition: all 400ms ease-in-out 0s;
+	-o-transition: all 400ms ease-in-out 0s;
+}
+/* disable ease transition on button click */
+.vrtk-itemdet-prod-body .tk-right .tk-cart-summary .tk-cart-summary-inner .tk-add-cart button:active {
+	transition: all 0ms ease-in-out 0s;
+	-moz-transition: all 0ms ease-in-out 0s;
+	-webkit-transition: all 0ms ease-in-out 0s;
+	-o-transition: all 0ms ease-in-out 0s;
+}
+
+.vrtk-itemdet-prod-body .tk-right .tk-cart-summary .tk-ordernow {
+	width: 70%;
+	margin: 23px auto;
+	text-align: center;
+}
+.vrtk-itemdet-prod-body .tk-right .tk-cart-summary .tk-ordernow a {
+	font-weight: normal;
+	font-size: 16px;
+	background: #159049 none repeat scroll 0 0;
+	border: 0 none;
+	color: #fff;
+	cursor: pointer;
+	display: inline-block;
+	padding: 11px 45px;
+	width: 100%;
+}
+.vrtk-itemdet-prod-body .tk-right .tk-cart-summary .tk-ordernow a:hover {
+	background: #17a152;
+	transition: all 400ms ease-in-out 0s;
+	-moz-transition: all 400ms ease-in-out 0s;
+	-webkit-transition: all 400ms ease-in-out 0s;
+	-o-transition: all 400ms ease-in-out 0s;
+}
+.vrtk-itemdet-prod-body .tk-right .tk-cart-summary .tk-ordernow a:active {
+	transition: all 0ms ease-in-out 0s;
+	-moz-transition: all 0ms ease-in-out 0s;
+	-webkit-transition: all 0ms ease-in-out 0s;
+	-o-transition: all 0ms ease-in-out 0s;
+	background: #0e6433;
+}
+.vrtk-itemdet-prod-body .tk-right .tk-cart-message {
+	font-size: 14px;
+	font-weight: bold;
+	padding: 10px 25px;
+	margin: 8px 0;
+}
+.vrtk-itemdet-prod-body .tk-right .tk-cart-message.error {
+	border: 1px solid #990000;
+	background-color: rgba(153, 0, 0, 0.15)
+}
+.vrtk-itemdet-prod-body .tk-right .tk-cart-message.success {
+	border: 1px solid #59a27b;
+	background-color: rgba(124, 225, 171, 0.15);
+}
+.vrtk-itemdet-prod-body .tk-right .tk-cart-message.warning {
+	border: 1px solid #e08950;
+	background-color: rgba(224, 137, 80, 0.15);
+}
+
+.vrtk-itemdet-prod-body .tk-right .tk-description {
+	padding: 15px 10px;
+	border-bottom: 1px solid #ddd;
+}
+
+.vrtk-itemdet-prod-body .tk-right .tk-special-notes {
+	padding: 15px 10px;
+}
+.vrtk-itemdet-prod-body .tk-right .tk-special-notes .tk-notes-title {
+	font-size: 16px;
+}
+.vrtk-itemdet-prod-body .tk-right .tk-special-notes .tk-notes-field {
+	padding: 10px 0;
+}
+.vrtk-itemdet-prod-body .tk-right .tk-special-notes .tk-notes-field .tk-notes-info {
+	padding: 0 0 5px 0;
+}
+.vrtk-itemdet-prod-body .tk-right .tk-special-notes .tk-notes-field textarea {
+	min-height: 100px;
+	width: 100%;
+	resize: vertical;
+	border: 1px solid #ddd;
+	padding: 10px;
+}
+
+/* quick reviews */
+
+.vr-reviews-quickwrapper {
+	margin-top: 20px;
+}
+
+.vr-reviews-quickwrapper .rv-reviews-quickstats {
+	margin: 10px 0;
+}
+.vr-reviews-quickwrapper .rv-reviews-quickstats .rv-top {
+	min-height: 32px;
+}
+.vr-reviews-quickwrapper .rv-reviews-quickstats .rv-top .rv-average-stars {
+	float: left;
+}
+.vr-reviews-quickwrapper .rv-reviews-quickstats .rv-top .rv-count-reviews {
+	float: left;
+	margin-top: 6px;
+	margin-left: 15px;
+}
+.vr-reviews-quickwrapper .rv-reviews-quickstats .rv-top .rv-submit-review {
+	float: right;
+}
+.vr-reviews-quickwrapper .rv-reviews-quickstats .rv-see-all {
+	margin: 15px 0;
+}
+.vr-reviews-quickwrapper .rv-reviews-quickstats .rv-top .rv-submit-review a,
+.vr-reviews-quickwrapper .rv-reviews-quickstats .rv-see-all a {
+	
+}
+
+.vr-reviews-quickwrapper .rv-reviews-quickstats .rv-average-ratings {
+	font-size: 14px;
+}
+
+.vr-reviews-quicklist .review-block {
+	padding: 10px 0;
+}
+.vr-reviews-quicklist .review-block .rv-top {
+	padding: 10px;
+	background-color: #eee;
+}
+.vr-reviews-quicklist .review-block .rv-top .rv-head-up {
+	height: 28px;
+}
+.vr-reviews-quicklist .review-block .rv-top .rv-head-up .rv-rating,
+.vr-reviews-quicklist .review-block .rv-top .rv-head-up .rv-title {
+	float: left;
+}
+.vr-reviews-quicklist .review-block .rv-top .rv-head-up .rv-lang {
+	float: right;
+}
+.vr-reviews-quicklist .review-block .rv-top .rv-head-up .rv-rating img {
+	width: 20px;
+}
+.vr-reviews-quicklist .review-block .rv-top .rv-head-up .rv-title {
+	font-weight: bold;
+	font-size: 16px;
+	margin-left: 20px;
+}
+.vr-reviews-quicklist .review-block .rv-top .rv-head-down .rv-verified {
+	margin-top: 5px;
+	font-size: smaller;
+	color: #ef6a29;
+}
+.vr-reviews-quicklist .review-block .rv-middle {
+	padding: 10px;
+	background-color: #e2e2e2;
+}
+
+/* review buttons */
+
+button.vr-review-btn,
+a.vr-review-btn {
+	padding: 6px 16px;
+	font-size: 14px;
+	border-radius: 4px;
+	border: 0;
+	cursor: pointer;
+	color: rgb(17, 17, 17);
+	background-image: linear-gradient(rgb(247, 248, 249), rgb(232, 233, 234));
+	margin: 0;
+	border: 1px solid #ccc;
+}
+button.vr-review-btn:hover,
+a.vr-review-btn:hover {
+	background-image: linear-gradient(rgb(230, 234, 238), rgb(216, 220, 224)) !important;
+}
+button.vr-review-btn:active,
+a.vr-review-btn:active {
+	box-shadow: rgba(0, 0, 0, 0.2) 0px 1px 3px inset;
+	background-color: rgb(230, 233, 236);
+	background-image: none !important;
+}
+
+/* full reviews list */
+.vr-reviews-toolbar {
+	height: 40px;
+}
+.vr-reviews-toolbar .rv-toolbar-field > div {
+	display: inline-block;
+}
+.vr-reviews-toolbar .rv-toolbar-field.left {
+	float: left;
+}
+.vr-reviews-toolbar .rv-toolbar-field.right {
+	float: right;
+}
+.vr-reviews-toolbar .rv-toolbar-field .rv-toolbar-field-label {
+	margin-right: 10px;
+}
+
+.vr-reviews-counts {
+	margin: 15px 0;
+}
+.vr-reviews-counts .rv-rating-count-box {
+	height: 24px;
+}
+.vr-reviews-counts .rv-rating-count-box > div {
+	float: left;
+}
+.vr-reviews-counts .rv-rating-count-box .rv-rating-title {
+	width: 60px;
+}
+.vr-reviews-counts .rv-rating-count-box .rv-rating-progress {
+	width: 150px;
+	border: 1px solid #ccc;
+	height: 16px;
+	margin: 0 10px;
+}
+.vr-reviews-counts .rv-rating-count-box .rv-rating-progress .rv-rating-bar {
+	background-image: linear-gradient(rgb(251, 212, 65), rgb(215, 176, 49));
+	height: 100%;
+	width: 0%;
+	-webkit-transition: all 1s ease;
+	-moz-transition: all 1s ease;
+	-o-transition: all 1s ease;
+	-ms-transition: all 1s ease;
+	transition: all 1s ease;
+}
+
+/* new review form */
+.vr-new-review-wrapper {
+	padding: 20px;
+	width: 100%;
+	border-top: 1px solid #ccc;
+	border-bottom: 1px solid #ccc;
+	margin: 15px 0;
+}
+.vr-new-review-wrapper .rv-new-field .rv-new-field-label {
+	font-weight: bold;
+	margin-bottom: 5px;
+}
+.vr-new-review-wrapper .rv-new-field .rv-new-field-value input {
+	margin: 0;
+	border: 1px solid #ddd;
+	border-radius: 3px;
+	background: #fff;
+	padding: 8px 3px 8px 5px;
+}
+.vr-new-review-wrapper .rv-new-top {
+	margin-bottom: 20px;
+}
+.vr-new-review-wrapper .rv-new-top .rv-new-field {
+	display: inline-block;
+	margin-right: 50px;
+	vertical-align: top;
+}
+.vr-new-review-wrapper .rv-new-middle .rv-new-field .rv-new-field-value {
+	display: inline-block;
+	width: 80%;
+}
+.vr-new-review-wrapper .rv-new-middle textarea {
+	width: 100%;
+	height: 120px;
+	max-width: 100%;
+	max-height: 300px;
+
+	background: none repeat scroll 0 0 #fff;
+	border: 1px solid #ddd;
+	border-radius: 3px;
+	padding: 5px;
+	resize: vertical;
+}
+.vr-new-review-wrapper .rv-new-middle .rv-new-charsleft {
+	float: left;
+}
+.vr-new-review-wrapper .rv-new-middle .rv-new-minchars {
+	float: right;
+}
+.vr-new-review-wrapper .rv-new-middle .rv-new-charsleft,
+.vr-new-review-wrapper .rv-new-middle .rv-new-minchars {
+	font-size: 12px;
+	color: #666;
+	margin-top: 5px;
+}
+.vr-new-review-wrapper .rv-new-middle #vrcommentchars,
+.vr-new-review-wrapper .rv-new-middle #vrcommentminchars {
+	font-weight: bold;
+}
+.vr-new-review-wrapper .rv-new-field .rv-new-field-value > .vr-ratingstar-box {
+	float: left;
+	display: inline-block;
+	width: 24px;
+	height: 24px;
+	cursor: pointer;
+}
+.vr-new-review-wrapper .rv-new-field .rv-new-field-value .rating-nostar {
+	background: url(images/rating-star-no.png) left center no-repeat;
+}
+.vr-new-review-wrapper .rv-new-field .rv-new-field-value .rating-hoverstar {
+	background: url(images/rating-star.png) left center no-repeat;
+	opacity: 0.5;
+}
+.vr-new-review-wrapper .rv-new-field .rv-new-field-value .rating-yesstar {
+	background: url(images/rating-star.png) left center no-repeat;
+}
+.vr-new-review-wrapper .rv-new-field .rv-new-field-value #vr-newrating-desc {
+	float: left;
+	margin: 4px 0 0 20px;
+}
+.vr-new-review-wrapper .rv-new-submit {
+	margin-top: 15px;
+}
+
+/* all orders */
+.vr-allorders-switch-tabs {
+	width: 50%;
+	height: 40px;
+}
+.vr-allorders-switch-tabs .switch-box {
+	float: left;
+	border: 1px solid #ccc;	
+	border-left: 0;
+	padding: 15px 0px 15px 1px;
+	text-align: center;
+	width: 48%;
+}
+.vr-allorders-switch-tabs .switch-box:first-child {
+	border-left: 1px solid #ccc;
+	padding-left: 0;
+}
+.vr-allorders-switch-tabs .switch-box.active {
+	background-color: #f6f6f6;
+}
+
+.vr-allorders-tinylist .list-order-bar {
+	padding: 15px 0;
+	display: inline-block;
+	width: 100%;
+	border-bottom: 1px solid #eee;
+}
+.vr-allorders-tinylist .list-order-bar:last-child {
+	border-bottom: 0;
+}
+.vr-allorders-tinylist .list-order-bar > div {
+	display: inline-block;
+	float: left;
+}
+.vr-allorders-tinylist .list-order-bar .order-oid {
+	border: 2px solid #999;
+	padding: 10px 10px;
+	color: #888;
+	font-size: 12px;
+	margin-top: 3px;
+	width: 70px;
+	text-align: center;
+}
+.vr-allorders-tinylist .list-order-bar .order-summary {
+	width: 45%;
+	padding: 3px 0 0 25px;
+}
+.vr-allorders-tinylist .list-order-bar .order-summary .summary-status {
+	font-size: 15px;
+	font-weight: 500;
+}
+.vr-allorders-tinylist .list-order-bar .order-summary .summary-status.confirmed {
+	color: #008000;
+}
+.vr-allorders-tinylist .list-order-bar .order-summary .summary-status.pending {
+	color: #ff7000;
+}
+.vr-allorders-tinylist .list-order-bar .order-summary .summary-status.removed {
+	color: #990000;
+}
+.vr-allorders-tinylist .list-order-bar .order-summary .summary-status.cancelled {
+	color: #f01b17;
+}
+.vr-allorders-tinylist .list-order-bar .order-summary .summary-service {
+	font-size: 13px;
+	margin-top: 3px;
+	color: #999;
+}
+.vr-allorders-tinylist .list-order-bar .order-purchase {
+	width: 20%;
+}
+.vr-allorders-tinylist .list-order-bar .order-purchase .purchase-date {
+	font-size: 14px;
+	font-weight: 500;
+	text-align: right;
+}
+.vr-allorders-tinylist .list-order-bar .order-purchase .purchase-price {
+	font-size: 14px;
+	color: #777;
+	font-weight: 400;
+	margin-top: 3px;
+	text-align: right;
+}
+.vr-allorders-tinylist .list-order-bar .order-view-button {
+	width: 20%;
+	float: right;
+	text-align: right;
+}
+.vr-allorders-tinylist .list-order-bar .order-view-button a {
+	border: 2px solid #6c9bb5;
+	padding: 10px 20px;
+	text-align: center;
+	color: #6c9bb5;
+	display: inline-block;
+}
+.vr-allorders-tinylist .list-order-bar .order-view-button a:hover {
+	color: #fff;
+	background-color: #6c9bb5;
+}
+.vr-allorders-tinylist .list-order-bar .order-view-button a {
+	transition: all 400ms ease-in-out 0s;
+	-moz-transition: all 400ms ease-in-out 0s;
+	-webkit-transition: all 400ms ease-in-out 0s;
+	-o-transition: all 400ms ease-in-out 0s;	
+}
+.vr-allorders-tinylist .list-order-bar .order-view-button a:hover {
+	transition: all 400ms ease-in-out 0s;
+	-moz-transition: all 400ms ease-in-out 0s;
+	-webkit-transition: all 400ms ease-in-out 0s;
+	-o-transition: all 400ms ease-in-out 0s;	
+}
+
+/* track order */
+
+.vr-trackorder-wrapper {
+	width: 100%;
+	padding: 10px 0;
+}
+.vr-trackorder-day-head {
+	padding: 10px 0;
+	border-top: 1px solid #ccc;
+	border-bottom: 1px solid #ccc;
+	text-align: center;
+	font-weight: bold;
+	font-size: 16px;
+}
+
+.vr-trackorder-status {
+	padding: 10px 0;
+}
+.vr-trackorder-status .vr-trackorder-status-time {
+	width: 80px;
+	display: inline-block;
+	text-align: center;
+	font-weight: bold;
+	float: left;
+	margin-top: 1px;
+}
+.vr-trackorder-status .vr-trackorder-status-details {
+	display: inline-block;
+	font-size: 14px;
+	width: 50%;
+}
+.vr-trackorder-status .vr-trackorder-status-ago {
+	margin: 0 10px 0 30px;
+	display: inline-block;
+	font-size: small;
+	font-style: italic;
+	float: right;
+}
+
+/* payment form */
+
+.vr-payments-list {
+	/*width: 90%;*/
+	margin-bottom: 20px;
+}
+
+.vr-payments-list .vr-payment-wrapper {
+	border: 1px solid #ccc;
+	border-bottom: 0;
+}
+.vr-payments-list .vr-payment-wrapper:first-of-type {
+	border-top-left-radius: 10px !important;
+	border-top-right-radius: 10px;
+}
+.vr-payments-list .vr-payment-wrapper:last-child {
+	border-bottom: 1px solid #ccc;
+	border-bottom-left-radius: 10px;
+	border-bottom-right-radius: 10px;
+}
+
+.vr-payments-list .vr-payment-wrapper label {
+	display: inline-block;
+}
+
+.vr-payments-list .vr-payment-wrapper i {
+	margin-left: 10px;
+}
+.vr-payments-list .vr-payment-wrapper i {
+	margin: 10px 5px 0 0;
+	float: left;
+}
+.vr-payments-list .vr-payment-wrapper label {
+	font-size: 16px;
+	display: inline-block;
+}
+.vr-payments-list .vr-payment-wrapper input {
+	display: inline-block;
+}
+
+.vr-payments-list .vr-payment-wrapper .vr-payment-title {
+	padding: 10px;
+}
+.vr-payments-list .vr-payment-wrapper .vr-payment-description {
+	padding: 10px;
+	border-top: 1px solid #ccc;
+}
+.vr-payments-list .vr-payment-wrapper .vr-payment-title input {
+	margin: 10px;
+	float: left;
+}
+.vr-payments-list .vr-payment-title-label img {
+	float: left;
+}
+.vr-payments-list .vr-payment-title-label span {
+	display: inline-block;
+	float: left;
+	margin: 5px;
+}
+
+/* order summary payment position */
+
+.vr-payment-position-top {
+	margin-bottom: 30px;
+}
+
+/* operator edit bill */
+
+.vrfront-list-wrapper {
+	min-height: 300px;
+}
+
+.vrfront-menu-block {
+	margin: 5px;
+	background: #eee;
+	border-radius: 3px;
+	border: 1px solid #eee;
+}
+.vrfront-menu-block.active {
+	border: 1px solid #9a2b2f;
+}
+.vrfront-menu-block, .vrfront-section-block, .vrfront-product-block {
+	width: 23%;
+	display: inline-block;
+	vertical-align: top;
+}
+.vrfront-editbill-menus {
+	width: 75%;
+	display: inline-block;
+	vertical-align: top;
+	margin: 20px 10px 0 0;
+}
+.vrfront-editbill-menus .menu-title {
+	padding: 10px;
+}
+.vrfront-menu-block .menu-image img, .vrfront-section-block .section-image img, 
+.vrfront-product-block .product-image img {
+	width: 100%;
+}
+.vrfront-food-summary {
+	width: 24%;
+	display: inline-block;
+	vertical-align: top;
+	margin: 20px 0 0;
+	background: #f6f6f6;
+	padding: 10px;
+	float: right;
+	border-radius: 3px;
+}
+.vrfront-food-list .food-details {
+	border-bottom: 1px solid #ddd;
+	padding: 5px 0;
+}
+.vrfront-food-list .food-details:last-child {
+	border:0;
+}
+.vrfront-food-list .food-details .food-details-left {
+	font-size: 1em;
+	margin-bottom: 3px;
+	float: left;
+}
+.vrfront-food-list .food-details .food-details-right {
+	text-align: right;
+}
+.vrfront-food-list .food-cost-total {
+	text-align: right;
+	font-size: 1.1em;
+	margin-top: 8px;
+}
+.vrfront-food-list .food-details .food-price {
+	font-weight: bold;
+}
+.vrfront-food-list .food-details .food-remove {
+	display: inline-block;
+	margin-left:5px;
+}
+.vrfront-food-list .food-details .food-remove a i {
+	background: #dd0000;
+	color: #fff;
+	font-weight: 500;
+	border-radius: 50%;
+	width: 20px;
+	height: 20px;
+	display: inline-block;
+	line-height: 20px;
+	text-align: center;
+}
+.vrfront-food-list .food-details .food-quantity {
+	margin-right: 10px;
+	display: in
+}
+.vrfront-menu-block.ghost {
+	width: 128px;
+	height: 100px;
+	vertical-align: top;
+	border: 2px dashed #aaa;
+	border-radius: 5px;
+	font-size: 32px;
+	line-height: initial;
+}
+.vrfront-menu-block.ghost i {
+	position: relative;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	color: #aaa;
+	font-size: 32px;
+}
+.vrfront-menu-sections {
+	margin-top: 10px;
+	border-top: 2px dashed #eee;
+	padding-top: 10px;
+}
+.vrfront-section-block {
+	border: 1px solid #eaeaea;
+	background: #eaeaea;
+	border-radius: 3px;
+	margin: 5px;
+}
+.vrfront-section-block.active {
+	border: 1px solid #9a2b2f;
+}
+.vrfront-editbill-menus .menu-title, .vrfront-section-block .section-title, .vrfront-product-block .product-title {
+	padding: 10px;
+}
+.vrfront-section-block .section-image, .vrfront-product-block .product-image {
+	height: 84px; 
+	overflow: hidden;
+}
+.vrfront-section-products {
+	margin-top: 10px;
+	border-top: 2px dashed #eee;
+	padding: 10px;
+	text-align: center;
+}
+.vrfront-product-block {
+	margin: 5px;
+	border:1px solid #ddd;
+}
+.vrfront-product-block.active {
+	border: 1px solid #9a2b2f;
+}
+.vrfront-product-block .product-title {
+	text-align: center;
+}
+#vr-product-details {
+	margin-top: 20px;
+	background: #eee;
+}
+#vr-product-details > * {
+	padding-left: 20px;
+	padding-right: 20px; 
+}
+#vr-product-details > div:first-child {
+	padding-top: 20px;
+}
+#vr-product-details h4 {
+	font-weight: bold;
+	font-size: 1.2em;
+	margin-bottom: 10px;
+}
+#vr-product-details .vrfront-field {
+	margin: 8px 0;
+}
+#vr-product-details .vrtk-addtocart-button {
+	margin-bottom: 20px;
+	border-radius: 5px;
+	padding: 10px 25px;
+	font-size: 14px;
+	text-transform: uppercase;
+	background: #951414;
+	cursor: pointer;
+	border: 0;
+	color: #fff;
+	margin-top: 10px;
+}
+#vr-product-details .field-label  {
+	width: 20%;
+	display: inline-block;
+}
+#vr-product-details .field-value textarea {
+	border:1px solid #ddd;
+	padding: 10px;
+}
+#vr-product-details .vrfront-field:last-of-type .field-label {
+	width: auto;
+}
+#vr-product-details .vrfront-field .currency, .vrfront-manage-form .currency {
+	display: inline-block;
+	position: relative;
+}
+#vr-product-details .vrfront-field input {
+	min-width: 174px;
+}
+#vr-product-details .vrfront-field .currency span {
+	position: absolute;
+	top: 6px;
+	left: 8px;
+}
+.vrfront-manage-form .currency span {
+	position: absolute;
+	top: 9px;
+	left: 8px;
+	color: #888;
+}
+#vr-product-details .vrfront-field input[type="number"], .vrfront-manage-form input[type="number"] {
+	text-align: right;
+}
+#vr-product-details .vrfront-field .field-value {
+	display: inline-block;
+}
+#vr-product-details .vrfront-field .vre-select {
+	min-width: 174px;
+}
+.vrfront-manage-form .vre-select-wrapper .vre-select {
+	margin-top: 0;
+}
+.vrfront-manage-form .vre-select-wrapper .dropdown-short, #vrsearchinputdiv .dropdown-short {
+	min-width: inherit;
+	padding-right: 20px;
+}
+
+/* loading overlay */
+
+.vr-loading-overlay.lock {
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	background-color: rgba(63, 63, 63, 0.80);
+	z-index: 10000;
+}
+.vr-loading-box {
+	background: url('./images/loading.gif');
+	width: 120px;
+	height: 120px;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+.vr-loading-box-message {
+	position: absolute;
+	top: 30%;
+	left: 50%;
+	color: #fff;
+	transform: translate(-50%, -50%);
+	text-align: center;
+	font-weight: bolder;
+	border: 1px solid #fff;
+	padding: 10px 20px;
+}
+
+/* 1.7.4 */
+.vrmenu-backdiv {
+	float: left;
+}
+.vrmenu-print-btn {
+	float: right;
+}
+.vrmenu-print-btn i.fa-print {
+	font-size: 32px;
+}
+.dash-table-wrapper {
+	overflow: hidden;
+	overflow-x: scroll;
+	border: 1px solid #eee;
+	border-radius: 2px;
+}
+.dash-table-wrapper table {
+	width: 100%;
+}
+.dash-table-wrapper table th {
+	padding: 10px;
+	background: #eee;
+	border-bottom: 1px solid #ddd;
+}
+.dash-table-wrapper table td {
+	padding: 10px;
+	border-bottom: 1px solid #eee;
+}
+.dash-table-wrapper table td .td-primary {
+	font-weight: bold;
+}
+.dash-table-wrapper table td .td-secondary {
+	font-size: .8em;
+	color: #777;
+}
+.dash-table-wrapper table .badge {
+	padding: 4px 5px;
+	border-radius: 2px;
+}
+.dash-table-wrapper table .actions-group {
+	margin-left: 10px;
+}
+
+.map-table-inspector .reservation-operator-wrapper .vre-select {
+	min-width: inherit;
+	width: 100%;
+}
+
+/* order dishes */
+
+.vre-order-dishes-wrapper .vre-order-dishes-menu-selection .vre-order-dishes-menu-picker {
+	display: inline-block;
+	width: calc(33% - 10px);
+	margin: 5px;
+	vertical-align: top;
+	border: 1px solid #ddd;
+	cursor: pointer;
+}
+.vre-order-dishes-wrapper .vre-order-dishes-menu-selection .vre-order-dishes-menu-picker:hover,
+.vre-order-dishes-wrapper .vre-order-dishes-menu-selection .vre-order-dishes-menu-picker.active {
+	border-color: #951414;
+}
+.vre-order-dishes-menu-picker .order-menu-title {
+	padding: 10px;
+}
+.vre-order-dishes-menus {
+	margin-top: 30px;
+}
+.vre-order-dishes-menu .dishes-menu-description {
+	color: #999;
+	font-size: .9em;
+}
+.vre-order-dishes-section .dishes-section-description {
+	color: #999;
+	font-size: .9em;
+}
+.vre-order-dishes-products {
+	margin: 20px 0;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+}
+.vre-order-dishes-product-inner {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	height: 100%;
+}
+.vre-order-dishes-products .vre-order-dishes-product {
+	display: inline-block;
+	vertical-align: top;
+	width: calc(50% - 5px);
+	margin: 5px 0;
+	border: 1px solid #eee;
+	border-radius: 4px;
+	box-shadow: 0 0 5px rgba(0,0,0,.05);
+	padding: 10px;
+	min-height: 150px;
+}
+.vre-order-dishes-products .vre-order-dishes-product.clickable {
+	cursor: pointer;
+}
+.vre-order-dishes-products .vre-order-dishes-product.clickable:hover {
+	box-shadow: 0 0 20px rgba(0,0,0,.15);
+}
+.vre-order-dishes-products .vre-order-dishes-product .dishes-product-text {
+	display: inline-block;
+	height: 100%;
+	position: relative;
+	width: 100%;
+}
+.vre-order-dishes-products .vre-order-dishes-product .dishes-product-text:not(:only-of-type) {
+	width: calc(100% - 100px);
+}
+.vre-order-dishes-products .vre-order-dishes-product .dishes-product-image {
+    display: inline-block;
+    width: 96px;
+    height: 96px;
+    background-position: center center;
+    background-size: cover;
+}
+.vre-order-dishes-products .vre-order-dishes-product .dishes-product-description {
+	font-size: .9em;
+}
+.vre-order-dishes-products .vre-order-dishes-product .dishes-product-name {
+	font-weight: bold;
+	margin-bottom: 6px;
+	font-size: 1.1em;
+
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+}
+.vre-order-dishes-products .vre-order-dishes-product .dishes-product-price {
+	position: absolute;
+	left: 0;
+	bottom: 0;
+	font-weight: 500;
+}
+
+/* order dishes cart */
+
+.vre-order-dishes-cart {
+	position: fixed;
+	bottom: 10px;
+	right: 10px;
+	z-index: 9999;
+	width: 400px;
+	padding: 10px 5px;
+}
+.vre-order-dishes-cart .dishes-cart-minified {
+	padding: 14px 20px !important;
+	width: 100%;
+	font-size: 16px !important;
+}
+.vre-order-dishes-cart .dishes-cart-minified i {
+	float: left;
+}
+.vre-order-dishes-cart .dishes-cart-collapsed {
+	background: #f1f2f8;
+	border: 1px solid #ddd;
+	padding: 10px 10px 14px 10px;
+	margin-bottom: -4px;
+	display: none;
+}
+.vre-order-dishes-cart .dishes-cart-collapsed .dishes-cart-items {
+	overflow-y: scroll;
+	max-height: calc(100vh - 170px);
+}
+.vre-order-dishes-cart .dishes-cart-collapsed .dishes-cart-item-row {
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+	margin: 8px 0;
+}
+.vre-order-dishes-cart .dishes-cart-collapsed .dishes-cart-item-row .dish-item-quantity {
+	width: 10%;
+	color: #888;
+}
+.vre-order-dishes-cart .dishes-cart-collapsed .dishes-cart-item-row .dish-item-name {
+	width: calc(65% - 20px);
+}
+.vre-order-dishes-cart .dishes-cart-collapsed .dishes-cart-item-row .dish-item-price {
+	width: 25%;
+	text-align: right;
+}
+.vre-order-dishes-cart .dishes-cart-collapsed .dishes-cart-item-row .dish-item-delete {
+	width: 20px;
+	text-align: right;
+}
+.vre-order-dishes-cart .dishes-cart-collapsed .dishes-cart-item-row .dish-item-name > span {
+	display: block;
+}
+.vre-order-dishes-cart .dishes-cart-collapsed .dishes-cart-item-row .dish-item-name .varname {
+	font-size: smaller;
+	color: #888;
+}
+.vre-order-dishes-cart .dishes-transmit-wrapper {
+	padding: 0px 5px;
+	margin-bottom: 15px;
+	display: flex;
+	justify-content: space-between;
+}
+.vre-order-dishes-cart .dishes-transmit-wrapper button {
+	flex: 1;
+	margin: 0 2px;
+	word-wrap: break-word;
+}
+.vre-order-dishes-cart .dishes-transmit-wrapper button#vre-closebill-btn {
+	max-width: calc(50% - 4px);
+}
+
+/* add dish overlay */
+
+#vrdishoverlay .vr-modal-box {
+	max-width: 640px;
+}
+#vrdishoverlay .vr-modal-body,
+#vrpaymentoverlay .vr-modal-body {
+	height: calc(100% - 90px);
+}
+
+#vrdishoverlay .dish-overlay-item-details {
+	display: flex;
+	justify-content: space-between;
+	margin-bottom: 10px;
+}
+#vrdishoverlay .dish-overlay-item-image {
+	display: inline-block;
+	width: 128px;
+	height: 128px;
+	background-position: center center;
+	background-size: cover;
+}
+#vrdishoverlay .dish-overlay-item-text:not(:only-of-type) {
+	width: calc(100% - 140px);
+}
+#vrdishoverlay .dish-overlay-item-text .dish-overlay-item-name {
+	font-size: 1.1em;
+	font-weight: bold;
+}
+
+#vrdishoverlay .vrtk-additem-notes-box {
+	width: 100%;
+	float: none;
+	margin-bottom: 10px;
+}
+
+#vrdishoverlay .vrtk-additem-variations-box {
+	margin-bottom: 10px;
+}
+#vrdishoverlay .vrtk-additem-variations-box p {
+	margin: 0 0 5px 0;
+}
+#vrdishoverlay .vrtk-additem-variations-box ul {
+	margin: 0;
+	list-style: none;
+}
+#vrdishoverlay .vrtk-additem-variations-box li {
+	margin-left: 4px;
+}
+#vrdishoverlay .vrtk-additem-variations-box li .var-charge {
+	float: right;
+	font-weight: bold;
+}
+
+#vrdishoverlay .vrtk-additem-quantity-box {
+	text-align: center;
+}
+#vrdishoverlay .vrtk-additem-quantity-box-inner,
+#vrpaymentoverlay .vrtk-additem-quantity-box-inner {
+	width: auto;
+	display: inline-block;
+}
+#vrdishoverlay .vrtk-additem-quantity-box-inner .quantity-actions,
+#vrpaymentoverlay .vrtk-additem-quantity-box-inner .quantity-actions {
+	float: none;
+}
+
+#vrpaymentoverlay .vrtk-ceil-tip {
+	display: inline-block;
+	margin-left: 10px;
+}
+
+.vr-modal-body .dish-item-overlay-footer {
+	position: absolute;
+	bottom: 10px;
+	text-align: right;
+	width: calc(100% - 30px);
+	display: flex;
+	justify-content: space-between;
+}
+.vr-modal-body .dish-item-overlay-footer button[data-role="save"] {
+	width: calc(65% - 5px);
+	max-width: 400px;
+}
+.vr-modal-body .dish-item-overlay-footer button[data-role="close"] {
+	width: calc(35% - 5px);
+	max-width: 215px;
+}
+
+.vrdash-container.kitchen {
+	display: flex;
+	width: 100%;
+}
+.vr-kitchen-wall {
+    background-color: #f1f2f8;
+    border: 1px solid #ddd;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 5px;
+    flex: 1;
+}
+.vr-kitchen-wall .kitchen-wall-block-wrap {
+    width: calc(100% / 3 - 10px);
+    margin: 5px;
+}
+.vr-kitchen-wall .kitchen-wall-block {
+    border: 1px solid #ccc;
+    background-color: #fff;
+}
+.vr-kitchen-wall .kitchen-wall-block .wall-block-head {
+    border-bottom: 1px solid #ccc;
+    background-color: #e2e2e2;
+    display: flex;
+    justify-content: space-between;
+}
+.vr-kitchen-wall .kitchen-wall-block .wall-block-head .block-head-text {
+    padding: 5px;
+    flex: 1;
+    display: flex;
+    justify-content: space-between;
+}
+.vr-kitchen-wall .kitchen-wall-block .wall-block-head .block-head-room {
+    font-weight: 500;
+}
+.vr-kitchen-wall .kitchen-wall-block .wall-block-head .block-head-actions {
+    text-align: right;
+    border-left: 1px solid #ccc;
+    margin-left: 5px;
+    padding: 5px 10px;
+}
+.vr-kitchen-wall .kitchen-wall-block .wall-block-list .block-list-dish {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px;
+    border-bottom: 1px solid #ddd;
+    min-height: 24px;
+}
+.vr-kitchen-wall .kitchen-wall-block .wall-block-list .block-list-dish .list-dish-quantity {
+    width: 32px;
+    text-align: center;
+}
+.vr-kitchen-wall .kitchen-wall-block .wall-block-list .block-list-dish .list-dish-main {
+    flex: 1;
+}
+.vr-kitchen-wall .kitchen-wall-block .wall-block-list .block-list-dish .list-dish-name {
+    font-weight: bold;
+}
+.vr-kitchen-wall .kitchen-wall-block .wall-block-list .block-list-dish .list-dish-notes {
+    font-size: smaller;
+    font-style: italic;
+}
+.vr-kitchen-wall .kitchen-wall-block .wall-block-list .block-list-dish .list-dish-code {
+    width: 32px;
+    text-align: center;
+}
+.vr-kitchen-wall .kitchen-wall-block .wall-block-list .block-list-dish:last-child {
+    border-bottom: 0;
+}
+.vr-kitchen-wall .kitchen-wall-block .wall-block-list .block-list-dish .list-dish-code .vrrescodelink img {
+	height: 28px;
+}
+.vr-kitchen-waitlist {
+    width: 260px;
+    border: 1px solid #ccc;
+    border-left: 0;
+    background: #f8f8f8;
+}
+.vr-kitchen-waitlist .kitchen-waitlist-head {
+    padding: 10px;
+    border-bottom: 1px solid #ccc;
+    background: #898b8f;
+    color: #fff;
+    font-size: 16px;
+    font-weight: bold;
+}
+.vr-kitchen-waitlist .kitchen-waitlist-groups .waitlist-group-title {
+    padding: 5px;
+    border-bottom: 1px solid #ccc;
+    background-color: #e3e3e3;
+    display: flex;
+    justify-content: space-between;
+}
+.vr-kitchen-waitlist .kitchen-waitlist-groups .waitlist-group-title .waitlist-group-room {
+    font-weight: 500;
+}
+.vr-kitchen-waitlist .kitchen-waitlist-groups .waitlist-group-dish {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px;
+    border-bottom: 1px solid #ccc;
+    min-height: 24px;
+}
+.vr-kitchen-waitlist .kitchen-waitlist-groups .waitlist-group-dish .waitlist-group-dish-quantity {
+    width: 32px;
+    text-align: center;
+}
+.vr-kitchen-waitlist .kitchen-waitlist-groups .waitlist-group-dish .waitlist-group-dish-name {
+    font-weight: bold;
+    flex: 1;
+}
+.vr-kitchen-waitlist .kitchen-waitlist-groups .waitlist-group-dish .waitlist-group-dish-code {
+    width: 32px;
+    text-align: center;
+}
+.vr-kitchen-waitlist .kitchen-waitlist-groups .waitlist-group-dish .waitlist-group-dish-code .vrrescodelink img {
+    height: 28px;
+}
+.vr-kitchen-waitlist .waitlist-group-dish:last-child {
+    border-bottom: 0;
+}
+.vr-kitchen-no-result {
+	border: 1px solid #ffd90f;
+	background: #ffc;
+	padding: 10px;
+	display: inline-block;
+	width: 100%;
+	margin-top: 20px;
+	box-sizing: border-box;
+}
+
+.vrpaymentnotes p:last-child {
+	margin-bottom: 0;
+}
+
+@media print {
+	.vrmenu-backdiv, .vrmenu-print-btn, .vrmenu-sectionsbar {
+		display: none;
+	}
+	.vrmenu-detailsprodlist, .vrmenu-detailsprod {
+		border: 0 !important;
+		background: #fff !important;
+	}
+	.vrmenu-detailsheadsubimage, .vrmenu-detailssectionsubimage, .vrmenu-detailsprodsubimage {
+		float: none !important;
+		display: block !important;
+	}
+	.vrmenu-detailsheadsubdesc, .vrmenu-detailssectionsubdesc, .vr-menudetailsprodsubnamedesc {
+		padding-left: 0px !important;
+		display: block;
+		width: 100% !important;
+	}
+}
+
+/* hack needed to prevent extra-page printing on Chrome */
+@media print and (-webkit-min-device-pixel-ratio: 0) {
+	html, body {
+		border: 1px solid white;
+		height: 99%;
+		page-break-after: avoid;
+		page-break-before: avoid;
+	}
+}

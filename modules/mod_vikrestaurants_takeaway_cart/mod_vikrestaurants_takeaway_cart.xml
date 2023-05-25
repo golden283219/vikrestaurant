@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension type="module" version="2.5.0" client="site" method="upgrade">
+	<name>VikRestaurants Take-Away Cart</name>
+	<author>Extensionsforjoomla.com</author>
+	<creationDate>January 12, 2023</creationDate>
+	<copyright>Copyright (C) 2023 e4j - extensionsforjoomla.com . All Rights Reserved</copyright>
+	<license>http://www.gnu.org/licenses/gpl-2.0.html GNU/GPL</license>
+	<authorEmail>dev@extensionsforjoomla.com</authorEmail>
+	<authorUrl>https://extensionsforjoomla.com</authorUrl>
+	<version>1.5.3</version>
+	<description>Module to Show the Take-Away Cart Form for VikRestaurants 1.8.2 or newer.</description>
+
+	<files>
+		<filename module="mod_vikrestaurants_takeaway_cart">mod_vikrestaurants_takeaway_cart.php</filename>
+		<filename>mod_vikrestaurants_takeaway_cart.css</filename>
+		<filename>mod_vikrestaurants_takeaway_cart.js</filename>
+		<filename>index.html</filename>
+		<folder>images</folder>
+		<folder>tmpl</folder>
+	</files>
+
+	<languages>
+		<language tag="en-GB">languages/en-GB.mod_vikrestaurants_takeaway_cart.ini</language>
+	</languages>
+
+	<config>
+
+		<fields name="params">
+
+			<fieldset name="basic">	
+
+				<field
+					name="carttitle"
+					type="text"
+					default=""
+					label="VRTK_CART_TITLE"
+					description="VRTK_CART_TITLE_DESC"
+				/>
+
+				<field
+					name="usefixed"
+					type="radio"
+					default="0"
+					label="VRTK_CART_FOLLOWSCROLL"
+					description="VRTK_CART_FOLLOWSCROLL_DESC"
+					class="btn-group btn-group-yesno"
+					layout="joomla.form.field.radio.switcher"
+				>
+					<option value="0">JNO</option>
+					<option value="1">JYES</option>
+				</field>
+
+				<field
+					name="mobilesticky"
+					type="radio"
+					default="0"
+					label="VRTK_CART_MOBILESTICKY"
+					description="VRTK_CART_MOBILESTICKY_DESC"
+					class="btn-group btn-group-yesno"
+					layout="joomla.form.field.radio.switcher"
+				>
+					<option value="0">JNO</option>
+					<option value="1">JYES</option>
+				</field>
+
+				<field
+					name="itemid"
+					type="menuitem"
+					default="0"
+					label="VRTK_CART_MENUITEM"
+					description="VRTK_CART_MENUITEM_DESC"
+				/>
+
+			</fieldset>
+
+			<fieldset name="advanced">	
+				
+				<field
+					name="moduleclass_sfx"
+					type="text"
+					default=""
+					label="COM_MODULES_FIELD_MODULECLASS_SFX_LABEL"
+				/>
+
+				<field
+					name="layout"
+					type="modulelayout"
+					label="JFIELD_ALT_LAYOUT_LABEL"
+					description="JFIELD_ALT_MODULE_LAYOUT_DESC"
+					class="form-select"
+				/>
+
+			</fieldset>
+			
+		</fields>
+
+	</config>
+
+	<updateservers>
+		<server type="extension" name="VikRestaurants Modules Update Site" priority="1">https://extensionsforjoomla.com/vikapi/?task=joomla.updateserver&amp;sku=vre-tkcart</server>
+	</updateservers>
+
+</extension>

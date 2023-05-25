@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension type="module" version="2.5.0" client="site" method="upgrade">
+	<name>VikRestaurants Quick Reservation</name>
+	<author>Extensionsforjoomla.com</author>
+	<creationDate>January 12, 2023</creationDate>
+	<copyright>Copyright (C) 2023 e4j - extensionsforjoomla.com . All Rights Reserved</copyright>
+	<license>http://www.gnu.org/licenses/gpl-2.0.html GNU/GPL</license>
+	<authorEmail>dev@extensionsforjoomla.com</authorEmail>
+	<authorUrl>https://extensionsforjoomla.com</authorUrl>
+	<version>1.5.3</version>
+	<description>Module to schedule quick reservations in a single form for VikRestaurants 1.8.3 or newer.</description>
+
+	<files>
+		<filename module="mod_vikrestaurants_quickres">mod_vikrestaurants_quickres.php</filename>
+		<filename>mod_vikrestaurants_quickres.css</filename>
+		<filename>helper.php</filename>
+		<filename>index.html</filename>
+		<folder>images</folder>
+		<filename>tmpl/default.php</filename>
+		<filename>tmpl/index.html</filename>
+	</files>
+
+	<languages>
+		<language tag="en-GB">languages/en-GB.mod_vikrestaurants_quickres.ini</language>
+	</languages>
+
+	<config>
+
+		<fields name="params">
+			
+			<fieldset name="basic">
+
+				<field
+					name="itemid"
+					type="menuitem"
+					default="0"
+					label="VR_QUICK_MENU_ITEM"
+					description="VR_QUICK_MENU_ITEM_DESC"
+				>
+					<option value="">COM_MODULES_OPTION_SELECT_MENU_ITEM</option>
+				</field>
+			
+			</fieldset>
+			
+			<fieldset name="settings">
+
+				<field
+					name="session_lifetime"
+					type="number"
+					default="15"
+					label="VR_QUICK_SESSION"
+					description="VR_QUICK_SESSION_DESC"
+				/>
+				
+				<field
+					name="chooseroom"
+					type="radio"
+					default="0"
+					label="VR_QUICK_ROOMS"
+					description="VR_QUICK_ROOMS_DESC"
+					class="btn-group btn-group-yesno"
+					layout="joomla.form.field.radio.switcher"
+				>
+					<option value="0">JNO</option>
+					<option value="1">JYES</option>
+				</field>
+				
+				<field
+					name="head_title"
+					type="text"
+					default=""
+					hint="Quick Reservation"
+					label="VR_QUICK_HEADTITLE"
+					description="VR_QUICK_HEADTITLE_DESC"
+				/>
+				
+				<field
+					name="head_subtitle"
+					type="text"
+					default=""
+					hint="Reserve in less than 30 seconds"
+					label="VR_QUICK_HEADSUBTITLE"
+					description="VR_QUICK_HEADSUBTITLE_DESC"
+				/>
+				
+				<field
+					name="head_image"
+					type="text"
+					default=""
+					label="VR_QUICK_IMAGEURL"
+					description="VR_QUICK_IMAGEURL_DESC"
+				/>
+				
+				<field
+					name="auto_redirect"
+					type="radio"
+					default="0"
+					label="VR_QUICK_AUTOREDIRECT"
+					description="VR_QUICK_AUTOREDIRECT_DESC"
+					class="btn-group btn-group-yesno"
+					layout="joomla.form.field.radio.switcher"
+				>
+					<option value="0">JNO</option>
+					<option value="1">JYES</option>
+				</field>
+
+				<field
+					name="order_summary"
+					type="text"
+					default="Thank you for your reservation!"
+					label="VR_QUICK_ORDERSUMMARY"
+					description="VR_QUICK_ORDERSUMMARY_DESC"
+					showon="auto_redirect:0"
+				/>
+
+				<field
+					name="recaptcha"
+					type="radio"
+					default="0"
+					label="VR_QUICK_RECAPTCHA"
+					description="VR_QUICK_RECAPTCHA_DESC"
+					class="btn-group btn-group-yesno"
+					layout="joomla.form.field.radio.switcher"
+				>
+					<option value="0">JNO</option>
+					<option value="1">JYES</option>
+				</field>
+			
+			</fieldset>
+
+			<fieldset name="advanced">	
+				
+				<field
+					name="moduleclass_sfx"
+					type="text"
+					default=""
+					label="COM_MODULES_FIELD_MODULECLASS_SFX_LABEL"
+				/>
+
+				<field
+					name="layout"
+					type="modulelayout"
+					label="JFIELD_ALT_LAYOUT_LABEL"
+					description="JFIELD_ALT_MODULE_LAYOUT_DESC"
+					class="form-select"
+				/>
+
+			</fieldset>
+			
+		</fields>
+
+	</config>
+
+	<updateservers>
+		<server type="extension" name="VikRestaurants Modules Update Site" priority="1">https://extensionsforjoomla.com/vikapi/?task=joomla.updateserver&amp;sku=vre-quick</server>
+	</updateservers>
+
+</extension>

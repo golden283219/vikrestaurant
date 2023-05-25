@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<metadata>
+	<layout title="COM_VIKRESTAURANTS_TAKEAWAY_VIEW_DEFAULT_TITLE">
+		<message>COM_VIKRESTAURANTS_TAKEAWAY_VIEW_DEFAULT_DESC</message>
+	</layout>
+	<view title="Take-away" >
+		<message><![CDATA[VikRestaurants]]></message>
+	</view>
+	<state>
+		<name>Takeaway</name>
+		<description>VikRestaurants</description>
+	</state>
+	<fields name="request" >
+		<fieldset name="request">
+			<field 
+				name="takeaway_menu"
+				type="sql"
+				label="COM_VIKRESTAURANTS_TKMENU_FIELD_SELECT_TITLE"
+				description="COM_VIKRESTAURANTS_TKMENU_FIELD_SELECT_TITLE_DESC"
+				required="false"
+				query="SELECT `m`.`id`, `m`.`title`
+				FROM `#__vikrestaurants_takeaway_menus` AS `m`
+				ORDER BY `m`.`ordering` ASC"
+				key_field="id"
+				value_field="title"
+			>
+				<option value=""></option>
+			</field>
+		</fieldset>
+	</fields>
+</metadata>

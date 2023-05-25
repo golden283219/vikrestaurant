@@ -1,0 +1,625 @@
+@media (min-width: 1200px) {
+
+  .container,
+  .sppb-row-container,
+  .sppb-container {
+    max-width: 1350px;
+  }
+}
+
+@media (max-width:1600px) {
+
+  body.ltr .sp-megamenu-parent .sp-dropdown.sp-dropdown-main.sp-menu-right {
+    left: auto;
+    right: 0px;
+}
+}
+
+
+@media (max-width:1199px) and (min-width:992px) {
+  .recipe-details-wrapper {
+    padding-right: 100px !important;
+    padding-left: 100px !important;
+  }
+
+  .recipe-info-wrapper {
+    margin-right: -100px !important;
+    margin-left: -100px !important;
+  }
+
+  .com-content.view-category .article>a:before {
+    bottom: 44px;
+  }
+}
+
+@media (max-width:1199px) {
+  .gourmand-hero-slider.sppb-addon-sp-slider .sp-slider-content-align-left {
+    padding: 40px 50px;
+    max-width: 610px;
+    margin-top: 68px;
+  }
+
+  .gourmand-hero-slider.sppb-addon-sp-slider .sp-slider-custom-dot-indecators {
+    left: 640px;
+  }
+
+  .gourmand-hero-slider.sppb-addon-sp-slider .sp-slider-custom-dot-indecators .sp-text-thumbnail-list {
+    padding: 40px 25px 40px 25px;
+  }
+
+  .gourmand-hero-slider.sppb-addon-sp-slider .sp-indicator-container {
+    width: 610px;
+  }
+
+  .com-content.view-category .article .article-header h2 {
+    margin: 0px 0px 30px 0px;
+    font-size: 30px;
+    line-height: 45px;
+  }
+
+  .com-content.view-article #sp-main-body .article-header h1 {
+    font-weight: bold;
+    font-size: 60px;
+    line-height: 90px;
+  }
+
+  .related-article-list-container .related-article-list .article-header h2 {
+    font-size: 26px;
+    line-height: 36px;
+  }
+
+  .view-login #sp-main-body,
+  .view-registration #sp-main-body {
+    background: none;
+  }
+
+  .com-content.view-category .article {
+    display: block;
+  }
+
+  .com-content.view-category .article>a {
+    display: block;
+  }
+
+  .com-content.view-category .article>a:before {
+    bottom: -7px;
+  }
+
+  .view-category.gourmand-recipe-category-list #sp-main-body .container .article-list-top ul.menu li {
+    padding: 35px;
+  }
+
+  .view-category.gourmand-recipe-category-list #sp-main-body .container .blog .article-list {
+    width: inherit;
+    margin: 0 20px;
+  }
+
+  .gourmand-recipe-list .sppb-addon-article .sppb-article-info-wrap h3 {
+    font-weight: bold;
+    font-size: 30px;
+    line-height: 40px;
+    margin-bottom: 30px;
+  }
+
+  .sp-megamenu-parent>li:not(:last-child)>a,
+  .sp-megamenu-parent>li:not(:last-child)>span {
+    padding-right: 20px;
+  }
+
+  .sp-page-title .sp-page-title-heading {
+    width: 60%;
+  }
+
+  .com-content.view-category .article .article-title-wrapper {
+    margin-top: 30px;
+  }
+
+  .gourmand-slider .sp-slider-content-align-left {
+    width: 100%;
+  }
+
+  .gourmand-slider > .container {
+    bottom: 150px;
+}
+
+}
+
+@media (max-width: 991px) {
+  .gm-food-slider .sppb-sp-slider-image {
+    margin-top: -30px;
+  }
+
+  .gm-food-slider div[class*="sp-slider-content-align"] {
+    padding-left: 160px;
+  }
+
+  .container,
+  .sppb-row-container {
+    max-width: 1350px;
+  }
+
+  .gourmand-hero-slider.sppb-addon-sp-slider .sp-slider-custom-dot-indecators .sp-text-thumbnail-list {
+    margin: 0px;
+    padding: 20px 20px 30px 20px;
+    margin-right: 15px;
+  }
+
+  .gourmand-hero-slider.sppb-addon-sp-slider .sp-slider-custom-dot-indecators .sp-text-thumbnail-list .sp-slider-text-thumb-number {
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    margin-bottom: 20px;
+  }
+
+  .gourmand-hero-slider.sppb-addon-sp-slider .sp-slider-custom-dot-indecators {
+    left: 0px;
+    bottom: 5px;
+  }
+
+  .gourmand-hero-slider.sppb-addon-sp-slider .sp-indicator-container {
+    left: 0px !important;
+    width: 100%;
+  }
+
+
+
+  .gourmand-hero-slider.sppb-addon-sp-slider .sp-slider-content-align-left {
+    padding: 40px 50px;
+    max-width: 710px;
+    margin-top: 0px;
+  }
+
+  .gourmand-hero-slider.sppb-addon-sp-slider .sp-slider-outer-stage {
+    margin-bottom: 100px;
+  }
+
+
+  html.coming-soon .coming-soon-content {
+    font-weight: 800;
+    font-size: 50px;
+    line-height: 80px;
+  }
+
+  html.coming-soon .coming-soon-title,
+  html.offline .coming-soon-title {
+    font-weight: 300;
+    font-size: 60px;
+    line-height: 90px;
+  }
+
+  // Coming soon
+  html.coming-soon,
+  html.offline {
+    #coming-soon-countdown {
+
+      .coming-soon-days,
+      .coming-soon-hours,
+      .coming-soon-minutes,
+      .coming-soon-seconds {
+        margin: 0;
+        float: left;
+        width: 25%;
+
+        .coming-soon-number {
+          font-size: 50px;
+          line-height: 90px;
+          padding: 0px 10px;
+        }
+      }
+    }
+  }
+
+  .recipe-info-wrapper .sppb-row>div:not(:last-child) {
+    border: none;
+  }
+
+  .com-content.view-category #sp-left {
+    padding-right: 15px;
+    margin-bottom: 60px;
+  }
+
+  .sp-page-title .sp-page-title-heading {
+    font-weight: bold;
+    font-size: 40px;
+    line-height: 60px;
+  }
+
+  .pagination-wrapper .pagination .page-link {
+    font-size: 20px;
+    padding: 5px 15px;
+  }
+
+  .article-details .article-full-image {
+    margin-bottom: 70px;
+  }
+
+
+  .related-article-list-container .related-article-list .article-header h2 {
+    font-size: 20px;
+    line-height: 30px;
+  }
+
+  .related-article-list-container .related-article-list .row>div {
+    flex: 0 0 50%;
+    max-width: 50%;
+  }
+
+  .gourmand-article-carousel .bx-controls .bx-controls-direction a {
+    font-size: 14px;
+  }
+
+  .gourmand-article-carousel .bx-controls .bx-controls-direction {
+    position: absolute;
+    right: 100px;
+  }
+
+  .view-login,
+  .view-registration,
+  .view-profile {
+    #sp-component {
+      flex: 0 0 50%;
+      max-width: 50%;
+    }
+  }
+
+  aside {
+    padding-top: 100px;
+  }
+
+  .view-category.gourmand-recipe-category-list #sp-main-body .container .article-list-top ul.menu li {
+    padding: 20px;
+  }
+
+  .view-category.gourmand-recipe-category-list #sp-main-body .container .article-list-top {
+    margin-bottom: 40px;
+  }
+
+  .view-category.gourmand-recipe-category-list #sp-main-body .container .blog .article-list .article .article-body .article-header h2 {
+    font-size: 22px;
+    line-height: 34px;
+    margin: 0;
+  }
+
+  .gourmand-recipe-list .sppb-addon-article .sppb-article-info-wrap h3 {
+    font-weight: bold;
+    font-size: 30px;
+    line-height: 40px;
+    margin-bottom: 30px;
+  }
+
+  .gourmand-videos {
+    .sppb-row {
+      >div {
+        flex: 0 0 50%;
+        max-width: 50%;
+      }
+    }
+  }
+
+  .recipe-tips ul.latestnews li a .module-content-wrap {
+    width: 100%;
+  }
+
+
+  .sp-page-title .sp-page-title-heading {
+    width: 100%;
+  }
+
+  .view-category.gourmand-blog-list #sp-main-body main[role=main] {
+    padding-right: 0px;
+    padding-top: 100px;
+  }
+
+  .pagination-wrapper {
+    margin-top: 30px;
+  }
+
+  .view-category.gourmand-blog-list #sp-main-body #sp-right .recipe-tips .sp-module-content ul.latestnews li a .module-content-wrap {
+    width: 100%;
+  }
+
+  .gourmand-slider > .container {
+   max-width: 720px;
+}
+
+}
+
+
+
+/*==========================================================================================*/
+/*========================     Below 768Px      ===========================================*/
+@media (max-width: 767px) {
+
+  // Buttons
+  body .sppb-btn,
+  body .btn {
+    padding: 13px 30px 13px 30px;
+
+    // 3d btn
+    &.sppb-btn-3d {
+      padding-top: 9px;
+      padding-bottom: 10px;
+    }
+
+    //button extra large
+    &.sppb-btn-xlg {
+      padding: 13px 40px 13px 40px;
+      font-size: 14px;
+    }
+
+    // button large
+    &.sppb-btn-lg {
+      padding: 13px 35px 13px 35px;
+    }
+
+    //button medium
+    &.sppb-btn-sm {
+      padding: 10px 15px 10px 15px;
+    }
+
+    //button extra small
+    &.sppb-btn-xs {
+      padding: 8px 10px 8px 10px;
+      font-size: 12px;
+    }
+  }
+
+  .sppb-form-group label {
+    font-size: 18px;
+    font-weight: 600;
+  }
+
+  .sp-page-title .sp-page-title-heading {
+    font-size: 30px;
+    line-height: 40px;
+  }
+
+  #sp-page-builder .page-content #section-margin-top.sppb-section:first-child {
+    margin-top: -80px;
+  }
+
+  #sp-footer ul.menu {
+    font-size: 14px;
+
+    li a {
+      margin-bottom: 5px;
+    }
+  }
+
+  .gourmand-hero-slider.sppb-addon-sp-slider .sp-slider-custom-dot-indecators .sp-text-thumbnail-list .sp-slider-text-thumb-number {
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+
+    margin-bottom: 10px;
+  }
+
+  .gourmand-hero-slider.sppb-addon-sp-slider .sp-slider-custom-dot-indecators .sp-text-thumbnail-list {
+    margin: 0px;
+    padding: 10px 10px 10px 10px;
+    margin-right: 15px;
+  }
+
+  .gourmand-hero-slider.sppb-addon-sp-slider .sp-slider-custom-dot-indecators .sp-text-thumbnail-list .sp-slider-text-thumb-number {
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+    margin-bottom: 10px;
+  }
+
+  .gourmand-hero-slider.sppb-addon-sp-slider .sp-slider-content-align-left {
+    padding: 20px 20px;
+    max-width: 710px;
+    margin-top: 0px;
+  }
+
+  .gourmand-hero-slider.sppb-addon-sp-slider .sp-slider-content-align-left .sppb-sp-slider-button .sp-slider-btn-text {
+    padding: 12px 15px;
+    margin-bottom: 10px;
+  }
+
+  .gourmand-hero-slider.sppb-addon-sp-slider .sp-slider-content-align-left .sppb-sp-slider-button.btn-transparent .sp-slider-btn-text {
+    padding: 9px 20px;
+  }
+
+  .gourmand-hero-slider.sppb-addon-sp-slider .sp-slider-outer-stage {
+    margin-bottom: 140px;
+  }
+
+  .com-content.view-category #sp-left .mod-list li h4 a {
+    padding: 12px 19px;
+  }
+
+  .com-content.view-category #sp-left .sp-module {
+    padding: 25px 20px;
+  }
+
+  .com-content.view-category #sp-left .sp-module-title {
+    margin-bottom: 25px;
+    padding-bottom: 20px;
+  }
+
+  .com-content.view-category .article {
+    flex-direction: column;
+  }
+
+  .com-content.view-category .article .article-title-wrapper {
+    margin-top: 0px;
+  }
+
+  .com-content.view-category .article .article-header h2 {
+    margin: 0px 0px 15px 0px;
+    font-size: 24px;
+    line-height: 36px;
+  }
+
+  .com-content.view-category .article .article-introtext p {
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 30px;
+  }
+
+  .pagination-wrapper {
+    margin-top: 30px;
+  }
+
+  #sp-main-body {
+    padding: 65px 0px 60px 0px;
+  }
+
+  .pagination-wrapper .pagination .page-link {
+    font-size: 16px;
+    padding: 0px 15px;
+  }
+
+  .com-content.view-category #sp-left .tagspopular ul li a {
+    padding: 12px 19px;
+  }
+
+  .com-content.view-article #sp-main-body .article-header h1 {
+    font-weight: bold;
+    font-size: 30px;
+    line-height: 40px;
+    margin-bottom: 20px;
+  }
+
+  .article-details .article-full-image {
+    margin-bottom: 40px;
+  }
+
+  .pager {
+    list-style: none;
+    margin: 30px auto 60px auto;
+  }
+
+  .related-article-list-container .related-article-title {
+    font-size: 30px;
+    line-height: 40px;
+  }
+
+  .gourmand-article-carousel .sppb-articles-carousel-column .sppb-articles-carousel-content {
+    max-width: 100%;
+    margin: 0px;
+  }
+
+  .gourmand-article-carousel .bx-controls .bx-controls-direction {
+    position: absolute;
+    right: 100px;
+  }
+
+  .gourmand-article-carousel .bx-controls .bx-controls-direction a {
+    margin-top: -20px;
+  }
+
+  .view-login,
+  .view-registration,
+  .view-profile {
+    #sp-component {
+      flex: 0 0 100%;
+      max-width: 100%;
+    }
+  }
+
+  .gourmand-category-carousel .sppb-carousel-extended-list:before,
+  .gourmand-category-carousel .sppb-carousel-extended-list:after {
+    width: 100px;
+  }
+
+  .gourmand-category-carousel .sppb-carousel-extended-list .sppb-carousel-extended-content-wrap {
+    top: auto;
+    padding: 0px 0px 0px 0px;
+    bottom: 20px;
+  }
+
+  .gourmand-videos .sppb-row>div {
+    flex: 0 0 100%;
+    max-width: 100%;
+    margin-bottom: 30px;
+  }
+
+  .gourmand-videos .sppb-row>div:nth-child(even) {
+    margin-top: 0px;
+  }
+
+  .gourmand-recipe-list .sppb-btn.sppb-btn-default {
+    margin-top: 0px;
+  }
+
+  .com-content.view-category .article .article-header h2 {
+    margin: 0px 0px 20px 0px;
+  }
+
+  .com-content.view-category .article .article-title-wrapper {
+    margin-bottom: 0px;
+    margin-top: 30px;
+  }
+
+  .com-content.view-article #sp-main-body {
+    padding: 0px 0px 50px 0px;
+  }
+
+  aside {
+    padding-top: 0px;
+  }
+
+  .gourmand-category-carousel .sppb-carousel-extended-list .sppb-carousel-extended-item a:after {
+    display: none;
+  }
+
+  .gourmand-slider > .container {
+    max-width: 540px;
+    bottom:120px;
+ }
+
+}
+
+/*==========================================================================================*/
+/*========================     Below 575Px      ===========================================*/
+
+@media (max-width: 575px) {
+  .recipe-ingredients .sppb-addon-content {
+    flex-direction: column;
+  }
+
+  .recipe-ingredients ul li {
+    margin-bottom: 30px;
+  }
+
+  .related-article-list-container .related-article-list .row>div {
+    flex: 0 0 100%;
+    max-width: 100%;
+  }
+
+}
+
+@media (max-width: 480px) {
+  .gm-food-slider div[class*="sp-slider-content-align"] {
+    padding-left: 30px;
+    padding-right: 75px;
+  }
+
+  .gm-food-slider .sppb-sp-slider-image {
+    margin-top: -70px;
+  }
+
+  .gourmand-hero-slider.sppb-addon-sp-slider .sp-slider-content-align-left .sppb-sp-slider-button .sp-slider-btn-text {
+    margin-bottom: 10px;
+  }
+
+  .sp-page-title .sp-page-title-heading {
+    width: 100%;
+  }
+
+  .view-category.gourmand-blog-list #sp-main-body main[role=main] {
+    padding-top: 40px;
+  }
+
+  .view-category.gourmand-recipe-category-list #sp-main-body .container .article-list-top ul.menu li {
+    padding: 20px;
+    margin-bottom: 20px;
+  }
+
+  .view-category.gourmand-recipe-category-list #sp-main-body .container .article-list-top ul.menu {
+    display: block;
+  }
+}

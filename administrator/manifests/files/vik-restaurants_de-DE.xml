@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<extension type="file" version="3.0" method="upgrade">
+	<name>Vik Restaurants - Language Pack German (de-DE)</name>
+	<element>vik-restaurants_de-DE</element>
+	<version>1.8.5.92</version>
+	<creationDate>May 24, 2023</creationDate>
+	<author>E4J</author>
+	<authorEmail>info@extensionsforjoomla.com</authorEmail>
+	<authorUrl>https://extensionsforjoomla.com/</authorUrl>
+	<copyright>Copyright (C) 2023 e4j - Extensionsforjoomla.com . All Rights Reserved</copyright>
+	<license>GNU/GPL Version 2 or later - http://www.gnu.org/licenses/gpl-2.0.html</license>
+	<description><![CDATA[<span style="color: #993300;"><strong>&lt;&lt; German Language Pack for Vik Restaurants 1.8.5 &gt;&gt;</strong></span><br /><br />Powered by <a href="https://extensionsforjoomla.com" target="_blank">e4j.com</a><br /></br>]]></description>
+	<fileset>
+		<files folder="administrator/language/de-DE" target="administrator/language/de-DE">
+			<file>de-DE.com_vikrestaurants.ini</file>
+			<file>de-DE.com_vikrestaurants.sys.ini</file>
+		</files>
+		<files folder="language/de-DE" target="language/de-DE">
+			<file>de-DE.com_vikrestaurants.ini</file>
+			<file>de-DE.mod_vikrestaurants_event.ini</file>
+			<file>de-DE.mod_vikrestaurants_items.ini</file>
+			<file>de-DE.mod_vikrestaurants_quickres.ini</file>
+			<file>de-DE.mod_vikrestaurants_search.ini</file>
+			<file>de-DE.mod_vikrestaurants_takeaway_cart.ini</file>
+			<file>de-DE.mod_vikrestaurants_takeaway_deals.ini</file>
+			<file>de-DE.mod_vikrestaurants_takeaway_grid.ini</file>
+			<file>de-DE.mod_vikrestaurants_takeaway_map.ini</file>
+			<file>de-DE.mod_vikrestaurants_worktimes.ini</file>
+		</files>
+ 	</fileset>
+ 	<updateservers>
+		<server type="extension" priority="1" name="Vik Restaurants - Language Pack German (de-DE) Update Site">https://extensionsforjoomla.com/index.php?option=com_viklanguages&amp;task=langpacks.xmlmanifest&amp;id=2&amp;langtag=de-DE</server>
+	</updateservers>
+</extension>

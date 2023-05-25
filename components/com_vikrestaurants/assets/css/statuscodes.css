@@ -1,0 +1,58 @@
+/**
+ * Keep old style for backward compatibility.
+ *
+ * @deprecated 1.9
+ */
+.vrrescodedialog {
+	display: none;
+	position: absolute;
+	background: #fff;
+	border-radius: 5px;
+	border: 1px solid #ddd;
+	padding: 0;
+	width: 200px;
+	max-height: 210px;
+	overflow: hidden;
+	overflow-y: auto;
+	margin-top: 5px;
+	left: 50%;
+	transform: translateX(-50%);
+	z-index: 999;
+}
+.vrrescodedialog.right-bound {
+	right: 0;
+	left: initial;
+	transform: none;
+}
+.vrrescodedialog .vrrescodeblockimage img {
+	width: 20px;
+	margin-right: 8px;
+}
+.vrrescodeblock {
+	display: flex;
+	align-items: center;
+	font-size: 12px;
+	padding: 6px 8px;
+	cursor: pointer;
+}
+.vrrescodeblock:not(:last-child) {
+	border-bottom: 1px solid #ddd;
+}
+.vrrescodeblock:hover, .vrcodeblockselected {
+	background: #f6f6f6;
+}
+.vrrescodeblock .vrrescodeblockname:only-of-type {
+	padding-left: 5px;
+	padding-right: 5px;
+}
+.vrrescodeblock.selected {
+	background: #298DC4;
+	color: #fff !important;
+}
+
+/* override context menu layout */
+
+.vik-context-menu.rescodes-context-menu li a .button-icon img {
+	max-width: 20px;
+	max-height: 20px;
+}

@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<access component="com_vikrestaurants">
+	<section name="component">
+
+		<action name="core.admin" title="JACTION_ADMIN" description="JACTION_ADMIN_COMPONENT_DESC" />
+		<action name="core.manage" title="JACTION_MANAGE" description="JACTION_MANAGE_COMPONENT_DESC" />
+		<action name="core.create" title="JACTION_CREATE" description="JACTION_CREATE_COMPONENT_DESC" />
+		<action name="core.delete" title="JACTION_DELETE" description="JACTION_DELETE_COMPONENT_DESC" />
+		<action name="core.edit" title="JACTION_EDIT" description="JACTION_EDIT_COMPONENT_DESC" />
+		<action name="core.edit.state" title="JACTION_EDITSTATE" description="JACTION_EDITSTATE_COMPONENT_DESC" />
+
+		<action name="core.access.dashboard" title="VR_ACCESS_DASHBOARD" description="VR_ACCESS_DASHBOARD_DESC" />
+		
+		<action name="core.access.rooms" title="VR_ACCESS_ROOMS" description="VR_ACCESS_ROOMS_DESC" />
+		<action name="core.access.tables" title="VR_ACCESS_TABLES" description="VR_ACCESS_TABLES_DESC" />
+		<action name="core.access.maps" title="VR_ACCESS_MAPS" description="VR_ACCESS_MAPS_DESC" />
+		<action name="core.access.products" title="VR_ACCESS_PRODUCTS" description="VR_ACCESS_PRODUCTS_DESC" />
+		<action name="core.access.menus" title="VR_ACCESS_MENUS" description="VR_ACCESS_MENUS_DESC" />
+		<action name="core.access.reservations" title="VR_ACCESS_RESERVATIONS" description="VR_ACCESS_RESERVATIONS_DESC" />
+		
+		<action name="core.access.shifts" title="VR_ACCESS_SHIFTS" description="VR_ACCESS_SHIFTS_DESC" />
+		<action name="core.access.specialdays" title="VR_ACCESS_SPECIALDAYS" description="VR_ACCESS_SPECIALDAYS_DESC" />
+		<action name="core.access.operators" title="VR_ACCESS_OPERATORS" description="VR_ACCESS_OPERATORS_DESC" />
+		
+		<action name="core.access.customers" title="VR_ACCESS_CUSTOMERS" description="VR_ACCESS_CUSTOMERS_DESC" />
+		<action name="core.access.reviews" title="VR_ACCESS_REVIEWS" description="VR_ACCESS_REVIEWS_DESC" />
+		<action name="core.access.coupons" title="VR_ACCESS_COUPONS" description="VR_ACCESS_COUPONS_DESC" />
+		<action name="core.access.invoices" title="VR_ACCESS_INVOICES" description="VR_ACCESS_INVOICES_DESC" />
+		
+		<action name="core.access.tkmenus" title="VR_ACCESS_TKMENUS" description="VR_ACCESS_TKMENUS_DESC" />
+		<action name="core.access.tktoppings" title="VR_ACCESS_TKTOPPINGS" description="VR_ACCESS_TKTOPPINGS_DESC" />
+		<action name="core.access.tkdeals" title="VR_ACCESS_TKDEALS" description="VR_ACCESS_TKDEALS_DESC" />
+		<action name="core.access.tkareas" title="VR_ACCESS_TKAREAS" description="VR_ACCESS_TKAREAS_DESC" />
+		<action name="core.access.tkorders" title="VR_ACCESS_TKORDERS" description="VR_ACCESS_TKORDERS_DESC" />
+		
+		<action name="core.access.custfields" title="VR_ACCESS_CUSTFIELDS" description="VR_ACCESS_CUSTFIELDS_DESC" />
+		<action name="core.access.payments" title="VR_ACCESS_PAYMENTS" description="VR_ACCESS_PAYMENTS_DESC" />
+		<action name="core.access.media" title="VR_ACCESS_MEDIA" description="VR_ACCESS_MEDIA_DESC" />
+		<action name="core.access.rescodes" title="VR_ACCESS_RESCODES" description="VR_ACCESS_RESCODES_DESC" />
+		<action name="core.access.config" title="VR_ACCESS_CONFIG" description="VR_ACCESS_CONFIG_DESC" />
+
+	</section>
+</access>

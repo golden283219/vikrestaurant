@@ -1,0 +1,237 @@
+.offcc-payment-wrapper {
+	padding: 20px 20px;
+	background-color: #efefef;
+	min-width: 390px;
+	max-width: 500px !important;
+}
+
+.offcc-payment-box {
+	width: 90%;
+}
+
+.offcc-payment-field {
+	margin-bottom: 8px;
+}
+
+.offcc-payment-field .offcc-payment-field-wrapper { 
+	max-width: 320px;
+}
+.offcc-payment-field .offcc-payment-field-wrapper.inline {
+	max-width: 120px;
+	margin-right: 30px !important;
+}
+.offcc-payment-field .offcc-payment-field-wrapper.inline:last-child {
+	margin-right: 0px !important;
+}
+
+.offcc-payment-field .offcc-payment-field-wrapper input[type="text"] {
+	padding: 10px;
+	font-size: 16px;
+	width: 100%;
+	border: none;
+	border-bottom: solid 2px #c9c9c9;
+	border-radius: 0;
+	margin: 0;
+
+	-webkit-transition: border 0.3s;
+	-moz-transition: border 0.3s;
+	-o-transition: border 0.3s;
+	transition: border 0.3s;
+}
+.offcc-payment-field .offcc-payment-field-wrapper input[type="text"]:focus, 
+.offcc-payment-field .offcc-payment-field-wrapper input[type="text"].focus {
+	border-bottom: solid 2px #969696;
+	outline: none;
+}
+
+.offcc-payment-field .offcc-payment-field-wrapper.field-required .offcc-payment-icon i {
+	color: #900;
+}
+
+/* required field shake animation */
+.offcc-payment-field .offcc-payment-field-wrapper.field-required {
+	animation: shake 0.5s ease-in-out;
+	-webkit-animation: shake 0.5s ease-in-out;
+	-moz-animation: shake 0.5s ease-in-out;
+}
+@keyframes shake {
+	0% {
+		transform: translateX(0);
+	}
+	20% {
+		transform: translateX(-5px);
+	}
+	40% {
+		transform: translateX(5px);
+	}
+	60% {
+		transform: translateX(-5px);
+	}
+	80% {
+		transform: translateX(5px);
+	}
+	100% {
+		transform: translateX(0);
+	}
+}
+@-webkit-keyframes shake {
+	0% {
+		transform: translateX(0);
+	}
+	20% {
+		transform: translateX(-5px);
+	}
+	40% {
+		transform: translateX(5px);
+	}
+	60% {
+		transform: translateX(-5px);
+	}
+	80% {
+		transform: translateX(5px);
+	}
+	100% {
+		transform: translateX(0);
+	}
+}
+@-moz-keyframes shake {
+	0% {
+		transform: translateX(0);
+	}
+	20% {
+		transform: translateX(-5px);
+	}
+	40% {
+		transform: translateX(5px);
+	}
+	60% {
+		transform: translateX(-5px);
+	}
+	80% {
+		transform: translateX(5px);
+	}
+	100% {
+		transform: translateX(0);
+	}
+}
+
+/* put icon within input */
+.offcc-payment-field .offcc-payment-field-wrapper { 
+	position: relative;
+}
+.offcc-payment-field .offcc-payment-field-wrapper.inline {
+	display: inline-block;
+}
+.offcc-payment-field input[type="text"] {
+	text-indent: 24px;
+}
+.offcc-payment-field .offcc-payment-field-wrapper .offcc-payment-icon i { 
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%);
+	left: 8px;
+	font-size: 14px;
+	color: #7d7d7d;
+}
+
+/* credit card type icon */
+.offcc-payment-field .offcc-payment-field-wrapper .offcc-payment-cctype-icon { 
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%);
+	right: 15px;
+
+	width: 32px;
+	height: 20px;
+
+	-webkit-transition: all 0.2s ease;
+	-moz-transition: all 0.2s ease;
+	-o-transition: all 0.2s ease;
+	-ms-transition: all 0.2s ease;
+	transition: all 0.2s ease;
+}
+
+.offcc-payment-field .offcc-payment-field-wrapper .offcc-payment-cctype-icon.visa,
+.offcc-payment-field .offcc-payment-field-wrapper .offcc-payment-cctype-icon.mastercard,
+.offcc-payment-field .offcc-payment-field-wrapper .offcc-payment-cctype-icon.amex,
+.offcc-payment-field .offcc-payment-field-wrapper .offcc-payment-cctype-icon.diners,
+.offcc-payment-field .offcc-payment-field-wrapper .offcc-payment-cctype-icon.discover,
+.offcc-payment-field .offcc-payment-field-wrapper .offcc-payment-cctype-icon.jcb {
+	right: 8px;
+}
+
+.offcc-payment-field .offcc-payment-field-wrapper .offcc-payment-cctype-icon.visa {
+	background-image: url(./icons/visa.png);
+}
+.offcc-payment-field .offcc-payment-field-wrapper .offcc-payment-cctype-icon.mastercard {
+	background-image: url(./icons/mastercard.png);
+}
+.offcc-payment-field .offcc-payment-field-wrapper .offcc-payment-cctype-icon.amex {
+	background-image: url(./icons/amex.png);
+}
+.offcc-payment-field .offcc-payment-field-wrapper .offcc-payment-cctype-icon.diners {
+	background-image: url(./icons/diners.png);
+}
+.offcc-payment-field .offcc-payment-field-wrapper .offcc-payment-cctype-icon.discover {
+	background-image: url(./icons/discover.png);
+}
+.offcc-payment-field .offcc-payment-field-wrapper .offcc-payment-cctype-icon.jcb {
+	background-image: url(./icons/jcb.png);
+}
+
+/* submit button */
+.offcc-payment-field .cc-submit-btn {
+	border: none;
+	position: relative;
+	border-radius: 4px;
+	background-color: #3ea8e5;
+	background-image: -webkit-linear-gradient(top, #44b1e8, #3098de);
+	background-image: linear-gradient(-180deg, #44b1e8, #3098de);
+	box-shadow: 0 1px 0 0 rgba(46, 86, 153, .15), inset 0 1px 0 0 rgba(46, 86, 153, .1), inset 0 -1px 0 0 rgba(46, 86, 153, .4);
+	font-size: 16px;
+	letter-spacing: 1px;
+	line-height: 18px;
+	height: 36px;
+	padding: 0 20px;
+	min-width: 140px;
+	margin: 0;
+	font-weight: 700;
+	color: #fff;
+	cursor: pointer;
+	-webkit-transition: all .2s ease-in-out;
+	transition: all .2s ease-in-out;
+}
+
+.offcc-payment-field .cc-submit-btn:active {
+	background-image: -webkit-linear-gradient(top, #328ac3, #277bbe);
+	background-image: linear-gradient(180deg, #328ac3, #277bbe)
+}
+
+/* mobile adapter */
+
+@media screen and (max-width : 700px) {	
+	.offcc-payment-wrapper {
+		width: initial !important;
+	}
+
+	.offcc-payment-field .offcc-payment-field-wrapper {
+		width: 100% !important;
+		max-width: initial !important;
+		margin: 0 0 10px;
+	}
+
+}
+
+@media screen and (max-width : 570px) {
+	.offcc-payment-field .offcc-payment-field-wrapper.inline {
+		width: initial !important;
+		max-width: initial !important;
+		display: block !important;
+		margin: 0 0 8px 0 !important;
+	}
+}	
+@media screen and (max-width : 410px) {
+	.offcc-payment-wrapper {
+		min-width: auto;
+	}
+}

@@ -1,0 +1,1 @@
+UPDATE `#__vikrestaurants_config` SET `setting`='1.7.2' WHERE `param`='version' LIMIT 1;

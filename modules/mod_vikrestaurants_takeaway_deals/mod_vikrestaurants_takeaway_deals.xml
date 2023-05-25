@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension type="module" version="2.5.0" client="site" method="upgrade">
+	<name>VikRestaurants Take-Away Deals</name>
+	<author>Extensionsforjoomla.com</author>
+	<creationDate>January 12, 2023</creationDate>
+	<copyright>Copyright (C) 2023 e4j - extensionsforjoomla.com . All Rights Reserved</copyright>
+	<license>http://www.gnu.org/licenses/gpl-2.0.html GNU/GPL</license>
+	<authorEmail>dev@extensionsforjoomla.com</authorEmail>
+	<authorUrl>https://extensionsforjoomla.com</authorUrl>
+	<version>1.2.4</version>
+	<description>Module to Show the Take-Away Deals in VikRestaurants 1.8.2 or newer.</description>
+
+	<files>
+		<filename module="mod_vikrestaurants_takeaway_deals">mod_vikrestaurants_takeaway_deals.php</filename>
+		<filename>mod_vikrestaurants_takeaway_deals.css</filename>
+		<filename>index.html</filename>
+		<folder>tmpl</folder>
+	</files>
+
+	<languages>
+		<language tag="en-GB">languages/en-GB.mod_vikrestaurants_takeaway_deals.ini</language>
+	</languages>
+
+	<config>
+
+		<fields name="params">
+			
+			<fieldset name="basic">
+
+				<field
+					name="date_filtering"
+					type="radio"
+					default="1"
+					label="VRTK_DEALS_DATEFILTER"
+					description="VRTK_DEALS_DATEFILTER_DESC"
+					class="btn-group btn-group-yesno"
+					layout="joomla.form.field.radio.switcher"
+				>
+					<option value="0">JNO</option>
+					<option value="1">JYES</option>
+				</field>
+			
+			</fieldset>
+			
+			<fieldset name="settings">	
+				
+				<field
+					name="dotnav"
+					type="radio"
+					default="1"
+					label="VRTK_DEALS_DOTTEDNAV"
+					description="VRTK_DEALS_DOTTEDNAV_DESC"
+					class="btn-group btn-group-yesno"
+					layout="joomla.form.field.radio.switcher"
+				>
+					<option value="0">JNO</option>
+					<option value="1">JYES</option>
+				</field>
+				
+				<field
+					name="arrownav"
+					type="radio"
+					default="1"
+					label="VRTK_DEALS_ARROWNAV"
+					description="VRTK_DEALS_ARROWNAV_DESC"
+					class="btn-group btn-group-yesno"
+					layout="joomla.form.field.radio.switcher"
+				>
+					<option value="0">JNO</option>
+					<option value="1">JYES</option>
+				</field>
+				
+				<field
+					name="slideframe_ms"
+					type="number"
+					default="5000"
+					label="VRTK_DEALS_DURATION"
+					description="VRTK_DEALS_DURATION_DESC"
+				/>
+			
+			</fieldset>
+
+			<fieldset name="advanced">	
+				
+				<field
+					name="moduleclass_sfx"
+					type="text"
+					default=""
+					label="COM_MODULES_FIELD_MODULECLASS_SFX_LABEL"
+				/>
+
+				<field
+					name="layout"
+					type="modulelayout"
+					label="JFIELD_ALT_LAYOUT_LABEL"
+					description="JFIELD_ALT_MODULE_LAYOUT_DESC"
+					class="form-select"
+				/>
+
+			</fieldset>
+			
+		</fields>
+
+	</config>
+
+	<updateservers>
+		<server type="extension" name="VikRestaurants Modules Update Site" priority="1">https://extensionsforjoomla.com/vikapi/?task=joomla.updateserver&amp;sku=vre-tkdeals</server>
+	</updateservers>
+
+</extension>

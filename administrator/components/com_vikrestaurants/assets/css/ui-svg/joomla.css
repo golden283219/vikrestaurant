@@ -1,0 +1,112 @@
+.container-main /* J3 */ ,
+section#content /* J4 */ {
+	padding: 0 !important;
+	margin: 0 !important;
+}
+
+#status,
+#isisJsData,
+.subhead-collapse,
+body.com_vikrestaurants #subhead-container /* J4 */ {
+	display: none !important;
+}
+
+form#adminForm {
+	display: none;
+}
+
+.ui-border-layout .tooltip {
+	font-size: 14px;
+}
+
+.ui-border-layout .ui-content {
+	/* overwrite content layout height by subtracting the Joomla heading (3.x) */
+	height: calc(100vh - 70px - 83px) !important;
+}
+
+.ui-border-layout .ui-content svg {
+	max-width: none !important;
+}
+
+.ui-form-fieldset .ui-control-group {
+	line-height: 26px;
+}
+
+.ui-tab-pane .ui-tab-button a {
+	color: #fff !important;
+	text-decoration: none !important;
+}
+.ui-tab-pane .ui-tab-button:not(.active):hover a{
+	color: #3b3b43 !important;
+}
+
+.ui-commands-toolbar .ui-form-fieldset {
+	margin-top: -2px;
+}
+
+.ui-form-fieldset input[type="radio"],
+.ui-form-fieldset input[type="checkbox"] {
+	margin-top: -2px !important;
+}
+.ui-form-fieldset .ui-radio-box {
+	margin-right: 12px;
+}
+
+.ui-form-fieldset select,
+.ui-form-fieldset input {
+	margin: 0 !important;
+}
+
+.ui-finder input[type="text"] {
+	width: 628px !important;
+	line-height: 28px !important;
+}
+.ui-finder input[type="text"]:focus {
+	border: 1px solid rgba(0, 0, 0, 0.2) !important;
+}
+.ui-border-layout .ui-toolbar-panel .ui-toolbar-buttons button {
+	margin-top: 0;
+}
+.ui-search-bar input {
+	/*background: transparent;*/
+	border: 1px solid #aaa !important;
+	box-shadow: none !important;
+	height: 20px !important;
+	border-radius: 20px !important;
+	box-shadow: none !important;
+	width: 90% !important;
+	margin: 0 !important;
+}
+.ui-search-bar i {
+	top: 7px;
+}
+
+.ui-control-group .chzn-container {
+	min-width: 120px !important;
+}
+.ui-inspector-panel .ui-control-group .chzn-container {
+	/* only for inspector, force width */
+	width: 120px !important;
+	max-width: 120px !important;
+}
+.ui-control-group .chzn-container .chzn-drop .chzn-search input {
+	width: 100% !important;
+}
+
+/* Joomla 4 */
+
+body.com_vikrestaurants.ui-svg-room #subhead {
+	display: none !important;
+}
+body.com_vikrestaurants.ui-svg-room .row,
+body.com_vikrestaurants.ui-svg-room .col-md-12 {
+	padding: 0;
+	margin: 0;
+}
+body.com_vikrestaurants.ui-svg-room .ui-border-layout .ui-content {
+	/* overwrite content layout height by subtracting the Joomla heading */
+	height: calc(100vh - 70px - 69px) !important;
+}
+body.com_vikrestaurants.ui-svg-room label {
+	color: #d5d5d5;
+}

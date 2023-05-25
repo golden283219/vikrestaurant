@@ -1,0 +1,164 @@
+/*@import url(http://fonts.googleapis.com/css?family=Varela+Round);*/
+
+.vrtk-dealsmod-slides {
+	padding: 0 10px;
+	width: 95%;
+	min-height: 60px;
+	display: block;
+	margin: 0 auto;
+	position: relative;
+}
+
+.vrtk-dealsmod-slides * {
+	user-select: none;
+	-ms-user-select: none;
+	-moz-user-select: none;
+	-khtml-user-select: none;
+	-webkit-user-select: none;
+	-webkit-touch-callout: none;
+}
+
+.vrtk-dealsmod-slides input { 
+	display: none; 
+}
+
+.vrtk-dealsmod-slide-container { 
+	display: block;
+}
+
+.vrtk-dealsmod-slide {
+	top: 0;
+	opacity: 0;
+	width: 100%;
+	min-height: 60px;
+	display: block;
+	position: absolute;
+
+	transform: scale(0);
+
+	transition: all .7s ease-in-out;
+}
+
+.vrtk-dealsmod-slide img {
+	width: 100%;
+	height: 100%;
+}
+
+.vrtk-dealsmod-nav label {
+	width: 200px;
+	height: 40px;
+	display: none;
+	position: absolute;
+
+	opacity: 0;
+	z-index: 9;
+	cursor: pointer;
+
+	transition: opacity .2s;
+
+	color: #9b3705;
+	font-size: 50px;
+	text-align: center;
+	line-height: 30px;
+	
+}
+.vrtk-dealsmod-nav label.next {
+	text-align: right;
+}
+.vrtk-dealsmod-nav label.prev {
+	text-align: left;
+}
+.vrtk-dealsmod-slide:hover + .vrtk-dealsmod-nav label {
+	opacity: 0.5;
+}
+
+.vrtk-dealsmod-nav label:hover {
+	opacity: 1;
+}
+
+.vrtk-dealsmod-nav .next {
+	right: 0;
+}
+
+input:checked + .vrtk-dealsmod-slide-container .vrtk-dealsmod-slide {
+	opacity: 1;
+	transform: scale(1);
+	transition: opacity 1s ease-in-out;
+}
+
+input:checked + .vrtk-dealsmod-slide-container .vrtk-dealsmod-nav label {
+	display: block;
+}
+
+.vrtk-dealsmod-nav-dots {
+	width: 100%;
+	bottom: 5px;
+	height: 11px;
+	display: block;
+	position: absolute;
+	text-align: center;
+}
+
+.vrtk-dealsmod-nav-dots .dot {
+	top: -5px;
+	width: 8px;
+	height: 8px;
+	margin: 0 1px;
+	position: relative;
+	border-radius: 100%;
+	display: inline-block;
+	background-color: rgba(0, 0, 0, 0.4);
+}
+
+.vrtk-dealsmod-nav-dots .dot:hover, .vrtk-dealsmod-nav-dots .dot.checked {
+	cursor: pointer;
+	background-color: rgba(0, 0, 0, 0.6);
+}
+
+.vrtk-dealmod-info {
+	font-size: 16px;
+	text-align: center;
+}
+.vrtk-dealmod-info:hover {
+	cursor: pointer;
+}
+.vrtk-deals-module {
+	background:#eee;
+	border:1px solid #9b3705;
+	padding: 10px 0;
+}
+.vrtk-dealsmod-listfull {
+	margin: 10px 0 0;
+}
+.vrtk-dealsmod-offer {
+	background: #fff;	
+	margin: 10px;
+	font-size: 1em;
+	border-radius: 4px;
+	padding: 10px 15px;
+	border: 1px solid #ddd;
+}
+.vrtk-dealsmod-offer-avdays {
+	border-bottom:1px solid #ddd;
+	padding: 0 0 5px 0;
+	margin-bottom: 5px;
+}
+.vrtk-dealsmod-offer-title {
+	color: #9b3705;
+	font-size: 16px;
+}
+.vrtk-dealsmod-listfull-toggle {
+	margin-top: 10px;
+	text-align: center;
+}
+.vrtk-dealsmod-listfull-toggle button {
+	background: #ddd repeat scroll 0 0;
+	border: 0 none;
+	border-radius: 3px;
+	color: #666;
+	cursor: pointer;
+	display: block;
+	font-size: 12px;
+	margin: 0 auto;
+	padding: 7px 15px;
+}

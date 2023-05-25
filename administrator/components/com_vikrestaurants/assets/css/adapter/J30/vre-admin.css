@@ -1,0 +1,187 @@
+/* Joomla 3.x */
+
+.icon-vikrestaurants:before {
+	content: "\43";
+}
+
+input, select {
+	width: auto !important;
+}
+.controls > input[type="checkbox"],
+table td > input[type="checkbox"] {
+    margin: 0;
+}
+
+table td > input[type="text"],
+table td > input[type="number"],
+table td > .input-append,
+table td > .input-prepend,
+table td > select,
+table td > .chzn-container {
+	margin-bottom: 0;
+}
+
+.controls > input[type="checkbox"] + label {
+    display: inline-block;
+    margin: 0;
+}
+.controls > img.flag:only-of-type {
+	margin-top: 8px;
+}
+.controls > span.control-text-value:only-of-type {
+	display: inline-block;
+	margin-top: 6px;
+}
+
+.controls .inline-checkbox input[type="checkbox"] {
+	vertical-align: middle;
+	margin: 0;
+}
+.controls .inline-checkbox label {
+	display: inline-block;
+	vertical-align: middle;
+	margin: 0 0 0 4px;
+}
+.controls .inline-checkbox .vr-quest-popover {
+	transform: none;
+	vertical-align: middle;
+}
+
+.controls > .switch-ios + input {
+	vertical-align: top;
+	margin-left: 4px;
+}
+
+table.adminform label {
+	display: inline;
+	margin:0 0 0 5px;
+}
+table.adminform td {
+	padding: 6px 0;
+}
+table.adminform div.input-append {
+	display: inline;
+}
+
+table.table-striped i.empty {
+	margin-right: 16px;
+}
+
+.form-horizontal .control-html-value {
+	float: left;
+	padding-top: 5px;
+	font-weight: bold;
+}
+.form-horizontal .control-group .switch-ios {
+	margin-bottom: -5px;
+}
+
+.field-calendar {
+	display: inline-block;
+}
+
+/* bootstrap modal */
+.modal-header .close {
+	/* fix vertical separator */
+	line-height: 46px !important;
+}
+@media screen and (max-width: 480px) {
+	.modal-header .close {
+		line-height: 30px !important;
+	}	
+}
+.modal-body {
+	overflow-y: scroll !important;
+}
+
+/* do not scroll purchaserinfo dialog */
+#jmodal-respinfo .modal-body {
+	overflow: hidden !important;
+}
+
+.modal-body.jviewport-height40 {
+	height: 40vh !important;
+}
+.modal-body.jviewport-height60 {
+	height: 60vh !important;
+}
+.modal-body.jviewport-height80 {
+	height: 80vh !important;
+}
+
+.contentpane.component #system-message-container .alert {
+	/* fix alert margin in modals */
+	margin: 10px 10px 5px 5px;
+}
+
+.modal-content-padding {
+	padding: 10px;	
+}
+
+/* colorpicker 3.x */
+
+.colorpicker input {
+	background-color: transparent !important;
+	border: 0 !important;
+	font-size: 11px !important;
+	color: #eee !important;
+	margin: 0 !important;
+	padding: 0 !important;
+}
+
+/* customers locations legend */
+
+.vr-delivery-locations-container legend {
+	cursor: pointer;
+}
+
+/* toolbar */
+
+.vr-toolbar-setfont {
+	font-size: 13px !important;
+}
+
+.btn-group.pull-right + .btn-group.pull-right {
+    margin-right: 5px;
+    margin-left: 0;
+}
+
+/* chosen */
+
+.chzn-container.active .chzn-single {
+	border: 2px solid #2384D3;
+}
+.chzn-container.dropdown-short {
+	width: 100px !important;
+}
+.chzn-container .chzn-search input[type="text"] {
+	width: 100% !important;
+}
+
+/* tooltip */
+
+.tooltip {
+	z-index: 9999 !important;
+}
+
+/* special days tool */
+
+#jmodal-sdtest iframe {
+	padding: 10px;
+	width: calc(100% - 20px);
+	height: calc(100% - 20px);
+}
+
+/* menu */
+
+#vre-menu-toggle-phone {
+	margin-top: -10px;
+	margin-bottom: 10px;
+	display: block;
+}
+
+@media screen and (max-width: 779px) {
+	#system-message-container {
+		padding: 0 !important;
+	}
+}

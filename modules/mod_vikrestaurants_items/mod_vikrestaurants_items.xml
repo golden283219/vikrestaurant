@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension type="module" version="2.5.0" client="site" method="upgrade">
+	<name>VikRestaurants Items</name>
+	<author>Extensionsforjoomla.com</author>
+	<creationDate>January 12, 2023</creationDate>
+	<copyright>Copyright (C) 2023 e4j - extensionsforjoomla.com . All Rights Reserved</copyright>
+	<license>http://www.gnu.org/licenses/gpl-2.0.html GNU/GPL</license>
+	<authorEmail>dev@extensionsforjoomla.com</authorEmail>
+	<authorUrl>https://extensionsforjoomla.com</authorUrl>
+	<version>1.3.4</version>
+	<description>This module allows you to choose which products you want to point out in your website. Only for VikRestaurants 1.8.2 or newer.</description>
+	
+	<files>
+		<filename module="mod_vikrestaurants_items">mod_vikrestaurants_items.php</filename>
+		<folder>src</folder>
+		<folder>tmpl</folder>
+		<filename>helper.php</filename>
+		<filename>index.html</filename>
+		<filename>mod_vikrestaurants_items.xml</filename>
+		<filename>mod_vikrestaurants_items.css</filename>	
+	</files>
+	
+	<languages>
+		<language tag="en-GB">languages/en-GB.mod_vikrestaurants_items.ini</language>
+	</languages>
+	
+	<config>
+
+		<fields name="params">
+
+			<fieldset name="basic">
+
+				<field
+					name="product"
+					type="sql"
+					default="0"
+					label="VIKREITEMS_PRODUCTS"
+					description="VIKREITEMS_PRODUCTSDESC"
+					query="SELECT `p`.`id`, `p`.`name` 
+					FROM `#__vikrestaurants_section_product` AS `p` 
+					LEFT JOIN `#__vikrestaurants_section_product_assoc` AS `a` ON `a`.`id_product`=`p`.`id`
+					LEFT JOIN `#__vikrestaurants_menus_section` AS `s` ON `s`.`id`=`a`.`id_section`
+					LEFT JOIN `#__vikrestaurants_menus` AS `m` ON `m`.`id`=`s`.`id_menu`
+					WHERE `p`.`hidden` = 0
+					ORDER BY `m`.`ordering` ASC, `p`.`ordering` ASC;" 
+					key_field="id"
+					value_field="name"
+					required="true"
+					multiple="multiple"
+					size="8"
+					layout="joomla.form.field.list-fancy-select"
+				/>
+
+				<field
+					name="showtitle"
+					type="radio"
+					default="1"
+					label="VIKREITEMS_SHOWTITLE"
+					class="btn-group btn-group-yesno"
+					layout="joomla.form.field.radio.switcher"
+				>
+					<option value="0">JNO</option>
+					<option value="1">JYES</option>
+				</field>
+
+				<field
+					name="desc"
+					type="radio"
+					default="1"
+					label="VIKREITEMS_SHOWDESC"
+					class="btn-group btn-group-yesno"
+					layout="joomla.form.field.radio.switcher"
+				>
+					<option value="0">JNO</option>
+					<option value="1">JYES</option>
+				</field>
+
+				<field
+					name="image"
+					type="radio"
+					default="1"
+					label="VIKREITEMS_SHOWIMAGE"
+					class="btn-group btn-group-yesno"
+					layout="joomla.form.field.radio.switcher"
+				>
+					<option value="0">JNO</option>
+					<option value="1">JYES</option>
+				</field>
+
+				<field
+					name="price"
+					type="radio"
+					default="1" 
+					label="VIKREITEMS_SHOWPRICE"
+					class="btn-group btn-group-yesno"
+					layout="joomla.form.field.radio.switcher"
+				>
+					<option value="0">JNO</option>
+					<option value="1">JYES</option>
+				</field>
+
+			</fieldset>
+
+			<fieldset name="slide">
+
+				<field
+					name="textcolor" 
+					type="color"
+					default="#fff" 
+					label="VIKREITEMS_COLOR"
+					description="VIKREITEMS_COLORDESC"
+				/>
+
+				<field
+					name="backcolor"
+					type="color"
+					default="#666"
+					label="VIKREITEMS_BACKCOLOR"
+					description="VIKREITEMS_BACKCOLORDESC"
+				/>
+
+				<field
+					name="numb_itemrow"
+					type="number"
+					default="4"
+					min="0"
+					max="10"
+					step="1"
+					label="VIKREITEMS_NUMBROW"
+					description="VIKREITEMS_NUMBROWDESC"
+				/>
+
+				<field
+					name="dotted"
+					type="radio"
+					default="1"
+					label="VIKREITEMS_DOTNAV"
+					description="VIKREITEMS_DOTNAVDESC"
+					class="btn-group btn-group-yesno"
+					layout="joomla.form.field.radio.switcher"
+				>
+					<option value="0">JNO</option>
+					<option value="1">JYES</option>
+				</field>
+
+				<field
+					name="autoplay"
+					type="radio"
+					default="1"
+					label="VIKREITEMS_AUTOPLAY"
+					description="VIKREITEMS_AUTOPLAYDESC"
+					class="btn-group btn-group-yesno"
+					layout="joomla.form.field.radio.switcher"
+				>
+					<option value="0">JNO</option>
+					<option value="1">JYES</option>
+				</field>
+
+				<field
+					name="autoplaytime"
+					type="text"
+					default="5000"
+					label="VIKREITEMS_TIMESCROLL"
+					description="VIKREITEMS_TIMESCROLLDESC"
+				/>
+
+			</fieldset>
+
+			<fieldset name="advanced">
+				
+				<field
+					name="moduleclass_sfx"
+					type="text"
+					default=" middle-line title-color title-center"
+					label="COM_MODULES_FIELD_MODULECLASS_SFX_LABEL"
+				/>
+
+				<field
+					name="layout"
+					type="modulelayout"
+					label="JFIELD_ALT_LAYOUT_LABEL"
+					description="JFIELD_ALT_MODULE_LAYOUT_DESC"
+					class="form-select"
+				/>
+
+			</fieldset>
+
+		</fields>
+
+	</config>
+
+	<updateservers>
+		<server type="extension" name="VikRestaurants Modules Update Site" priority="1">https://extensionsforjoomla.com/vikapi/?task=joomla.updateserver&amp;sku=vre-items</server>
+	</updateservers>
+
+</extension>

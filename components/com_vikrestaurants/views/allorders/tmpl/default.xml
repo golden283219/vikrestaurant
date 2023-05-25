@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<metadata>
+	<layout title="COM_VIKRESTAURANTS_ALLORDERS_VIEW_DEFAULT_TITLE">
+		<message>COM_VIKRESTAURANTS_ALLORDERS_VIEW_DEFAULT_DESC</message>
+	</layout>
+	<view title="View All Orders" >
+		<message><![CDATA[VikRestaurants]]></message>
+	</view>
+	<state>
+		<name>View All Orders</name>
+		<description>VikRestaurants</description>
+	</state>
+</metadata>

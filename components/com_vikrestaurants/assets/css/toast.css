@@ -1,0 +1,160 @@
+/* toast common */
+
+.toast-wrapper {
+	position: fixed;
+	width: 400px;
+	z-index: 100000;
+
+	transition: 0.4s ease all;
+	-moz-transition: 0.4s ease all;
+	-webkit-transition: 0.4s ease all;
+}
+.toast-wrapper.clickable {
+	cursor: pointer;
+}
+.toast-wrapper .toast-message {
+	background: none repeat scroll 0 0 #fff;
+}
+.toast-wrapper .toast-message-content {
+	padding: 20px 25px;
+	margin: 0;
+	font-size: 14px;
+	font-weight: bold;
+	border: 1px solid #333;
+	border-radius: 1px;
+	background-color: rgba(64, 64, 64, 0.15);
+}
+.toast-wrapper .toast-message-content.error {
+	border: 1px solid #990000;
+	background-color: rgba(153, 0, 0, 0.20)
+}
+.toast-wrapper .toast-message-content.success {
+	border: 1px solid #59a27b;
+	background-color: rgba(112, 204, 135, 0.40);
+}
+.toast-wrapper .toast-message-content.warning {
+	border: 1px solid #e08950;
+	background-color: rgba(224, 137, 80, 0.35);
+}
+.toast-wrapper .toast-message-content.notice {
+	border: 1px solid #36add7;
+	background-color: rgba(54, 173, 215, 0.20);
+}
+
+/* toast hidden positions */
+.toast-wrapper.top-left,
+.toast-wrapper.top-center,
+.toast-wrapper.top-right {
+	/*
+	Use a higher margin to avoid seeing the toast on
+	browsers (like Safari) that lets the user to scroll
+	even if the page reached the end.
+	Same thing for the bottom position.
+	*/
+	top: -100px;
+	transform: translateY(-100%);
+}
+.toast-wrapper.top-left,
+.toast-wrapper.bottom-left {
+	left: 10px;
+}
+.toast-wrapper.top-right,
+.toast-wrapper.bottom-right {
+	right: 10px;
+}
+.toast-wrapper.top-center {
+	left: 50%;
+	transform: translate(-50%, -100%);
+}
+
+.toast-wrapper.bottom-left,
+.toast-wrapper.bottom-center,
+.toast-wrapper.bottom-right {
+	bottom: -100px;
+	transform: translateY(100%);
+}
+.toast-wrapper.bottom-center {
+	left: 50%;
+	transform: translate(-50%, 100%);
+}
+
+/* toast slide-in positions */
+
+.toast-wrapper.top-left.toast-slide-in,
+.toast-wrapper.top-center.toast-slide-in,
+.toast-wrapper.top-right.toast-slide-in {
+	transform: translateY(0%);
+	top: 10px;
+}
+.toast-wrapper.bottom-left.toast-slide-in,
+.toast-wrapper.bottom-center.toast-slide-in,
+.toast-wrapper.bottom-right.toast-slide-in {
+	transform: translateY(0%);
+	bottom: 15px;
+}
+
+.toast-wrapper.top-center.toast-slide-in,
+.toast-wrapper.bottom-center.toast-slide-in {
+	transform: translate(-50%, 0%);
+}
+
+/* shake effect */
+
+.toast-wrapper.do-shake {
+	backface-visibility: hidden;
+	perspective: 1000px;
+}
+
+.toast-wrapper.top-center.do-shake,
+.toast-wrapper.bottom-center.do-shake {
+	animation: shake-animation-center 0.82s cubic-bezier(.36, .07, .19, .97) both;
+	transform: translate3d(-50%, 0, 0) !important;
+}
+@keyframes shake-animation-center {
+	10%, 90% {
+		transform: translate3d(-50.5%, 0, 0);
+	}
+
+	20%, 80% {
+		transform: translate3d(-49%, 0, 0);
+	}
+
+	30%, 50%, 70% {
+		transform: translate3d(-52%, 0, 0);
+	}
+
+	40%, 60% {
+		transform: translate3d(-48%, 0, 0);
+	}
+}
+
+.toast-wrapper.top-left.do-shake,
+.toast-wrapper.top-right.do-shake,
+.toast-wrapper.bottom-left.do-shake,
+.toast-wrapper.bottom-right.do-shake {
+	animation: shake-animation-side 0.82s cubic-bezier(.36, .07, .19, .97) both;
+}
+@keyframes shake-animation-side {
+	10%, 90% {
+		transform: translate3d(-0.5%, 0, 0);
+	}
+
+	20%, 80% {
+		transform: translate3d(1%, 0, 0);
+	}
+
+	30%, 50%, 70% {
+		transform: translate3d(-2%, 0, 0);
+	}
+
+	40%, 60% {
+		transform: translate3d(2%, 0, 0);
+	}
+}
+
+@media screen and (max-width: 480px) {
+	.toast-wrapper {
+		right: 10px !important;
+		width: calc(100% - 20px) !important;
+	}	
+}

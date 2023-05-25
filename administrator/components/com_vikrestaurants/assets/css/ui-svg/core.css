@@ -1,0 +1,363 @@
+/* border layout */
+
+.ui-border-layout {
+	/**
+	 * z-index must be equals or lower than .ui-transparent-overlay
+	 */
+}
+
+.ui-border-layout .ui-toolbar-panel {
+	display: flex;
+	padding: 0px 10px;
+	background-color: #232328;
+	color: #fff;
+	height: 40px;
+	line-height: 40px;
+}
+.ui-border-layout .ui-toolbar-panel .ui-commands-toolbar {
+	width: 80%;
+}
+.ui-border-layout .ui-toolbar-panel .ui-toolbar-buttons {
+	width: 20%;
+	text-align: right;
+}
+.ui-border-layout .ui-toolbar-panel .ui-toolbar-buttons button {
+	background: transparent;
+	border: 0;
+	color: #d5d5d5;
+	font-size: 24px;
+	cursor: pointer;
+	margin-top: 5px;
+}
+.ui-border-layout .ui-toolbar-panel .ui-toolbar-buttons button:hover {
+	color: #fff;
+}
+
+.ui-border-layout .ui-content {
+	display: flex;
+	height: calc(100vh - 70px);
+}
+
+.ui-border-layout .ui-content .ui-commands-panel {
+	padding: 10px 0;
+	text-align: center;
+	width: 50px;
+	background-color: #232328;
+	color: #fff;
+}
+
+.ui-border-layout .ui-content .ui-canvas-panel {
+	width: calc(100% - 350px);
+	background-color: #34343b;
+	color: #fff;
+	height: 100%;
+	overflow: scroll;
+}
+
+.ui-border-layout .ui-content .ui-inspector-panel {
+	/*padding: 10px 0;*/
+	text-align: center;
+	width: 300px;
+	/*background-color: #232328;*/
+	background-color: #3b3b43;
+	color: #fff;
+	overflow-y: scroll;
+}
+
+.ui-border-layout .ui-statusbar-panel {
+	padding: 0 10px;
+	background-color: #232328;
+	color: #fff;
+	height: 30px;
+	line-height: 30px;
+	font-size: 12px;
+}
+
+/* commands */
+
+button.cmd-btn {
+	background: transparent;
+	border: 0;
+	outline: 0;
+	transition: color 100ms linear;
+	font-size: 24px;
+	color: #d5d5d5;
+	cursor: pointer;
+	width: 36px;
+	height: 36px;
+	margin-bottom: 4px;
+	border-radius: 2px;
+}
+
+button.cmd-btn:hover {
+	background-color: rgba(255, 255, 255, .1);
+}
+
+button.cmd-btn.active {
+	background-color: rgba(0,0,0,.35);
+	box-shadow: 0 0 0 1px #454545;
+}
+
+/* shape */
+
+g.element-selected {
+	cursor: grab;	
+}
+
+/* inspector */
+
+.ui-form-fieldset .ui-control-group {
+	text-align: left;
+	padding: 5px 10px;
+	vertical-align: middle;
+	line-height: 22px;
+	font-size: small;
+}
+.ui-form-fieldset .ui-control-group .ui-control-label {
+	display: inline-block;	
+}
+.ui-form-fieldset .ui-control-group .ui-control-input {
+	display: inline-block;
+	float: right;
+}
+
+.ui-form-fieldset .ui-control-group.full .ui-control-label,
+.ui-form-fieldset .ui-control-group.full .ui-control-input {
+	display: block;
+	width: 100%;
+	float: none;
+}
+
+.ui-form-fieldset button.color-picker-eye {
+	color: #333;
+	background: #eee;
+	border-radius: 6px;
+	box-shadow: none;
+	border: 1px solid #bbb;
+	padding: 0;
+}
+.ui-form-fieldset button.color-picker-eye span {
+	display: inline-block;
+	width: 40px;
+	border-right: 1px solid #bbb;
+	border-top-left-radius: 6px;
+	border-bottom-left-radius: 6px;
+	padding: 3px;
+	line-height: 15px;
+}
+.ui-form-fieldset button.color-picker-eye i {
+	padding: 3px 6px;
+	font-size: 14px;
+}
+.ui-form-fieldset button.color-picker-eye:hover {
+	cursor: pointer;
+}
+.ui-form-fieldset button.color-picker-eye:active {
+	color: #333;
+	background: #ccc;
+}
+
+.ui-form-fieldset .ui-radio-box {
+	margin-right: 10px;
+}
+.ui-form-fieldset .ui-radio-box label {
+	display: inline-block;
+	margin-right: 5px;
+}
+
+.ui-form-fieldset hr {
+	border: 0;
+	border-bottom: 1px solid #777;
+	margin: 10px 6px;
+}
+
+/* media field */
+
+.ui-media-field {
+	text-align: center;
+	padding: 10px 0;
+	margin: 5px 0;
+	border: 1px solid #777;
+	max-height: 400px;
+	overflow-y: scroll;
+}
+.ui-media-field .ui-media-file {
+	width: 40%;
+	display: inline-block;
+	margin: 0 10px;
+	vertical-align: top;
+	cursor: pointer;
+}
+.ui-media-field .ui-media-file img {
+	width: 100%;
+	max-height: 80px;
+	border-radius: 10px;
+	border: 2px solid transparent;
+}
+.ui-media-field .ui-media-file span {
+	word-wrap: break-word;
+}
+
+.ui-media-field .ui-media-file.selected {
+	cursor: default;
+}
+.ui-media-field .ui-media-file.selected img {
+	border: 2px solid #ebce57;
+}
+
+/* search bar */
+
+.ui-search-bar {
+	position: relative;
+	margin-bottom: 10px;
+}
+.ui-search-bar input {
+	width: 90%;
+	height: 20px;
+	border: 1px solid #aaa;
+	border-radius: 20px;
+	text-indent: 30px;
+	line-height: 14px;
+}
+.ui-search-bar input:focus {
+	outline: none;
+	border: solid 1px #618bc8;
+	-webkit-box-shadow: 0 0 5px 1px #618bc8;
+	-moz-box-shadow: 0 0 5px 1px #618bc8;
+	box-shadow: 0 0 5px 1px #618bc8;
+}
+.ui-search-bar i {
+	position: absolute;
+	top: 4px;
+	left: 22px;
+	color: #aaa;
+	font-size: 15px;
+}
+
+/* button */
+
+button.ui-button {
+	padding: 6px 10px;
+	background: #4F80FF;
+	border: 1px solid #4F80FF;
+	color: #fff;
+	font-size: 14px;
+}
+button.ui-button:hover {
+	background: #fff;
+	color: #4F80FF;
+}
+button.ui-button.full {
+	width: 100%;
+}
+
+/* inspector tabs */
+
+.ui-tab-pane {
+	display: flex;
+	margin-bottom: 10px;
+}
+.ui-tab-pane .ui-tab-button {
+	background-color: #2a2a2f;
+	width: 100%;
+	border-right: 1px solid #232328;
+	border-bottom: 1px solid #232328;
+}
+.ui-tab-pane .ui-tab-button:last-child {
+	border-right: 0;
+}
+.ui-tab-pane .ui-tab-button.active {
+	background-color: #4897f4;
+}
+.ui-tab-pane .ui-tab-button:not(.active):hover {
+	background-color: #d0daf4;
+}
+.ui-tab-pane .ui-tab-button a {
+	color: #fff;
+	text-decoration: none;
+	padding: 10px 0;
+	display: inline-block;
+	width: 100%;
+}
+.ui-tab-pane .ui-tab-button.active a {
+	cursor: default;
+}
+.ui-tab-pane .ui-tab-button:not(.active):hover a {
+	color: #3b3b43;
+}
+
+/* toolbar form */
+
+.ui-form-fieldset.horizontal .ui-control-group {
+	display: inline-block;
+	width: auto;
+	line-height: 30px;
+	height: 30px;
+}
+.ui-form-fieldset.horizontal .ui-control-group .ui-control-label {
+	margin-right: 10px;
+}
+.ui-form-fieldset.horizontal .ui-control-group .ui-control-input {
+	float: none;
+}
+
+/* overlay */
+
+.ui-transparent-overlay {
+	position: fixed;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	background: transparent;
+	overflow: hidden;
+	/**
+	 * z-index must be equals or higher than .border-layout
+	 * and must be lower than .colorpicker
+	 */
+}
+
+/* finder */
+
+.ui-finder {
+	position: fixed;
+	top: 30%;
+	left: 50%;
+	transform: translateX(-50%);
+}
+
+.ui-finder i {
+	position: absolute;
+	font-size: 1.6rem;
+	color: #666666;
+	top: 16px;
+	left: 16px;
+}
+
+.ui-finder input[type="text"] {
+	display: block;
+	width: 628px;
+	height: 56px;
+	margin: auto;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+	border-radius: 5px;
+	-moz-appearance: none;
+	-webkit-appearance: none;
+	-moz-box-shadow: 0 25px 60px 10px rgba(0, 0, 0, 0.3);
+	-webkit-box-shadow: 0 25px 60px 10px rgba(0, 0, 0, 0.3);
+	box-shadow: 0 25px 60px 10px rgba(0, 0, 0, 0.3);
+	border: 1px solid rgba(0, 0, 0, 0.2);
+	outline: none;
+	font-size: 1.6rem;
+	font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+	color: #000;
+	background-color: #d9dbe0;
+	padding: 0 10px 0 52px;
+}
+.ui-finder input[type="text"]:-moz-placeholder,
+.ui-finder input[type="text"]::-moz-placeholder,
+.ui-finder input[type="text"]:-ms-input-placeholder,
+.ui-finder input[type="text"]::-webkit-input-placeholder {
+ 	color: #666666;
+}

@@ -1,0 +1,35 @@
+/**
+* @package     com_spauthorarchive
+*
+* @copyright   Copyright (C) 2010 - 2018 JoomShaper. All rights reserved.
+* @license     GNU General Public License version 2 or later.
+*/
+
+/* *** Author *** */
+.spauthorarchive .spauthorarchive-department-wrap {
+    margin-bottom: 50px;
+    text-align: center
+}
+
+.spauthorarchive .spauthorarchive-department-wrap .spauthorarchive-department-img-wrap{
+    display: inline-block;
+}
+
+.spauthorarchive .spauthorarchive-department-content {
+    margin: 15px 0;
+}
+
+/* Socials */
+.spauthorarchive ul.spauthorarchive-author-socials {
+    padding: 0;
+    margin: 15px 0;
+}
+
+.spauthorarchive ul.spauthorarchive-author-socials li{
+    display: inline-block;
+}
+
+/* *** Articles *** */
+.spauthorarchive .spauthorarchive-content .spauthorarchive-addon-article {
+    margin-bottom: 30px;
+}

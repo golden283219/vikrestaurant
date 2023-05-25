@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- define "link" attribute in case the table doesn't follow the standard notation of "_lang_" -->
+<translation table="#__vikrestaurants_lang_takeaway_menus_entry_topping_group" link="#__vikrestaurants_takeaway_entry_group_assoc" id="tkentrygroup">
+
+	<columns>
+
+		<!-- define primary key column -->
+		<column name="id" rule="pk" />
+
+		<!-- omit "link" attribute in case the columns of both the tables have the same name -->
+		<column name="name" rule="content" link="title" />
+		<column name="description" rule="content" />
+
+		<!-- define foreign key column to create a relation with translation link -->
+		<!-- define "link" attribute in case the landing table PK is not equals to "id" -->
+		<column name="id_group" rule="fk" />
+
+		<!-- define foreign key column ro create a relation with a different language table -->
+		<!-- the "link" attribute can be used to recognize the table identifier to which the child belongs -->
+		<column name="id_parent" rule="parent" link="tkmenuentry" />
+
+		<!-- define column used to register the translation language tag -->
+		<column name="tag" rule="language" />
+
+	</columns>
+	
+</translation>

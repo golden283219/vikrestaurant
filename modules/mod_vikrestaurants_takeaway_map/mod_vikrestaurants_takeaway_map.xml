@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension type="module" version="2.5.0" client="site" method="upgrade">
+	<name>VikRestaurants Take-Away Map</name>
+	<author>Extensionsforjoomla.com</author>
+	<creationDate>January 12, 2023</creationDate>
+	<copyright>Copyright (C) 2023 e4j - extensionsforjoomla.com . All Rights Reserved</copyright>
+	<license>http://www.gnu.org/licenses/gpl-2.0.html GNU/GPL</license>
+	<authorEmail>dev@extensionsforjoomla.com</authorEmail>
+	<authorUrl>https://extensionsforjoomla.com</authorUrl>
+	<version>1.1.3</version>
+	<description>Module to Show the Take-Away Delivery Areas in VikRestaurants 1.8.5 or newer.</description>
+
+	<files>
+		<filename module="mod_vikrestaurants_takeaway_map">mod_vikrestaurants_takeaway_map.php</filename>
+		<filename>mod_vikrestaurants_takeaway_map.css</filename>
+		<filename>helper.php</filename>
+		<filename>index.html</filename>
+		<folder>fields</folder>
+		<folder>src</folder>
+		<folder>tmpl</folder>
+	</files>
+
+	<languages>
+		<language tag="en-GB">languages/en-GB.mod_vikrestaurants_takeaway_map.ini</language>
+	</languages>
+
+	<config>
+
+		<fields name="params">
+
+			<fieldset name="basic">	
+
+				<field
+					name="itemid"
+					type="menuitem"
+					default="0"
+					label="VRTKXMLMENUITEM"
+					description="VRTKXMLMENUITEMDESC"
+				/>
+
+			</fieldset>
+
+			<fieldset name="mapsettings" label="VRTKXMLMAPSETTINGS">
+
+				<field
+					name="width"
+					type="text"
+					default="100%"
+					label="VRTKXMLMAPWIDTH"
+					description="VRTKXMLMAPSIZEDESC"
+				/>
+
+				<field
+					name="height"
+					type="text"
+					default="200px"
+					label="VRTKXMLMAPHEIGHT"
+					description="VRTKXMLMAPSIZEDESC"
+				/>
+
+				<field
+					name="mapstyle"
+					type="list"
+					default="0"
+					label="VRTKXMLMAPSTYLE"
+				>
+					<option value="0">Default</option>
+					<option value="1">Grayscale</option>
+					<option value="2">Midnight</option>
+					<option value="3">Blue Essence</option>
+					<option value="4">Nature</option>
+				</field>
+
+				<field 
+					name="zoom"
+					type="text"
+					default=""
+					label="VRTKXMLMAPZOOM"
+					description="VRTKXMLMAPZOOMDESC"
+				/>
+				
+				<field
+					name="center_lat"
+					type="text"
+					default=""
+					label="VRTKXMLMAPCENTERLAT"
+					description="VRTKXMLMAPCENTERLATDESC"
+				/>
+
+				<field
+					name="center_lng"
+					type="text"
+					default=""
+					label="VRTKXMLMAPCENTERLNG"
+					description="VRTKXMLMAPCENTERLNGDESC"
+				/>
+
+			</fieldset>
+
+			<fieldset name="locations" label="VRTKXMLLOCATIONS" addfieldpath="/modules/mod_vikrestaurants_takeaway_map/fields">
+				
+				<field
+					name="locations_map"
+					type="vikadmin"
+					label=""
+					hidden="true"
+				/>
+				
+			</fieldset>
+
+			<fieldset name="delivery" label="VRTKXMLDELIVERY">
+
+				<field
+					name="delivery_shapes"
+					type="radio"
+					default="0"
+					label="VRTKXMLDELIVERYSHOWAREAS"
+					description="VRTKXMLDELIVERYSHOWAREASDESC"
+					class="btn-group btn-group-yesno"
+					layout="joomla.form.field.radio.switcher"
+				>
+					<option value="0">JNO</option>
+					<option value="1">JYES</option>
+				</field>
+
+				<field
+					name="enable_delivery"
+					type="radio"
+					default="0"
+					label="VRTKXMLDELIVERYENABLESEARCH"
+					description="VRTKXMLDELIVERYENABLESEARCHDESC"
+					class="btn-group btn-group-yesno"
+					layout="joomla.form.field.radio.switcher"
+				>
+					<option value="0">JNO</option>
+					<option value="1">JYES</option>
+				</field>
+
+				<field
+					name="delivery_position"
+					type="list"
+					label="VRTKXMLDELIVERYSEARCHPOS"
+					default="delivery-left"
+					description="VRTKXMLDELIVERYSEARCHPOSDESC"
+				>
+					<option value="delivery-above">VRTKXMLDELIVERYPOSABOVE</option>
+					<option value="delivery-left">VRTKXMLDELIVERYPOSLEFT</option>
+					<option value="delivery-right">VRTKXMLDELIVERYPOSRIGHT</option>
+				</field>
+
+				<field
+					name="delivery_text"
+					type="editor"
+					label="VRTKXMLDELIVERYTEXT"
+					default=""
+					width="300"
+					filter="safehtml"
+					description="VRTKXMLDELIVERYTEXTDESC"
+				/>
+
+			</fieldset>
+
+			<fieldset name="advanced">	
+				
+				<field
+					name="moduleclass_sfx"
+					type="text"
+					default=""
+					label="COM_MODULES_FIELD_MODULECLASS_SFX_LABEL"
+				/>
+
+				<field
+					name="layout"
+					type="modulelayout"
+					label="JFIELD_ALT_LAYOUT_LABEL"
+					description="JFIELD_ALT_MODULE_LAYOUT_DESC"
+					class="form-select"
+				/>
+
+			</fieldset>
+			
+		</fields>
+
+	</config>
+
+	<updateservers>
+		<server type="extension" name="VikRestaurants Modules Update Site" priority="1">https://extensionsforjoomla.com/vikapi/?task=joomla.updateserver&amp;sku=vre-tkmap</server>
+	</updateservers>
+
+</extension>

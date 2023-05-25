@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<metadata>
+	<layout title="COM_VIKRESTAURANTS_RESTAURANTS_VIEW_DEFAULT_TITLE">
+		<message>COM_VIKRESTAURANTS_RESTAURANTS_VIEW_DEFAULT_DESC</message>
+	</layout>
+	<view title="Restaurants" >
+		<message><![CDATA[VikRestaurants]]></message>
+	</view>
+	<state>
+		<name>Restaurants</name>
+		<description>VikRestaurants</description>
+	</state>
+</metadata>
